@@ -1,0 +1,176 @@
+.header {
+
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        height: 4rem;
+
+        &__container-left {
+            display: flex;
+            align-items: center;
+
+            &__img {
+                margin: 0 1rem;
+                padding: 0.5em;
+                cursor: pointer;
+            }
+
+            &__icon-H {
+                margin-left: 1rem;
+                padding: 0.4em 0.6em;
+                font-family: 'Archivo';
+                font-size: 1.5em;
+                box-shadow: 0 0.10em 0.15em lightgray, // bottom
+                    -0.1em 0.10em 0.5em lightgray, // left
+                    0.1em 0.10em 0.5em lightgray; // right
+            }
+
+            &__title {
+                margin-left: 1rem;
+                font-family: 'Archivo';
+                font-size: 1em;
+                letter-spacing: 0.1em;
+                text-transform: uppercase;
+                font-weight: 400;
+            }
+        }
+
+        &__container-right {
+            display: flex;
+            align-items: center;
+
+            &__img {
+                margin-right: 1rem;
+                padding: 0.5em;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.footer {
+    padding: 2em 1em 1em;
+    background-image: url("D:/Varios-PC/Educacion/TrainingOxygen/Temario/Practicas/Hotel%20Miranda/src/imgWeb/footerBackground.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__container-title {
+        display: flex;
+        align-items: center;
+
+        &__icon-H {
+            padding: 0.4em 0.6em;
+            font-family: 'Archivo';
+            font-size: 2.75em;
+            color: #FFFFFF;
+            background-color: #BEAD8E;
+        }
+
+        &__title {
+            margin-left: 1.5rem;
+            font-family: 'Archivo';
+            font-size: 1.5em;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            font-weight: 400;
+        }
+    }
+
+    &__text {
+        margin: 3rem 0 0;
+        font-family: 'Archivo';
+        font-size: 1em;
+        line-height: 1.5em;
+        color: #777777;
+    }
+
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        width: 70%;
+        margin-top: 3rem;
+
+        &__img {
+            cursor: pointer;
+        }
+    }
+
+    &__services {
+        margin-top: 3rem;
+
+        &__title {
+            margin-bottom: 1rem;
+            font-family: 'Old Standard TT';
+            font-size: 1.5em;
+            font-weight: 300;
+        }
+
+        &__list {
+            columns: 2;
+            text-align: left;
+
+            &__option {
+                padding: 1em 0;
+                font-family: 'Roboto';
+                list-style: none;
+                // list-style-image: '+';
+                color: #777777;
+            }
+        }
+    }
+
+    &__contact {
+        margin-top: 2rem;
+
+        &__title {
+            font-family: 'Old Standard TT';
+            font-size: 1.5em;
+            font-weight: 300;
+        }
+
+        &__container-contact {
+            margin-top: 2rem;
+
+            &__img {
+                display: inline-block;
+            }
+
+            &__container-info {
+                display: inline-block;
+                margin-left: 1rem;
+
+                &__title {
+                    font-family: 'Old Standard TT';
+                    font-size: 1.4em;
+                    font-weight: 300;
+                }
+
+                &__number {
+                    font-family: 'Roboto';
+                    font-size: 1em;
+                    font-weight: 400;
+                    color: #777777;
+                }
+            }
+        }
+
+    }
+
+    &__credits {
+        margin-top: 3rem;
+        font-family: 'Roboto';
+
+        &__container-terms-policy {
+            margin-top: 1rem;
+
+            &__terms {
+                display: inline-block;
+            }
+
+            &__policy {
+                display: inline-block;
+            }
+        }
+    }
+}

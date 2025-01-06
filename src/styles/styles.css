@@ -1,6 +1,149 @@
-#root {
-  margin: 0 auto;
-  padding: 2rem;
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  height: 4rem;
+}
+.header__nav__container-left {
+  display: flex;
+  align-items: center;
+}
+.header__nav__container-left__img {
+  margin: 0 1rem;
+  padding: 0.5em;
+  cursor: pointer;
+}
+.header__nav__container-left__icon-H {
+  margin-left: 1rem;
+  padding: 0.4em 0.6em;
+  font-family: "Archivo";
+  font-size: 1.5em;
+  box-shadow: 0 0.1em 0.15em lightgray, -0.1em 0.1em 0.5em lightgray, 0.1em 0.1em 0.5em lightgray;
+}
+.header__nav__container-left__title {
+  margin-left: 1rem;
+  font-family: "Archivo";
+  font-size: 1em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.header__nav__container-right {
+  display: flex;
+  align-items: center;
+}
+.header__nav__container-right__img {
+  margin-right: 1rem;
+  padding: 0.5em;
+  cursor: pointer;
+}
+
+.footer {
+  padding: 2em 1em 1em;
+  background-image: url("D:/Varios-PC/Educacion/TrainingOxygen/Temario/Practicas/Hotel%20Miranda/src/imgWeb/footerBackground.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.footer__container-title {
+  display: flex;
+  align-items: center;
+}
+.footer__container-title__icon-H {
+  padding: 0.4em 0.6em;
+  font-family: "Archivo";
+  font-size: 2.75em;
+  color: #FFFFFF;
+  background-color: #BEAD8E;
+}
+.footer__container-title__title {
+  margin-left: 1.5rem;
+  font-family: "Archivo";
+  font-size: 1.5em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.footer__text {
+  margin: 3rem 0 0;
+  font-family: "Archivo";
+  font-size: 1em;
+  line-height: 1.5em;
+  color: #777777;
+}
+.footer__nav {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin-top: 3rem;
+}
+.footer__nav__img {
+  cursor: pointer;
+}
+.footer__services {
+  margin-top: 3rem;
+}
+.footer__services__title {
+  margin-bottom: 1rem;
+  font-family: "Old Standard TT";
+  font-size: 1.5em;
+  font-weight: 300;
+}
+.footer__services__list {
+  -moz-columns: 2;
+       columns: 2;
+  text-align: left;
+}
+.footer__services__list__option {
+  padding: 1em 0;
+  font-family: "Roboto";
+  list-style: none;
+  color: #777777;
+}
+.footer__contact {
+  margin-top: 2rem;
+}
+.footer__contact__title {
+  font-family: "Old Standard TT";
+  font-size: 1.5em;
+  font-weight: 300;
+}
+.footer__contact__container-contact {
+  margin-top: 2rem;
+}
+.footer__contact__container-contact__img {
+  display: inline-block;
+}
+.footer__contact__container-contact__container-info {
+  display: inline-block;
+  margin-left: 1rem;
+}
+.footer__contact__container-contact__container-info__title {
+  font-family: "Old Standard TT";
+  font-size: 1.4em;
+  font-weight: 300;
+}
+.footer__contact__container-contact__container-info__number {
+  font-family: "Roboto";
+  font-size: 1em;
+  font-weight: 400;
+  color: #777777;
+}
+.footer__credits {
+  margin-top: 3rem;
+  font-family: "Roboto";
+}
+.footer__credits__container-terms-policy {
+  margin-top: 1rem;
+}
+.footer__credits__container-terms-policy__terms {
+  display: inline-block;
+}
+.footer__credits__container-terms-policy__policy {
+  display: inline-block;
+}
+
+.home__p {
+  padding: 1em 0;
   text-align: center;
   background-color: yellow;
 }

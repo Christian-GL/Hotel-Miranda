@@ -1,8 +1,18 @@
 
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { createRoot } from 'react-dom/client'
-import { App } from './App.jsx'
+
+import { Home } from './pages/home/home'
+import { Layout } from './pages/layout/layout'
 
 
 createRoot(document.getElementById('root')).render(
-    <App />
+    <BrowserRouter>
+        <Routes>
+            <Route element={<Layout />}>
+                <Route path='' element={<Home />} />
+                {/* <Route path='/myPhotos' element={<PageMyPhotos />} /> */}
+            </Route>
+        </Routes>
+    </BrowserRouter >
 )
