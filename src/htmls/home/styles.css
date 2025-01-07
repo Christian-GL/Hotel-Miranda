@@ -1,0 +1,209 @@
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  height: 4rem;
+}
+.header__nav__container-left {
+  display: flex;
+  align-items: center;
+}
+.header__nav__container-left__img {
+  margin: 0 1rem;
+  padding: 0.5em;
+  cursor: pointer;
+}
+.header__nav__container-left__icon-H {
+  margin-left: 1rem;
+  padding: 0.3em 0.5em;
+  font-family: "Archivo";
+  font-size: 1.25em;
+  box-shadow: 0 0.1em 0.15em lightgray, -0.1em 0.1em 0.5em lightgray, 0.1em 0.1em 0.5em lightgray;
+}
+.header__nav__container-left__title {
+  margin-left: 1rem;
+  font-family: "Archivo";
+  font-size: 0.75em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.header__nav__container-right {
+  display: flex;
+  align-items: center;
+}
+.header__nav__container-right__img {
+  margin-right: 1rem;
+  padding: 0.5em;
+  cursor: pointer;
+}
+
+.footer__container-main {
+  padding: 2em 1em 1em;
+  background-image: url("D:/Varios-PC/Educacion/TrainingOxygen/Temario/Practicas/Hotel%20Miranda/src/imgWeb/footerBackground.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.footer__container-main__container-title {
+  display: flex;
+  align-items: center;
+}
+.footer__container-main__container-title__icon-H {
+  padding: 0.4em 0.6em;
+  font-family: "Archivo";
+  font-size: 2.75em;
+  color: #FFFFFF;
+  background-color: #BEAD8E;
+}
+.footer__container-main__container-title__title {
+  margin-left: 1.5rem;
+  font-family: "Archivo";
+  font-size: 1.5em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.footer__container-main__text {
+  margin: 3rem 0 0;
+  font-family: "Archivo";
+  font-size: 1em;
+  line-height: 1.5em;
+  color: #777777;
+}
+.footer__container-main__nav {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin-top: 3rem;
+}
+.footer__container-main__nav__img {
+  cursor: pointer;
+}
+.footer__container-main__services {
+  margin-top: 3rem;
+}
+.footer__container-main__services__title {
+  margin-bottom: 1rem;
+  font-family: "Old Standard TT";
+  font-size: 1.5em;
+  font-weight: 300;
+}
+.footer__container-main__services__list {
+  -moz-columns: 2;
+       columns: 2;
+  text-align: left;
+}
+.footer__container-main__services__list__option {
+  padding: 1em 0;
+  font-family: "Roboto";
+  list-style: none;
+  color: #777777;
+}
+.footer__container-main__contact {
+  margin-top: 2rem;
+}
+.footer__container-main__contact__title {
+  font-family: "Old Standard TT";
+  font-size: 1.5em;
+  font-weight: 300;
+}
+.footer__container-main__contact__container-contact {
+  margin-top: 2rem;
+}
+.footer__container-main__contact__container-contact__img {
+  display: inline-block;
+}
+.footer__container-main__contact__container-contact__container-info {
+  display: inline-block;
+  margin-left: 1rem;
+}
+.footer__container-main__contact__container-contact__container-info__title {
+  font-family: "Old Standard TT";
+  font-size: 1.4em;
+  font-weight: 300;
+}
+.footer__container-main__contact__container-contact__container-info__number {
+  font-family: "Roboto";
+  font-size: 1em;
+  font-weight: 400;
+  color: #777777;
+}
+.footer__credits {
+  padding: 1em;
+  font-family: "Roboto";
+  background-color: #F8F8F8;
+}
+.footer__credits__container-terms-policy {
+  margin-top: 1rem;
+}
+.footer__credits__container-terms-policy__terms {
+  display: inline-block;
+}
+.footer__credits__container-terms-policy__policy {
+  display: inline-block;
+}
+
+.home__btn {
+  margin-top: 2rem;
+  padding: 1.75em 2.5em;
+  font-family: "Archivo";
+  font-size: 1em;
+  font-weight: 700;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  border: 1px solid #767676;
+  cursor: pointer;
+}
+.home__intro {
+  padding: 3em 1em;
+  background-color: #333333;
+}
+.home__intro__minor-title {
+  font-family: "Archivo";
+  font-size: 0.75em;
+  letter-spacing: 0.25em;
+  line-height: 1.5em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.home__intro__mayor-title {
+  margin-top: 2rem;
+  font-family: "Old Standard TT";
+  font-size: 3.5em;
+  font-weight: 300;
+  color: #FFFFFF;
+}
+.home__intro__btn--tour {
+  background-color: #BEAD8E;
+}
+.home__intro__btn--learn {
+  background-color: #333333;
+}
+.home__availability {
+  padding: 3em 1em;
+  background-color: #222222;
+}
+.home__availability__title {
+  font-family: "Roboto";
+  font-size: 1.25em;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+.home__availability__btn-check {
+  background-color: #BEAD8E;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+}/*# sourceMappingURL=styles.css.map */
