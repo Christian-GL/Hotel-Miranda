@@ -17,9 +17,9 @@
 
             &__icon-H {
                 margin-left: 1rem;
-                padding: 0.4em 0.6em;
+                padding: 0.3em 0.5em;
                 font-family: 'Archivo';
-                font-size: 1.5em;
+                font-size: 1.25em;
                 box-shadow: 0 0.10em 0.15em lightgray, // bottom
                     -0.1em 0.10em 0.5em lightgray, // left
                     0.1em 0.10em 0.5em lightgray; // right
@@ -28,7 +28,7 @@
             &__title {
                 margin-left: 1rem;
                 font-family: 'Archivo';
-                font-size: 1em;
+                font-size: 0.75em;
                 letter-spacing: 0.1em;
                 text-transform: uppercase;
                 font-weight: 400;
@@ -49,117 +49,121 @@
 }
 
 .footer {
-    padding: 2em 1em 1em;
-    background-image: url("D:/Varios-PC/Educacion/TrainingOxygen/Temario/Practicas/Hotel%20Miranda/src/imgWeb/footerBackground.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 
-    &__container-title {
-        display: flex;
-        align-items: center;
+    &__container-main {
+        padding: 2em 1em 1em;
+        background-image: url("D:/Varios-PC/Educacion/TrainingOxygen/Temario/Practicas/Hotel%20Miranda/src/imgWeb/footerBackground.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
 
-        &__icon-H {
-            padding: 0.4em 0.6em;
-            font-family: 'Archivo';
-            font-size: 2.75em;
-            color: #FFFFFF;
-            background-color: #BEAD8E;
-        }
+        &__container-title {
+            display: flex;
+            align-items: center;
 
-        &__title {
-            margin-left: 1.5rem;
-            font-family: 'Archivo';
-            font-size: 1.5em;
-            letter-spacing: 0.1em;
-            text-transform: uppercase;
-            font-weight: 400;
-        }
-    }
+            &__icon-H {
+                padding: 0.4em 0.6em;
+                font-family: 'Archivo';
+                font-size: 2.75em;
+                color: #FFFFFF;
+                background-color: #BEAD8E;
+            }
 
-    &__text {
-        margin: 3rem 0 0;
-        font-family: 'Archivo';
-        font-size: 1em;
-        line-height: 1.5em;
-        color: #777777;
-    }
-
-    &__nav {
-        display: flex;
-        justify-content: space-between;
-        width: 70%;
-        margin-top: 3rem;
-
-        &__img {
-            cursor: pointer;
-        }
-    }
-
-    &__services {
-        margin-top: 3rem;
-
-        &__title {
-            margin-bottom: 1rem;
-            font-family: 'Old Standard TT';
-            font-size: 1.5em;
-            font-weight: 300;
-        }
-
-        &__list {
-            columns: 2;
-            text-align: left;
-
-            &__option {
-                padding: 1em 0;
-                font-family: 'Roboto';
-                list-style: none;
-                // list-style-image: '+';
-                color: #777777;
+            &__title {
+                margin-left: 1.5rem;
+                font-family: 'Archivo';
+                font-size: 1.5em;
+                letter-spacing: 0.1em;
+                text-transform: uppercase;
+                font-weight: 400;
             }
         }
-    }
 
-    &__contact {
-        margin-top: 2rem;
-
-        &__title {
-            font-family: 'Old Standard TT';
-            font-size: 1.5em;
-            font-weight: 300;
+        &__text {
+            margin: 3rem 0 0;
+            font-family: 'Archivo';
+            font-size: 1em;
+            line-height: 1.5em;
+            color: #777777;
         }
 
-        &__container-contact {
-            margin-top: 2rem;
+        &__nav {
+            display: flex;
+            justify-content: space-between;
+            width: 70%;
+            margin-top: 3rem;
 
             &__img {
-                display: inline-block;
+                cursor: pointer;
+            }
+        }
+
+        &__services {
+            margin-top: 3rem;
+
+            &__title {
+                margin-bottom: 1rem;
+                font-family: 'Old Standard TT';
+                font-size: 1.5em;
+                font-weight: 300;
             }
 
-            &__container-info {
-                display: inline-block;
-                margin-left: 1rem;
+            &__list {
+                columns: 2;
+                text-align: left;
 
-                &__title {
-                    font-family: 'Old Standard TT';
-                    font-size: 1.4em;
-                    font-weight: 300;
-                }
-
-                &__number {
+                &__option {
+                    padding: 1em 0;
                     font-family: 'Roboto';
-                    font-size: 1em;
-                    font-weight: 400;
+                    list-style: none;
+                    // list-style-image: '+';
                     color: #777777;
                 }
             }
         }
 
+        &__contact {
+            margin-top: 2rem;
+
+            &__title {
+                font-family: 'Old Standard TT';
+                font-size: 1.5em;
+                font-weight: 300;
+            }
+
+            &__container-contact {
+                margin-top: 2rem;
+
+                &__img {
+                    display: inline-block;
+                }
+
+                &__container-info {
+                    display: inline-block;
+                    margin-left: 1rem;
+
+                    &__title {
+                        font-family: 'Old Standard TT';
+                        font-size: 1.4em;
+                        font-weight: 300;
+                    }
+
+                    &__number {
+                        font-family: 'Roboto';
+                        font-size: 1em;
+                        font-weight: 400;
+                        color: #777777;
+                    }
+                }
+            }
+
+        }
     }
 
     &__credits {
-        margin-top: 3rem;
+        padding: 1em;
         font-family: 'Roboto';
+        background-color: #F8F8F8;
 
         &__container-terms-policy {
             margin-top: 1rem;
@@ -173,4 +177,5 @@
             }
         }
     }
+
 }
