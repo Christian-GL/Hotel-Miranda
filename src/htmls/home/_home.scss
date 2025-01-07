@@ -1,27 +1,18 @@
 .home {
 
     &__intro {
-        padding: 3em 1em;
-        background-color: $color-mediumBrown;
+        @include introPage;
 
         &__minor-title {
-            font-family: $font-archivo;
-            font-size: 0.75em;
-            letter-spacing: 0.25em;
-            line-height: 1.5em;
-            text-transform: uppercase;
-            color: $color-white;
+            @include introPageMinorTitle;
         }
 
         &__mayor-title {
-            margin-top: 2rem;
-            font-family: $font-oldStandardTT;
-            font-size: 3.5em;
-            font-weight: 300;
-            color: $color-white;
+            @include introPageMayorTitle;
         }
 
         &__btn {
+
             &--tour {
                 @include defaultButton($color-lightBrown, $color-white)
             }

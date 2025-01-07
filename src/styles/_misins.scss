@@ -12,3 +12,56 @@
     color: $textColor;
     background-color: $backgroundColor;
 }
+
+@mixin introPage {
+    padding: 4em 1em 0;
+    background-color: $color-mediumBrown;
+}
+
+@mixin introPageMinorTitle {
+    font-family: $font-archivo;
+    font-size: 0.75em;
+    letter-spacing: 0.25em;
+    line-height: 1.5em;
+    text-transform: uppercase;
+    color: $color-white;
+}
+
+@mixin introPageMayorTitle {
+    margin-top: 1rem;
+    font-family: $font-oldStandardTT;
+    font-size: 3.5em;
+    font-weight: 300;
+    line-height: 1.15em;
+    color: $color-white;
+}
+
+@mixin introLocation {
+    margin: 2rem 0 0 auto;
+    padding: 1em 0;
+    text-align: center;
+    width: 10rem;
+    background-color: $color-white;
+}
+
+@mixin introPreviusLocation {
+    display: inline-block;
+    font-family: $font-archivo;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+@mixin introSeparator($distanceRem: 0.25rem) {
+    display: inline-block;
+    margin: 0 $distanceRem;
+    height: 0.9rem;
+    border-left: 2px solid $color-black;
+}
+
+@mixin introActualLocation {
+    display: inline-block;
+    font-family: $font-archivo;
+    font-weight: 700;
+    color: $color-lightBrown;
+    cursor: pointer;
+}
