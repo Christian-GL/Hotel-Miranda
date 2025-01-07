@@ -18,16 +18,16 @@
             &__icon-H {
                 margin-left: 1rem;
                 padding: 0.3em 0.5em;
-                font-family: 'Archivo';
+                font-family: $font-archivo;
                 font-size: 1.25em;
-                box-shadow: 0 0.10em 0.15em lightgray, // bottom
-                    -0.1em 0.10em 0.5em lightgray, // left
-                    0.1em 0.10em 0.5em lightgray; // right
+                box-shadow: 0 0.10em 0.15em $color-shading, // bottom
+                    -0.1em 0.10em 0.5em $color-shading, // left
+                    0.1em 0.10em 0.5em $color-shading; // right
             }
 
             &__title {
                 margin-left: 1rem;
-                font-family: 'Archivo';
+                font-family: $font-archivo;
                 font-size: 0.75em;
                 letter-spacing: 0.1em;
                 text-transform: uppercase;
@@ -63,15 +63,15 @@
 
             &__icon-H {
                 padding: 0.4em 0.6em;
-                font-family: 'Archivo';
+                font-family: $font-archivo;
                 font-size: 2.75em;
-                color: #FFFFFF;
-                background-color: #BEAD8E;
+                color: $color-white;
+                background-color: $color-lightBrown;
             }
 
             &__title {
                 margin-left: 1.5rem;
-                font-family: 'Archivo';
+                font-family: $font-archivo;
                 font-size: 1.5em;
                 letter-spacing: 0.1em;
                 text-transform: uppercase;
@@ -81,10 +81,10 @@
 
         &__text {
             margin: 3rem 0 0;
-            font-family: 'Archivo';
+            font-family: $font-archivo;
             font-size: 1em;
             line-height: 1.5em;
-            color: #777777;
+            color: $color-textGray;
         }
 
         &__nav {
@@ -103,7 +103,7 @@
 
             &__title {
                 margin-bottom: 1rem;
-                font-family: 'Old Standard TT';
+                font-family: $font-oldStandardTT;
                 font-size: 1.5em;
                 font-weight: 300;
             }
@@ -114,10 +114,9 @@
 
                 &__option {
                     padding: 1em 0;
-                    font-family: 'Roboto';
+                    font-family: $font-roboto;
                     list-style: none;
-                    // list-style-image: '+';
-                    color: #777777;
+                    color: $color-textGray;
                 }
             }
         }
@@ -126,7 +125,7 @@
             margin-top: 2rem;
 
             &__title {
-                font-family: 'Old Standard TT';
+                font-family: $font-oldStandardTT;
                 font-size: 1.5em;
                 font-weight: 300;
             }
@@ -143,16 +142,16 @@
                     margin-left: 1rem;
 
                     &__title {
-                        font-family: 'Old Standard TT';
+                        font-family: $font-oldStandardTT;
                         font-size: 1.4em;
                         font-weight: 300;
                     }
 
                     &__number {
-                        font-family: 'Roboto';
+                        font-family: $font-roboto;
                         font-size: 1em;
                         font-weight: 400;
-                        color: #777777;
+                        color: $color-textGray;
                     }
                 }
             }
@@ -162,8 +161,8 @@
 
     &__credits {
         padding: 1em;
-        font-family: 'Roboto';
-        background-color: #F8F8F8;
+        font-family: $font-roboto;
+        background-color: $color-backgroundGray;
 
         &__container-terms-policy {
             margin-top: 1rem;

@@ -143,18 +143,6 @@
   display: inline-block;
 }
 
-.home__btn {
-  margin-top: 2rem;
-  padding: 1.75em 2.5em;
-  font-family: "Archivo";
-  font-size: 1em;
-  font-weight: 700;
-  letter-spacing: 0.25em;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  border: 1px solid #767676;
-  cursor: pointer;
-}
 .home__intro {
   padding: 3em 1em;
   background-color: #333333;
@@ -175,9 +163,29 @@
   color: #FFFFFF;
 }
 .home__intro__btn--tour {
+  margin-top: 2rem;
+  padding: 1.75em 2.5em;
+  font-family: "Archivo";
+  font-size: 1em;
+  font-weight: 700;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  border: 1px solid #767676;
+  cursor: pointer;
+  color: #FFFFFF;
   background-color: #BEAD8E;
 }
 .home__intro__btn--learn {
+  margin-top: 2rem;
+  padding: 1.75em 2.5em;
+  font-family: "Archivo";
+  font-size: 1em;
+  font-weight: 700;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  border: 1px solid #767676;
+  cursor: pointer;
+  color: #FFFFFF;
   background-color: #333333;
 }
 .home__availability {
@@ -191,7 +199,21 @@
   color: #FFFFFF;
 }
 .home__availability__btn-check {
+  margin-top: 2rem;
+  padding: 1.75em 2.5em;
+  font-family: "Archivo";
+  font-size: 1em;
+  font-weight: 700;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  border: 1px solid #767676;
+  cursor: pointer;
+  color: #FFFFFF;
   background-color: #BEAD8E;
+}
+
+.rooms__s__p {
+  border: 2px solid black;
 }
 
 * {
