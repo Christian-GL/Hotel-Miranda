@@ -1,0 +1,6 @@
+.about {
+
+    &__intro {
+        @include introPage(0.25rem);
+    }
+}

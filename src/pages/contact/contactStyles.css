@@ -25,14 +25,21 @@
 .header__nav__ctn-left__ctn-img__img__X {
   display: none;
 }
-.header__nav__ctn-left__icon-H {
+.header__nav__ctn-left__ctn-returnHome {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #000000;
+  cursor: pointer;
+}
+.header__nav__ctn-left__ctn-returnHome__icon-H {
   margin-left: 1rem;
   padding: 0.3em 0.5em;
   font-family: "Archivo";
   font-size: 1.25em;
   box-shadow: 0 0.1em 0.15em lightgray, -0.1em 0.1em 0.5em lightgray, 0.1em 0.1em 0.5em lightgray;
 }
-.header__nav__ctn-left__title {
+.header__nav__ctn-left__ctn-returnHome__title {
   margin-left: 1rem;
   font-family: "Archivo";
   font-size: 0.75em;

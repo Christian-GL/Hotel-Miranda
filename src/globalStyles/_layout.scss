@@ -29,23 +29,31 @@
                 }
             }
 
-            &__icon-H {
-                margin-left: 1rem;
-                padding: 0.3em 0.5em;
-                font-family: $font-archivo;
-                font-size: 1.25em;
-                box-shadow: 0 0.10em 0.15em $color-shading, // bottom
-                    -0.1em 0.10em 0.5em $color-shading, // left
-                    0.1em 0.10em 0.5em $color-shading; // right
-            }
+            &__ctn-returnHome {
+                display: flex;
+                align-items: center;
+                text-decoration: none;
+                color: $color-black;
+                cursor: pointer;
 
-            &__title {
-                margin-left: 1rem;
-                font-family: $font-archivo;
-                font-size: 0.75em;
-                letter-spacing: 0.1em;
-                text-transform: uppercase;
-                font-weight: 400;
+                &__icon-H {
+                    margin-left: 1rem;
+                    padding: 0.3em 0.5em;
+                    font-family: $font-archivo;
+                    font-size: 1.25em;
+                    box-shadow: 0 0.10em 0.15em $color-shading, // bottom
+                        -0.1em 0.10em 0.5em $color-shading, // left
+                        0.1em 0.10em 0.5em $color-shading; // right
+                }
+
+                &__title {
+                    margin-left: 1rem;
+                    font-family: $font-archivo;
+                    font-size: 0.75em;
+                    letter-spacing: 0.1em;
+                    text-transform: uppercase;
+                    font-weight: 400;
+                }
             }
         }
 

@@ -221,11 +221,11 @@
   display: flex;
 }
 
-.rooms__intro {
+.about__intro {
   padding: 4em 1em 0;
   background-color: #333333;
 }
-.rooms__intro__minor-title {
+.about__intro__minor-title {
   font-family: "Archivo";
   font-size: 0.75em;
   letter-spacing: 0.25em;
@@ -233,7 +233,7 @@
   text-transform: uppercase;
   color: #FFFFFF;
 }
-.rooms__intro__mayor-title {
+.about__intro__mayor-title {
   margin-top: 1rem;
   font-family: "Old Standard TT";
   font-size: 3.5em;
@@ -241,14 +241,14 @@
   line-height: 1.15em;
   color: #FFFFFF;
 }
-.rooms__intro__location {
+.about__intro__location {
   margin: 2rem 0 0 auto;
   padding: 1em 0;
   text-align: center;
   width: 10rem;
   background-color: #FFFFFF;
 }
-.rooms__intro__location__previus-location {
+.about__intro__location__previus-location {
   display: inline-block;
   text-decoration: none;
   font-family: "Archivo";
@@ -256,77 +256,17 @@
   color: #000000;
   cursor: pointer;
 }
-.rooms__intro__location__separator {
+.about__intro__location__separator {
   display: inline-block;
   margin: 0 0.25rem;
   height: 0.9rem;
   border-left: 2px solid #000000;
 }
-.rooms__intro__location__actual-location {
+.about__intro__location__actual-location {
   display: inline-block;
   font-family: "Archivo";
   font-weight: 700;
   color: #BEAD8E;
-  cursor: pointer;
-}
-.rooms__entry {
-  margin-top: 4rem;
-  padding: 0 1em;
-}
-.rooms__entry__ctn-img {
-  position: relative;
-}
-.rooms__entry__ctn-img__img {
-  width: 100%;
-  height: auto;
-}
-.rooms__entry__ctn-img__ctn-options {
-  position: absolute;
-  padding: 0.5em 1.2em;
-  width: -moz-fit-content;
-  width: fit-content;
-  left: 50%;
-  transform: translate(-50%, -60%);
-  white-space: nowrap;
-  box-shadow: 0 0 0.25em 0.025em lightgray, -0.01em 0.01em 0.05em lightgray, 0.01em 0.01em 0.05em lightgray;
-  background-color: #FFFFFF;
-}
-.rooms__entry__ctn-img__ctn-options__img {
-  padding: 0.5em 0.5em;
-  transform: scale(1.25);
-  cursor: pointer;
-}
-.rooms__entry__ctn-info {
-  margin-top: 3.5rem;
-  padding: 0 1.5em;
-  text-align: center;
-}
-.rooms__entry__ctn-info__title {
-  font-family: "Old Standard TT";
-  font-size: 1.75em;
-  font-weight: 400;
-  color: #222222;
-}
-.rooms__entry__ctn-info__text {
-  margin: 1rem 0;
-  font-family: "Roboto";
-  color: #777777;
-}
-.rooms__entry__ctn-info__price {
-  display: inline-block;
-  margin-right: 0.75rem;
-  font-family: "Archivo";
-  font-size: 1.2em;
-  font-weight: 700;
-  color: #BEAD8E;
-}
-.rooms__entry__ctn-info__link-confirm {
-  display: inline-block;
-  margin-left: 0.75rem;
-  font-family: "Archivo";
-  font-size: 1.2em;
-  font-weight: 700;
-  color: #BDBDBD;
   cursor: pointer;
 }
 
@@ -342,4 +282,4 @@ html {
 
 body {
   min-width: 320px;
-}/*# sourceMappingURL=roomsStyles.css.map */
+}/*# sourceMappingURL=aboutStyles.css.map */
