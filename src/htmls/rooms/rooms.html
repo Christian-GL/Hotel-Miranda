@@ -19,7 +19,9 @@
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+  <script src="../../js/HeaderMenu.js" defer></script>
+  <script src="../../js/index.js" defer></script>
   <title>Hotel Miranda - Rooms</title>
 </head>
 
@@ -27,9 +29,30 @@
   <header class="header">
     <nav class="header__nav">
       <div class="header__nav__container-left">
-        <img class="header__nav__container-left__img" src="../../imgIcon/hamburger.png"></img>
+        <div class="header__nav__container-left__container-img">
+          <img
+            class="header__nav__container-left__container-img__img header__nav__container-left__container-img__img__hamburger"
+            id="header__nav__container-left__container-img__img__hamburger" src="../../imgIcon/hamburger.png"></img>
+          <img
+            class="header__nav__container-left__container-img__img header__nav__container-left__container-img__img__X"
+            id="header__nav__container-left__container-img__img__X" src="../../imgIcon/X.png">
+        </div>
         <h4 class="header__nav__container-left__icon-H">H</h4>
         <h5 class="header__nav__container-left__title"><b>Hotel</b><br />Miranda</h5>
+      </div>
+      </div>
+      <div class="header__nav__container-middle">
+        <ul class="header__nav__container-middle__menu" id="header__nav__container-middle__menu">
+          <li class="header__nav__container-middle__menu__option"
+            id="header__nav__container-middle__menu__option__aboutus">About Us</li>
+          <li class="header__nav__container-middle__menu__option"
+            id="header__nav__container-middle__menu__option__rooms">
+            Rooms</li>
+          <li class="header__nav__container-middle__menu__option"
+            id="header__nav__container-middle__menu__option__offers">Offers</li>
+          <li class="header__nav__container-middle__menu__option"
+            id="header__nav__container-middle__menu__option__contact">Contact</li>
+        </ul>
       </div>
       <div class="header__nav__container-right">
         <img class="header__nav__container-right__img" src="../../imgIcon/personProfile.png"></img>

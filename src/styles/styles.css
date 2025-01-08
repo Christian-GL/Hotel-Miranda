@@ -1,5 +1,6 @@
 .header {
-  border-bottom: 5px solid yellow;
+  position: relative;
+  box-shadow: 0 0.15rem 0.15rem #BDBDBD;
 }
 .header__nav {
   display: flex;
@@ -10,15 +11,18 @@
   display: flex;
   align-items: center;
 }
-.header__nav__container-left__img {
-  margin: 0 1rem;
+.header__nav__container-left__container-img {
+  width: 4rem;
+}
+.header__nav__container-left__container-img__img {
+  margin: 0 auto;
   padding: 0.5em;
   cursor: pointer;
 }
-.header__nav__container-left__img--hamburger {
+.header__nav__container-left__container-img__img__hamburger {
   display: block;
 }
-.header__nav__container-left__img--X {
+.header__nav__container-left__container-img__img__X {
   display: none;
 }
 .header__nav__container-left__icon-H {
@@ -36,6 +40,30 @@
   text-transform: uppercase;
   font-weight: 400;
 }
+.header__nav__container-middle {
+  width: 100%;
+  position: absolute;
+  top: 4.1rem;
+  left: 0;
+  background-color: #FFFFFF;
+}
+.header__nav__container-middle__menu {
+  display: none;
+  flex-direction: column;
+  list-style: none;
+  font-family: "Archivo";
+  font-size: 0.8em;
+  font-weight: 700;
+}
+.header__nav__container-middle__menu__option {
+  margin-left: 1.5rem;
+  padding: 1.15em 0;
+  cursor: pointer;
+  color: #000000;
+}
+.header__nav__container-middle__menu__option:hover {
+  color: #BDBDBD;
+}
 .header__nav__container-right {
   display: flex;
   align-items: center;
@@ -46,9 +74,6 @@
   cursor: pointer;
 }
 
-.footer {
-  border-top: 5px solid yellow;
-}
 .footer__container-main {
   padding: 2em 1em 1em;
   background-image: url("D:/Varios-PC/Educacion/TrainingOxygen/Temario/Practicas/Hotel Miranda/src/imgIcon/footerBackground.png");
@@ -161,6 +186,18 @@
 }
 .footer__credits__container-terms-policy__policy {
   display: inline-block;
+}
+
+.displayBlock {
+  display: block;
+}
+
+.displayNone {
+  display: none;
+}
+
+.displayFlex {
+  display: flex;
 }
 
 .home__intro {
