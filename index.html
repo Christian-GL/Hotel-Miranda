@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="stylesheet" href="../../styles/styles.css">
+  <link rel="stylesheet" href="src/styles/styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -20,43 +20,42 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
-  <script src="../../js/HeaderMenu.js" defer></script>
-  <script src="../../js/index.js" defer></script>
+  <script src="src/js/HeaderMenu.js" defer></script>
+  <script src="src/js/index.js" defer></script>
   <title>Hotel Miranda - Home</title>
 </head>
 
 <body>
+
   <header class="header">
     <nav class="header__nav">
-      <div class="header__nav__container-left">
-        <div class="header__nav__container-left__container-img">
-          <img
-            class="header__nav__container-left__container-img__img header__nav__container-left__container-img__img__hamburger"
-            id="header__nav__container-left__container-img__img__hamburger" src="../../imgIcon/hamburger.png"></img>
-          <img
-            class="header__nav__container-left__container-img__img header__nav__container-left__container-img__img__X"
-            id="header__nav__container-left__container-img__img__X" src="../../imgIcon/X.png">
+      <div class="header__nav__ctn-left">
+        <div class="header__nav__ctn-left__ctn-img">
+          <img class="header__nav__ctn-left__ctn-img__img header__nav__ctn-left__ctn-img__img__hamburger"
+            id="header__nav__ctn-left__ctn-img__img__hamburger" src="src/imgIcon/hamburger.png"></img>
+          <img class="header__nav__ctn-left__ctn-img__img header__nav__ctn-left__ctn-img__img__X"
+            id="header__nav__ctn-left__ctn-img__img__X" src="src/imgIcon/X.png">
         </div>
-        <h4 class="header__nav__container-left__icon-H">H</h4>
-        <h5 class="header__nav__container-left__title"><b>Hotel</b><br />Miranda</h5>
+        <h4 class="header__nav__ctn-left__icon-H">H</h4>
+        <h5 class="header__nav__ctn-left__title"><b>Hotel</b><br />Miranda</h5>
       </div>
       </div>
-      <div class="header__nav__container-middle">
-        <ul class="header__nav__container-middle__menu" id="header__nav__container-middle__menu">
-          <li class="header__nav__container-middle__menu__option"
-            id="header__nav__container-middle__menu__option__aboutus">About Us</li>
-          <li class="header__nav__container-middle__menu__option"
-            id="header__nav__container-middle__menu__option__rooms">
-            Rooms</li>
-          <li class="header__nav__container-middle__menu__option"
-            id="header__nav__container-middle__menu__option__offers">Offers</li>
-          <li class="header__nav__container-middle__menu__option"
-            id="header__nav__container-middle__menu__option__contact">Contact</li>
+      <div class="header__nav__ctn-middle">
+        <ul class="header__nav__ctn-middle__menu" id="header__nav__ctn-middle__menu">
+          <a class="header__nav__ctn-middle__menu__option" id="header__nav__ctn-middle__menu__option__aboutus">About Us
+          </a>
+          <a class="header__nav__ctn-middle__menu__option" id="header__nav__ctn-middle__menu__option__rooms"
+            href="src/pages/rooms/rooms.html">
+            Rooms</a>
+          <a class="header__nav__ctn-middle__menu__option" id="header__nav__ctn-middle__menu__option__offers">Offers
+          </a>
+          <a class="header__nav__ctn-middle__menu__option" id="header__nav__ctn-middle__menu__option__contact">Contact
+          </a>
         </ul>
       </div>
-      <div class="header__nav__container-right">
-        <img class="header__nav__container-right__img" src="../../imgIcon/personProfile.png"></img>
-        <img class="header__nav__container-right__img" src="../../imgIcon/magnifyingGlass.png"></img>
+      <div class="header__nav__ctn-right">
+        <img class="header__nav__ctn-right__img" src="src/imgIcon/personProfile.png"></img>
+        <img class="header__nav__ctn-right__img" src="src/imgIcon/magnifyingGlass.png"></img>
       </div>
     </nav>
   </header>
@@ -80,62 +79,62 @@
   </main>
 
   <footer class="footer">
-    <div class="footer__container-main">
-      <div class="footer__container-main__container-title">
-        <h4 class="footer__container-main__container-title__icon-H">H</h4>
-        <h3 class="footer__container-main__container-title__title"><b>Hotel</b><br />Miranda</h3>
+    <div class="footer__ctn-main">
+      <div class="footer__ctn-main__ctn-title">
+        <h4 class="footer__ctn-main__ctn-title__icon-H">H</h4>
+        <h3 class="footer__ctn-main__ctn-title__title"><b>Hotel</b><br />Miranda</h3>
       </div>
-      <p class="footer__container-main__text">Lorem ipsum dolor sit amet, consect etur
+      <p class="footer__ctn-main__text">Lorem ipsum dolor sit amet, consect etur
         adipisicing elit, seddoing eius mod tempor incididunt ut labore et dolore magna aliqua.
         Ut enim ad minim veniam,quis nostrud exercitat ion ullamco laboris nisi.
       </p>
-      <nav class="footer__container-main__nav">
-        <img class="footer__container-main__nav__img" src="../../imgIcon/facebook.png"></img>
-        <img class="footer__container-main__nav__img" src="../../imgIcon/twitter.png"></img>
-        <img class="footer__container-main__nav__img" src="../../imgIcon/be.png"></img>
-        <img class="footer__container-main__nav__img" src="../../imgIcon/linkedin.png"></img>
-        <img class="footer__container-main__nav__img" src="../../imgIcon/youtube.png"></img>
+      <nav class="footer__ctn-main__nav">
+        <img class="footer__ctn-main__nav__img" src="src/imgIcon/facebook.png"></img>
+        <img class="footer__ctn-main__nav__img" src="src/imgIcon/twitter.png"></img>
+        <img class="footer__ctn-main__nav__img" src="src/imgIcon/be.png"></img>
+        <img class="footer__ctn-main__nav__img" src="src/imgIcon/linkedin.png"></img>
+        <img class="footer__ctn-main__nav__img" src="src/imgIcon/youtube.png"></img>
       </nav>
-      <section class="footer__container-main__services">
-        <h4 class="footer__container-main__services__title">Services.</h4>
-        <ul class="footer__container-main__services__list">
-          <li class="footer__container-main__services__list__option">+ Resturent & Bar</li>
-          <li class="footer__container-main__services__list__option">+ Swimming Pool</li>
-          <li class="footer__container-main__services__list__option">+ Wellness & Spa</li>
-          <li class="footer__container-main__services__list__option">+ Restaurant</li>
-          <li class="footer__container-main__services__list__option">+ Conference Room</li>
-          <li class="footer__container-main__services__list__option">+ Coctail Party House</li>
-          <li class="footer__container-main__services__list__option">+ Gaming Zone</li>
-          <li class="footer__container-main__services__list__option">+ Marriage Party</li>
-          <li class="footer__container-main__services__list__option">+ Party Planning</li>
-          <li class="footer__container-main__services__list__option">+ Tour Consultancy</li>
+      <section class="footer__ctn-main__services">
+        <h4 class="footer__ctn-main__services__title">Services.</h4>
+        <ul class="footer__ctn-main__services__list">
+          <li class="footer__ctn-main__services__list__option">+ Resturent & Bar</li>
+          <li class="footer__ctn-main__services__list__option">+ Swimming Pool</li>
+          <li class="footer__ctn-main__services__list__option">+ Wellness & Spa</li>
+          <li class="footer__ctn-main__services__list__option">+ Restaurant</li>
+          <li class="footer__ctn-main__services__list__option">+ Conference Room</li>
+          <li class="footer__ctn-main__services__list__option">+ Coctail Party House</li>
+          <li class="footer__ctn-main__services__list__option">+ Gaming Zone</li>
+          <li class="footer__ctn-main__services__list__option">+ Marriage Party</li>
+          <li class="footer__ctn-main__services__list__option">+ Party Planning</li>
+          <li class="footer__ctn-main__services__list__option">+ Tour Consultancy</li>
         </ul>
       </section>
-      <section class="footer__container-main__contact">
-        <h4 class="footer__container-main__contact__title">Contact Us.</h4>
-        <div class="footer__container-main__contact__container-contact">
-          <img class="footer__container-main__contact__container-contact__img" src="../../imgIcon/phone.png"></img>
-          <div class="footer__container-main__contact__container-contact__container-info">
-            <h5 class="footer__container-main__contact__container-contact__container-info__title">Phone Number</h5>
-            <h6 class="footer__container-main__contact__container-contact__container-info__number">+987 876 765 76
+      <section class="footer__ctn-main__contact">
+        <h4 class="footer__ctn-main__contact__title">Contact Us.</h4>
+        <div class="footer__ctn-main__contact__ctn-contact">
+          <img class="footer__ctn-main__contact__ctn-contact__img" src="src/imgIcon/phone.png"></img>
+          <div class="footer__ctn-main__contact__ctn-contact__ctn-info">
+            <h5 class="footer__ctn-main__contact__ctn-contact__ctn-info__title">Phone Number</h5>
+            <h6 class="footer__ctn-main__contact__ctn-contact__ctn-info__number">+987 876 765 76
               577
             </h6>
           </div>
         </div>
-        <div class="footer__container-main__contact__container-contact">
-          <img class="footer__container-main__contact__container-contact__img" src="../../imgIcon/mail.png"></img>
-          <div class="footer__container-main__contact__container-contact__container-info">
-            <h5 class="footer__container-main__contact__container-contact__container-info__title">Phone Number</h5>
-            <h6 class="footer__container-main__contact__container-contact__container-info__number">+987 876 765 76
+        <div class="footer__ctn-main__contact__ctn-contact">
+          <img class="footer__ctn-main__contact__ctn-contact__img" src="src/imgIcon/mail.png"></img>
+          <div class="footer__ctn-main__contact__ctn-contact__ctn-info">
+            <h5 class="footer__ctn-main__contact__ctn-contact__ctn-info__title">Phone Number</h5>
+            <h6 class="footer__ctn-main__contact__ctn-contact__ctn-info__number">+987 876 765 76
               577
             </h6>
           </div>
         </div>
-        <div class="footer__container-main__contact__container-contact">
-          <img class="footer__container-main__contact__container-contact__img" src="../../imgIcon/location.png"></img>
-          <div class="footer__container-main__contact__container-contact__container-info">
-            <h5 class="footer__container-main__contact__container-contact__container-info__title">Phone Number</h5>
-            <h6 class="footer__container-main__contact__container-contact__container-info__number">+987 876 765 76
+        <div class="footer__ctn-main__contact__ctn-contact">
+          <img class="footer__ctn-main__contact__ctn-contact__img" src="src/imgIcon/location.png"></img>
+          <div class="footer__ctn-main__contact__ctn-contact__ctn-info">
+            <h5 class="footer__ctn-main__contact__ctn-contact__ctn-info__title">Phone Number</h5>
+            <h6 class="footer__ctn-main__contact__ctn-contact__ctn-info__number">+987 876 765 76
               577
             </h6>
           </div>
@@ -144,13 +143,14 @@
     </div>
     <section class="footer__credits">
       <h4>Copyright By<br />christiangl.dev@gmail.com - 2025</h4>
-      <div class="footer__credits__container-terms-policy">
-        <h4 class="footer__credits__container-terms-policy__terms">Terms of use</h4>
-        <div class="footer__credits__container-terms-policy__separator"></div>
-        <h4 class="footer__credits__container-terms-policy__policy">Privacy Environmental Policy</h4>
+      <div class="footer__credits__ctn-terms-policy">
+        <h4 class="footer__credits__ctn-terms-policy__terms">Terms of use</h4>
+        <div class="footer__credits__ctn-terms-policy__separator"></div>
+        <h4 class="footer__credits__ctn-terms-policy__policy">Privacy Environmental Policy</h4>
       </div>
     </section>
   </footer>
+
 </body>
 
 </html>

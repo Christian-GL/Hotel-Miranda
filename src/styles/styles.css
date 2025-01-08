@@ -7,32 +7,32 @@
   justify-content: space-between;
   height: 4rem;
 }
-.header__nav__container-left {
+.header__nav__ctn-left {
   display: flex;
   align-items: center;
 }
-.header__nav__container-left__container-img {
+.header__nav__ctn-left__ctn-img {
   width: 4rem;
 }
-.header__nav__container-left__container-img__img {
+.header__nav__ctn-left__ctn-img__img {
   margin: 0 auto;
   padding: 0.5em;
   cursor: pointer;
 }
-.header__nav__container-left__container-img__img__hamburger {
+.header__nav__ctn-left__ctn-img__img__hamburger {
   display: block;
 }
-.header__nav__container-left__container-img__img__X {
+.header__nav__ctn-left__ctn-img__img__X {
   display: none;
 }
-.header__nav__container-left__icon-H {
+.header__nav__ctn-left__icon-H {
   margin-left: 1rem;
   padding: 0.3em 0.5em;
   font-family: "Archivo";
   font-size: 1.25em;
   box-shadow: 0 0.1em 0.15em lightgray, -0.1em 0.1em 0.5em lightgray, 0.1em 0.1em 0.5em lightgray;
 }
-.header__nav__container-left__title {
+.header__nav__ctn-left__title {
   margin-left: 1rem;
   font-family: "Archivo";
   font-size: 0.75em;
@@ -40,14 +40,14 @@
   text-transform: uppercase;
   font-weight: 400;
 }
-.header__nav__container-middle {
+.header__nav__ctn-middle {
   width: 100%;
   position: absolute;
   top: 4.1rem;
   left: 0;
   background-color: #FFFFFF;
 }
-.header__nav__container-middle__menu {
+.header__nav__ctn-middle__menu {
   display: none;
   flex-direction: column;
   list-style: none;
@@ -55,44 +55,45 @@
   font-size: 0.8em;
   font-weight: 700;
 }
-.header__nav__container-middle__menu__option {
+.header__nav__ctn-middle__menu__option {
   margin-left: 1.5rem;
   padding: 1.15em 0;
-  cursor: pointer;
+  text-decoration: none;
   color: #000000;
+  cursor: pointer;
 }
-.header__nav__container-middle__menu__option:hover {
+.header__nav__ctn-middle__menu__option:hover {
   color: #BDBDBD;
 }
-.header__nav__container-right {
+.header__nav__ctn-right {
   display: flex;
   align-items: center;
 }
-.header__nav__container-right__img {
+.header__nav__ctn-right__img {
   margin-right: 1rem;
   padding: 0.5em;
   cursor: pointer;
 }
 
-.footer__container-main {
+.footer__ctn-main {
   padding: 2em 1em 1em;
   background-image: url("D:/Varios-PC/Educacion/TrainingOxygen/Temario/Practicas/Hotel Miranda/src/imgIcon/footerBackground.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.footer__container-main__container-title {
+.footer__ctn-main__ctn-title {
   display: flex;
   align-items: center;
 }
-.footer__container-main__container-title__icon-H {
+.footer__ctn-main__ctn-title__icon-H {
   padding: 0.4em 0.6em;
   font-family: "Archivo";
   font-size: 2.75em;
   color: #FFFFFF;
   background-color: #BEAD8E;
 }
-.footer__container-main__container-title__title {
+.footer__ctn-main__ctn-title__title {
   margin-left: 1.5rem;
   font-family: "Archivo";
   font-size: 1.5em;
@@ -100,68 +101,68 @@
   text-transform: uppercase;
   font-weight: 400;
 }
-.footer__container-main__text {
+.footer__ctn-main__text {
   margin: 3rem 0 0;
   font-family: "Archivo";
   font-size: 1em;
   line-height: 1.5em;
   color: #777777;
 }
-.footer__container-main__nav {
+.footer__ctn-main__nav {
   display: flex;
   justify-content: space-between;
   width: 70%;
   margin-top: 3rem;
 }
-.footer__container-main__nav__img {
+.footer__ctn-main__nav__img {
   cursor: pointer;
 }
-.footer__container-main__services {
+.footer__ctn-main__services {
   margin-top: 3rem;
 }
-.footer__container-main__services__title {
+.footer__ctn-main__services__title {
   margin-bottom: 1rem;
   font-family: "Old Standard TT";
   font-size: 1.5em;
   font-weight: 300;
 }
-.footer__container-main__services__list {
+.footer__ctn-main__services__list {
   display: grid;
   grid-template-rows: repeat(6, 1fr);
   grid-template-columns: repeat(2, 1fr);
   grid-auto-flow: column;
   text-align: left;
 }
-.footer__container-main__services__list__option {
+.footer__ctn-main__services__list__option {
   padding: 1em 0;
   font-family: "Roboto";
   list-style: none;
   color: #777777;
 }
-.footer__container-main__contact {
+.footer__ctn-main__contact {
   margin-top: 2rem;
 }
-.footer__container-main__contact__title {
+.footer__ctn-main__contact__title {
   font-family: "Old Standard TT";
   font-size: 1.5em;
   font-weight: 300;
 }
-.footer__container-main__contact__container-contact {
+.footer__ctn-main__contact__ctn-contact {
   margin-top: 2rem;
 }
-.footer__container-main__contact__container-contact__img {
+.footer__ctn-main__contact__ctn-contact__img {
   display: inline-block;
 }
-.footer__container-main__contact__container-contact__container-info {
+.footer__ctn-main__contact__ctn-contact__ctn-info {
   display: inline-block;
   margin-left: 1rem;
 }
-.footer__container-main__contact__container-contact__container-info__title {
+.footer__ctn-main__contact__ctn-contact__ctn-info__title {
   font-family: "Old Standard TT";
   font-size: 1.4em;
   font-weight: 300;
 }
-.footer__container-main__contact__container-contact__container-info__number {
+.footer__ctn-main__contact__ctn-contact__ctn-info__number {
   font-family: "Roboto";
   font-size: 1em;
   font-weight: 400;
@@ -172,19 +173,19 @@
   font-family: "Roboto";
   background-color: #F8F8F8;
 }
-.footer__credits__container-terms-policy {
+.footer__credits__ctn-terms-policy {
   margin-top: 1rem;
 }
-.footer__credits__container-terms-policy__terms {
+.footer__credits__ctn-terms-policy__terms {
   display: inline-block;
 }
-.footer__credits__container-terms-policy__separator {
+.footer__credits__ctn-terms-policy__separator {
   display: inline-block;
   margin: 0 0.75rem;
   height: 0.9rem;
   border-left: 2px solid #000000;
 }
-.footer__credits__container-terms-policy__policy {
+.footer__credits__ctn-terms-policy__policy {
   display: inline-block;
 }
 
@@ -299,8 +300,10 @@
 }
 .rooms__intro__location__previus-location {
   display: inline-block;
+  text-decoration: none;
   font-family: "Archivo";
   font-weight: 700;
+  color: #000000;
   cursor: pointer;
 }
 .rooms__intro__location__separator {
@@ -320,14 +323,14 @@
   margin: 4rem 0;
   padding: 0 1em;
 }
-.rooms__entry__container-img {
+.rooms__entry__ctn-img {
   position: relative;
 }
-.rooms__entry__container-img__img {
+.rooms__entry__ctn-img__img {
   width: 100%;
   height: auto;
 }
-.rooms__entry__container-img__container-options {
+.rooms__entry__ctn-img__ctn-options {
   position: absolute;
   padding: 0.5em 1.2em;
   width: -moz-fit-content;
@@ -338,28 +341,28 @@
   box-shadow: 0 0 0.25em 0.025em lightgray, -0.01em 0.01em 0.05em lightgray, 0.01em 0.01em 0.05em lightgray;
   background-color: #FFFFFF;
 }
-.rooms__entry__container-img__container-options__img {
+.rooms__entry__ctn-img__ctn-options__img {
   padding: 0.5em 0.5em;
   transform: scale(1.25);
   cursor: pointer;
 }
-.rooms__entry__container-info {
+.rooms__entry__ctn-info {
   margin-top: 3.5rem;
   padding: 0 1.5em;
   text-align: center;
 }
-.rooms__entry__container-info__title {
+.rooms__entry__ctn-info__title {
   font-family: "Old Standard TT";
   font-size: 1.75em;
   font-weight: 400;
   color: #222222;
 }
-.rooms__entry__container-info__text {
+.rooms__entry__ctn-info__text {
   margin: 1rem 0;
   font-family: "Roboto";
   color: #777777;
 }
-.rooms__entry__container-info__price {
+.rooms__entry__ctn-info__price {
   display: inline-block;
   margin-right: 0.75rem;
   font-family: "Archivo";
@@ -367,7 +370,7 @@
   font-weight: 700;
   color: #BEAD8E;
 }
-.rooms__entry__container-info__link-confirm {
+.rooms__entry__ctn-info__link-confirm {
   display: inline-block;
   margin-left: 0.75rem;
   font-family: "Archivo";

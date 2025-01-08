@@ -46,8 +46,10 @@
 
 @mixin introPreviusLocation {
     display: inline-block;
+    text-decoration: none;
     font-family: $font-archivo;
     font-weight: 700;
+    color: $color-black;
     cursor: pointer;
 }
 

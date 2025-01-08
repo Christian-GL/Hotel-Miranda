@@ -7,11 +7,11 @@
         justify-content: space-between;
         height: 4rem;
 
-        &__container-left {
+        &__ctn-left {
             display: flex;
             align-items: center;
 
-            &__container-img {
+            &__ctn-img {
                 width: 4rem;
 
                 &__img {
@@ -49,7 +49,7 @@
             }
         }
 
-        &__container-middle {
+        &__ctn-middle {
             width: 100%;
             position: absolute;
             top: 4.1rem;
@@ -67,8 +67,9 @@
                 &__option {
                     margin-left: 1.5rem;
                     padding: 1.15em 0;
-                    cursor: pointer;
+                    text-decoration: none;
                     color: $color-black;
+                    cursor: pointer;
 
                     &:hover {
                         color: $color-textLightGray;
@@ -77,7 +78,7 @@
             }
         }
 
-        &__container-right {
+        &__ctn-right {
             display: flex;
             align-items: center;
 
@@ -92,14 +93,14 @@
 
 .footer {
 
-    &__container-main {
+    &__ctn-main {
         padding: 2em 1em 1em;
         background-image: url("D:/Varios-PC/Educacion/TrainingOxygen/Temario/Practicas/Hotel Miranda/src/imgIcon/footerBackground.png");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
 
-        &__container-title {
+        &__ctn-title {
             display: flex;
             align-items: center;
 
@@ -175,14 +176,14 @@
                 font-weight: 300;
             }
 
-            &__container-contact {
+            &__ctn-contact {
                 margin-top: 2rem;
 
                 &__img {
                     display: inline-block;
                 }
 
-                &__container-info {
+                &__ctn-info {
                     display: inline-block;
                     margin-left: 1rem;
 
@@ -209,7 +210,7 @@
         font-family: $font-roboto;
         background-color: $color-backgroundGray;
 
-        &__container-terms-policy {
+        &__ctn-terms-policy {
             margin-top: 1rem;
 
             &__terms {
