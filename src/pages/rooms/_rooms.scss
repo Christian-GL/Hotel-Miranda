@@ -1,35 +1,11 @@
 .rooms {
 
     &__intro {
-        @include introPage;
-
-        &__minor-title {
-            @include introPageMinorTitle;
-        }
-
-        &__mayor-title {
-            @include introPageMayorTitle;
-        }
-
-        &__location {
-            @include introLocation;
-
-            &__previus-location {
-                @include introPreviusLocation;
-            }
-
-            &__separator {
-                @include introSeparator;
-            }
-
-            &__actual-location {
-                @include introActualLocation;
-            }
-        }
+        @include introPage(0.25rem);
     }
 
     &__entry {
-        margin: 4rem 0;
+        margin-top: 4rem;
         padding: 0 1em;
 
         &__ctn-img {

@@ -76,7 +76,7 @@
 }
 
 .footer__ctn-main {
-  padding: 2em 1em 1em;
+  padding: 4em 1em 1em;
   background-image: url("D:/Varios-PC/Educacion/TrainingOxygen/Temario/Practicas/Hotel Miranda/src/imgIcon/footerBackground.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -148,27 +148,31 @@
   font-weight: 300;
 }
 .footer__ctn-main__contact__ctn-contact {
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 .footer__ctn-main__contact__ctn-contact__img {
   display: inline-block;
+  vertical-align: top;
 }
 .footer__ctn-main__contact__ctn-contact__ctn-info {
   display: inline-block;
   margin-left: 1rem;
+  max-width: 75%;
 }
 .footer__ctn-main__contact__ctn-contact__ctn-info__title {
+  margin-bottom: 0rem;
   font-family: "Old Standard TT";
   font-size: 1.4em;
   font-weight: 300;
 }
-.footer__ctn-main__contact__ctn-contact__ctn-info__number {
+.footer__ctn-main__contact__ctn-contact__ctn-info__text {
   font-family: "Roboto";
   font-size: 1em;
   font-weight: 400;
   color: #777777;
 }
 .footer__credits {
+  margin-top: 1rem;
   padding: 1em;
   font-family: "Roboto";
   background-color: #F8F8F8;
@@ -221,29 +225,29 @@
   line-height: 1.15em;
   color: #FFFFFF;
 }
-.home__intro__btn--tour {
+.home__intro__btn__tour {
   margin-top: 2rem;
-  padding: 1.75em 2.5em;
   font-family: "Archivo";
   font-size: 1em;
   font-weight: 700;
   letter-spacing: 0.25em;
   text-transform: uppercase;
-  border: 1px solid #767676;
   cursor: pointer;
+  padding: 1.75em 2.5em;
+  border: none;
   color: #FFFFFF;
   background-color: #BEAD8E;
 }
-.home__intro__btn--learn {
+.home__intro__btn__learn {
   margin-top: 2rem;
-  padding: 1.75em 2.5em;
   font-family: "Archivo";
   font-size: 1em;
   font-weight: 700;
   letter-spacing: 0.25em;
   text-transform: uppercase;
-  border: 1px solid #767676;
   cursor: pointer;
+  padding: 1.75em 2.5em;
+  border: 1px solid #767676;
   color: #FFFFFF;
   background-color: #333333;
 }
@@ -259,14 +263,14 @@
 }
 .home__availability__btn-check {
   margin-top: 2rem;
-  padding: 1.75em 2.5em;
   font-family: "Archivo";
   font-size: 1em;
   font-weight: 700;
   letter-spacing: 0.25em;
   text-transform: uppercase;
-  border: 1px solid #767676;
   cursor: pointer;
+  padding: 1.75em 2.5em;
+  border: none;
   color: #FFFFFF;
   background-color: #BEAD8E;
 }

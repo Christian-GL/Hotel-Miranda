@@ -94,7 +94,7 @@
 .footer {
 
     &__ctn-main {
-        padding: 2em 1em 1em;
+        padding: 4em 1em 1em;
         background-image: url("D:/Varios-PC/Educacion/TrainingOxygen/Temario/Practicas/Hotel Miranda/src/imgIcon/footerBackground.png");
         background-position: center;
         background-repeat: no-repeat;
@@ -170,42 +170,12 @@
         &__contact {
             margin-top: 2rem;
 
-            &__title {
-                font-family: $font-oldStandardTT;
-                font-size: 1.5em;
-                font-weight: 300;
-            }
-
-            &__ctn-contact {
-                margin-top: 2rem;
-
-                &__img {
-                    display: inline-block;
-                }
-
-                &__ctn-info {
-                    display: inline-block;
-                    margin-left: 1rem;
-
-                    &__title {
-                        font-family: $font-oldStandardTT;
-                        font-size: 1.4em;
-                        font-weight: 300;
-                    }
-
-                    &__number {
-                        font-family: $font-roboto;
-                        font-size: 1em;
-                        font-weight: 400;
-                        color: $color-textGray;
-                    }
-                }
-            }
-
+            @include contact(3rem);
         }
     }
 
     &__credits {
+        margin-top: 1rem;
         padding: 1em;
         font-family: $font-roboto;
         background-color: $color-backgroundGray;

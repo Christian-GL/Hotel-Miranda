@@ -76,7 +76,7 @@
 }
 
 .footer__ctn-main {
-  padding: 2em 1em 1em;
+  padding: 4em 1em 1em;
   background-image: url("D:/Varios-PC/Educacion/TrainingOxygen/Temario/Practicas/Hotel Miranda/src/imgIcon/footerBackground.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -148,27 +148,31 @@
   font-weight: 300;
 }
 .footer__ctn-main__contact__ctn-contact {
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 .footer__ctn-main__contact__ctn-contact__img {
   display: inline-block;
+  vertical-align: top;
 }
 .footer__ctn-main__contact__ctn-contact__ctn-info {
   display: inline-block;
   margin-left: 1rem;
+  max-width: 75%;
 }
 .footer__ctn-main__contact__ctn-contact__ctn-info__title {
+  margin-bottom: 0rem;
   font-family: "Old Standard TT";
   font-size: 1.4em;
   font-weight: 300;
 }
-.footer__ctn-main__contact__ctn-contact__ctn-info__number {
+.footer__ctn-main__contact__ctn-contact__ctn-info__text {
   font-family: "Roboto";
   font-size: 1em;
   font-weight: 400;
   color: #777777;
 }
 .footer__credits {
+  margin-top: 1rem;
   padding: 1em;
   font-family: "Roboto";
   background-color: #F8F8F8;
@@ -201,8 +205,141 @@
   display: flex;
 }
 
-.contact__p {
-  border: 1px solid black;
+.contact__intro {
+  padding: 4em 1em 0;
+  background-color: #333333;
+}
+.contact__intro__minor-title {
+  font-family: "Archivo";
+  font-size: 0.75em;
+  letter-spacing: 0.25em;
+  line-height: 1.5em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.contact__intro__mayor-title {
+  margin-top: 1rem;
+  font-family: "Old Standard TT";
+  font-size: 3.5em;
+  font-weight: 300;
+  line-height: 1.15em;
+  color: #FFFFFF;
+}
+.contact__intro__location {
+  margin: 2rem 0 0 auto;
+  padding: 1em 0;
+  text-align: center;
+  width: 10rem;
+  background-color: #FFFFFF;
+}
+.contact__intro__location__previus-location {
+  display: inline-block;
+  text-decoration: none;
+  font-family: "Archivo";
+  font-weight: 700;
+  color: #000000;
+  cursor: pointer;
+}
+.contact__intro__location__separator {
+  display: inline-block;
+  margin: 0 0.25rem;
+  height: 0.9rem;
+  border-left: 2px solid #000000;
+}
+.contact__intro__location__actual-location {
+  display: inline-block;
+  font-family: "Archivo";
+  font-weight: 700;
+  color: #BEAD8E;
+  cursor: pointer;
+}
+.contact__ctn-contacts {
+  margin: 4rem 0;
+  padding: 0 2em;
+}
+.contact__ctn-contacts__title {
+  font-family: "Old Standard TT";
+  font-size: 1.5em;
+  font-weight: 300;
+}
+.contact__ctn-contacts__ctn-contact {
+  margin-top: 5rem;
+}
+.contact__ctn-contacts__ctn-contact__img {
+  display: inline-block;
+  vertical-align: top;
+}
+.contact__ctn-contacts__ctn-contact__ctn-info {
+  display: inline-block;
+  margin-left: 1rem;
+  max-width: 75%;
+}
+.contact__ctn-contacts__ctn-contact__ctn-info__title {
+  margin-bottom: 1rem;
+  font-family: "Old Standard TT";
+  font-size: 1.4em;
+  font-weight: 300;
+}
+.contact__ctn-contacts__ctn-contact__ctn-info__text {
+  font-family: "Roboto";
+  font-size: 1em;
+  font-weight: 400;
+  color: #777777;
+}
+.contact__img {
+  padding: 0 1em;
+  width: 100%;
+  height: auto;
+}
+.contact__ctn-data {
+  margin: 2rem 0;
+  padding: 0 1em;
+}
+.contact__ctn-data__ctn-entry {
+  margin-bottom: 1rem;
+  background-color: #F8F8F8;
+}
+.contact__ctn-data__ctn-entry__img {
+  display: inline-block;
+  padding: 1.5em 0 1.25em 1.25em;
+  vertical-align: top;
+  background-color: #F8F8F8;
+}
+.contact__ctn-data__ctn-entry__data {
+  display: inline-block;
+  padding: 1.25em;
+  width: 75%;
+  vertical-align: top;
+  font-family: "Roboto";
+  font-size: 1.1em;
+  border: none;
+  outline: none;
+  background-color: #F8F8F8;
+}
+.contact__ctn-data__ctn-entry--message {
+  padding-bottom: 4em;
+}
+.contact__ctn-data__data::-moz-placeholder {
+  color: #777777;
+}
+.contact__ctn-data__data::placeholder {
+  color: #777777;
+}
+.contact__ctn-data__ctn-btn {
+  text-align: center;
+}
+.contact__ctn-data__ctn-btn__btn {
+  margin-top: 2rem;
+  font-family: "Archivo";
+  font-size: 1em;
+  font-weight: 700;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 1.75em 7.5em;
+  border: none;
+  color: #FFFFFF;
+  background-color: #BEAD8E;
 }
 
 * {

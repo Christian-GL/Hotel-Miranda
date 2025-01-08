@@ -1,24 +1,16 @@
 .home {
 
     &__intro {
-        @include introPage;
-
-        &__minor-title {
-            @include introPageMinorTitle;
-        }
-
-        &__mayor-title {
-            @include introPageMayorTitle;
-        }
+        @include introPageIndex;
 
         &__btn {
 
-            &--tour {
-                @include defaultButton($color-lightBrown, $color-white)
+            &__tour {
+                @include defaultButton
             }
 
-            &--learn {
-                @include defaultButton($color-mediumBrown, $color-white)
+            &__learn {
+                @include defaultButton($border: 1px solid $color-borderButton, $backgroundColor: $color-mediumBrown)
             }
         }
     }
@@ -35,7 +27,7 @@
         }
 
         &__btn-check {
-            @include defaultButton($color-lightBrown, $color-white)
+            @include defaultButton
         }
     }
 }

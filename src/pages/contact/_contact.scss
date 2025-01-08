@@ -1,7 +1,66 @@
 .contact {
 
-    &__p {
-        border: 1px solid black;
+    &__intro {
+        @include introPage(0.25rem);
+    }
+
+    &__ctn-contacts {
+        margin: 4rem 0;
+        padding: 0 2em;
+
+        @include contact(5rem, 1rem);
+    }
+
+    &__img {
+        padding: 0 1em;
+        width: 100%;
+        height: auto;
+    }
+
+    &__ctn-data {
+        margin: 2rem 0;
+        padding: 0 1em;
+
+        &__ctn-entry {
+            margin-bottom: 1rem;
+            background-color: $color-backgroundGray;
+
+            &__img {
+                display: inline-block;
+                padding: 1.5em 0 1.25em 1.25em;
+                vertical-align: top;
+                background-color: $color-backgroundGray;
+            }
+
+            &__data {
+                display: inline-block;
+                padding: 1.25em;
+                width: 75%;
+                vertical-align: top;
+                font-family: $font-roboto;
+                font-size: 1.1em;
+                border: none;
+                outline: none;
+                background-color: $color-backgroundGray;
+            }
+
+            &--message {
+                padding-bottom: 4em;
+            }
+        }
+
+        &__data::placeholder {
+            color: $color-textGray;
+        }
+
+        &__ctn-btn {
+            text-align: center;
+
+            &__btn {
+                @include defaultButton(7.5em);
+            }
+        }
+
     }
 
 }

@@ -76,7 +76,7 @@
 }
 
 .footer__ctn-main {
-  padding: 2em 1em 1em;
+  padding: 4em 1em 1em;
   background-image: url("D:/Varios-PC/Educacion/TrainingOxygen/Temario/Practicas/Hotel Miranda/src/imgIcon/footerBackground.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -148,27 +148,31 @@
   font-weight: 300;
 }
 .footer__ctn-main__contact__ctn-contact {
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 .footer__ctn-main__contact__ctn-contact__img {
   display: inline-block;
+  vertical-align: top;
 }
 .footer__ctn-main__contact__ctn-contact__ctn-info {
   display: inline-block;
   margin-left: 1rem;
+  max-width: 75%;
 }
 .footer__ctn-main__contact__ctn-contact__ctn-info__title {
+  margin-bottom: 0rem;
   font-family: "Old Standard TT";
   font-size: 1.4em;
   font-weight: 300;
 }
-.footer__ctn-main__contact__ctn-contact__ctn-info__number {
+.footer__ctn-main__contact__ctn-contact__ctn-info__text {
   font-family: "Roboto";
   font-size: 1em;
   font-weight: 400;
   color: #777777;
 }
 .footer__credits {
+  margin-top: 1rem;
   padding: 1em;
   font-family: "Roboto";
   background-color: #F8F8F8;
@@ -202,7 +206,7 @@
 }
 
 .rooms__intro {
-  padding: 4em 1em;
+  padding: 4em 1em 0;
   background-color: #333333;
 }
 .rooms__intro__minor-title {
@@ -250,7 +254,7 @@
   cursor: pointer;
 }
 .rooms__entry {
-  margin: 4rem 0;
+  margin-top: 4rem;
   padding: 0 1em;
 }
 .rooms__entry__ctn-img {
