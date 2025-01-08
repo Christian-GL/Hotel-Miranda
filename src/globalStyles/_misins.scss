@@ -95,16 +95,15 @@
     }
 }
 
-@mixin contact ($marginTop: 0rem, $marginTitleText: 0rem) {
+@mixin contact ($marginTop: 0rem, $paddingTopBotton: 0rem, $marginTitleText: 0rem) {
 
-    &__title {
-        font-family: $font-oldStandardTT;
-        font-size: 1.5em;
-        font-weight: 300;
-    }
-
-    &__ctn-contact {
+    &__ctn-entry {
         margin-top: $marginTop;
+        padding: $paddingTopBotton 0;
+        background-position: right;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-size: contain;
 
         &__img {
             display: inline-block;

@@ -111,11 +111,15 @@
 .footer__ctn-main__nav {
   display: flex;
   justify-content: space-between;
-  width: 70%;
+  width: 100%;
   margin-top: 3rem;
 }
 .footer__ctn-main__nav__img {
+  padding: 0.75em;
   cursor: pointer;
+}
+.footer__ctn-main__nav__img:hover {
+  background-color: #BEAD8E;
 }
 .footer__ctn-main__services {
   margin-top: 3rem;
@@ -140,32 +144,37 @@
   color: #777777;
 }
 .footer__ctn-main__contact {
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 .footer__ctn-main__contact__title {
   font-family: "Old Standard TT";
   font-size: 1.5em;
   font-weight: 300;
 }
-.footer__ctn-main__contact__ctn-contact {
-  margin-top: 3rem;
+.footer__ctn-main__contact__ctn-entry {
+  margin-top: 4rem;
+  padding: 0rem 0;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: contain;
 }
-.footer__ctn-main__contact__ctn-contact__img {
+.footer__ctn-main__contact__ctn-entry__img {
   display: inline-block;
   vertical-align: top;
 }
-.footer__ctn-main__contact__ctn-contact__ctn-info {
+.footer__ctn-main__contact__ctn-entry__ctn-info {
   display: inline-block;
   margin-left: 1rem;
   max-width: 75%;
 }
-.footer__ctn-main__contact__ctn-contact__ctn-info__title {
+.footer__ctn-main__contact__ctn-entry__ctn-info__title {
   margin-bottom: 0rem;
   font-family: "Old Standard TT";
   font-size: 1.4em;
   font-weight: 300;
 }
-.footer__ctn-main__contact__ctn-contact__ctn-info__text {
+.footer__ctn-main__contact__ctn-entry__ctn-info__text {
   font-family: "Roboto";
   font-size: 1em;
   font-weight: 400;

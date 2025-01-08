@@ -133,12 +133,18 @@
         &__nav {
             display: flex;
             justify-content: space-between;
-            width: 70%;
+            width: 100%;
             margin-top: 3rem;
 
             &__img {
+                padding: 0.75em;
                 cursor: pointer;
+
+                &:hover {
+                    background-color: $color-lightBrown;
+                }
             }
+
         }
 
         &__services {
@@ -168,9 +174,15 @@
         }
 
         &__contact {
-            margin-top: 2rem;
+            margin-top: 3rem;
 
-            @include contact(3rem);
+            &__title {
+                font-family: $font-oldStandardTT;
+                font-size: 1.5em;
+                font-weight: 300;
+            }
+
+            @include contact($marginTop: 4rem);
         }
     }
 

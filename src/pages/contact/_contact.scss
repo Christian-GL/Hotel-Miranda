@@ -8,7 +8,22 @@
         margin: 4rem 0;
         padding: 0 2em;
 
-        @include contact(5rem, 1rem);
+        &__ctn-entry {
+
+            &--01 {
+                background-image: url('D:/Varios-PC/Educacion/TrainingOxygen/Temario/Practicas/Hotel Miranda/src/img/01.png')
+            }
+
+            &--02 {
+                background-image: url('D:/Varios-PC/Educacion/TrainingOxygen/Temario/Practicas/Hotel Miranda/src/img/02.png')
+            }
+
+            &--03 {
+                background-image: url('D:/Varios-PC/Educacion/TrainingOxygen/Temario/Practicas/Hotel Miranda/src/img/03.png')
+            }
+        }
+
+        @include contact(5rem, 2.5em, 1rem);
     }
 
     &__img {
