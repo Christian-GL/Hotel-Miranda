@@ -269,6 +269,104 @@
   color: #BEAD8E;
   cursor: pointer;
 }
+.about__introduction {
+  position: relative;
+  margin-top: 4rem;
+  padding: 0 1em;
+  text-align: center;
+}
+.about__introduction__video {
+  width: 100%;
+  height: 20rem;
+}
+.about__introduction__btn-play {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 150%);
+  white-space: nowrap;
+  padding: 1em 1.2em;
+  font-size: 1.5em;
+  border: none;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+}
+.about__introduction__text {
+  margin-top: 2rem;
+  font-family: "Old Standard TT";
+  font-size: 1.8em;
+}
+.about__beneficits {
+  margin-bottom: 4rem;
+  padding: 0 1em;
+  text-align: center;
+}
+.about__beneficits__ctn-entry {
+  margin-top: 3rem;
+  padding: 1em;
+  display: inline-block;
+  width: 49%;
+  max-width: 15rem;
+  vertical-align: top;
+}
+.about__beneficits__ctn-entry__img {
+  padding: 1em;
+  width: 75%;
+  height: auto;
+  cursor: pointer;
+}
+.about__beneficits__ctn-entry__text {
+  white-space: nowrap;
+  font-family: "Archivo";
+  font-size: 0.75em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+}
+.about__beneficits__ctn-entry:hover {
+  background-color: #BEAD8E;
+}
+.about__restaurant {
+  padding: 0 2em;
+}
+.about__restaurant__img {
+  width: 100%;
+  height: auto;
+}
+.about__restaurant__title-photo {
+  margin-top: 1.5rem;
+  font-family: "Archivo";
+  font-size: 0.85em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #777777;
+}
+.about__restaurant__title-info {
+  margin-top: 2rem;
+  font-family: "Old Standard TT";
+  font-size: 2.5em;
+  font-weight: 400;
+  color: #000000;
+}
+.about__restaurant__info {
+  margin-top: 1.5rem;
+  font-family: "Archivo";
+  line-height: 1.75em;
+  color: #777777;
+}
+.about__restaurant__btn {
+  margin-top: 2rem;
+  font-family: "Archivo";
+  font-size: 1em;
+  font-weight: 700;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 1.75em 2.5em;
+  border: none;
+  color: #FFFFFF;
+  background-color: #BEAD8E;
+}
 
 * {
   box-sizing: border-box;

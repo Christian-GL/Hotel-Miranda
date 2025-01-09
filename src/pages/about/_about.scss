@@ -3,4 +3,109 @@
     &__intro {
         @include introPage(0.25rem);
     }
+
+    &__introduction {
+        position: relative;
+        margin-top: 4rem;
+        padding: 0 1em;
+        text-align: center;
+
+        &__video {
+            width: 100%;
+            height: 20rem;
+        }
+
+        &__btn-play {
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, 150%);
+            white-space: nowrap;
+
+            padding: 1em 1.2em;
+            font-size: 1.5em;
+            border: none;
+            border-radius: 50%;
+            background-color: $color-white;
+        }
+
+        &__text {
+            margin-top: 2rem;
+            font-family: $font-oldStandardTT;
+            font-size: 1.8em;
+        }
+    }
+
+    &__beneficits {
+        margin-bottom: 4rem;
+        padding: 0 1em;
+        text-align: center;
+
+        &__ctn-entry {
+            margin-top: 3rem;
+            padding: 1em;
+            display: inline-block;
+            width: 49%;
+            max-width: 15rem;
+            vertical-align: top;
+
+            &__img {
+                padding: 1em;
+                width: 75%;
+                height: auto;
+                cursor: pointer;
+            }
+
+            &__text {
+                white-space: nowrap;
+                font-family: $font-archivo;
+                font-size: 0.75em;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 0.25em;
+            }
+
+            &:hover {
+                background-color: $color-lightBrown;
+            }
+        }
+    }
+
+    &__restaurant {
+        padding: 0 2em;
+
+        &__img {
+            width: 100%;
+            height: auto;
+        }
+
+        &__title-photo {
+            margin-top: 1.5rem;
+            font-family: $font-archivo;
+            font-size: 0.85em;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            color: $color-textGray;
+        }
+
+        &__title-info {
+            margin-top: 2rem;
+            font-family: $font-oldStandardTT;
+            font-size: 2.5em;
+            font-weight: 400;
+            color: $color-black;
+        }
+
+        &__info {
+            margin-top: 1.5rem;
+            font-family: $font-archivo;
+            line-height: 1.75em;
+            color: $color-textGray;
+        }
+
+        &__btn {
+            @include defaultButton;
+        }
+    }
+
 }

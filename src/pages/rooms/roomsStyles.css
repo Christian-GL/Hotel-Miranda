@@ -270,7 +270,7 @@
   cursor: pointer;
 }
 .rooms__entry {
-  margin-top: 4rem;
+  margin: 4rem 0;
   padding: 0 1em;
 }
 .rooms__entry__ctn-img {
