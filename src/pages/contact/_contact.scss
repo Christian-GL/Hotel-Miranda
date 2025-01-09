@@ -1,7 +1,7 @@
 .contact {
 
     &__intro {
-        @include introPage(0.25rem);
+        @include introPage($separatorDistanceRem: 0.25rem);
     }
 
     &__ctn-contacts {

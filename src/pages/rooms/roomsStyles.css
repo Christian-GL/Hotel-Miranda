@@ -327,12 +327,13 @@
   font-weight: 700;
   color: #BEAD8E;
 }
-.rooms__entry__ctn-info__link-confirm {
+.rooms__entry__ctn-info__link-room {
   display: inline-block;
   margin-left: 0.75rem;
   font-family: "Archivo";
   font-size: 1.2em;
   font-weight: 700;
+  text-decoration: none;
   color: #BDBDBD;
   cursor: pointer;
 }

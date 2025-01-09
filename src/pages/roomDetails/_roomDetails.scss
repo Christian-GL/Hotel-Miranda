@@ -1,0 +1,180 @@
+.roomDetails {
+
+    &__intro {
+        @include introPage($widthContainer: 12.5rem, $separatorDistanceRem: 0.25rem);
+    }
+
+    &__availability {
+        padding: 3em 1em;
+
+        @include introSection($fontSizeTitleIntro: 2.25em);
+
+        &__ctn-price {
+            margin: 1.5rem 0;
+            font-family: $font-archivo;
+            color: $color-lightBrown;
+
+            &__number {
+                display: inline-block;
+                font-size: 2em;
+                text-decoration-thickness: 1px;
+            }
+
+            &__text {
+                display: inline-block;
+                font-size: 1em;
+                text-decoration-thickness: 1px;
+            }
+        }
+
+        &__img {
+            width: 100%;
+            height: auto;
+        }
+
+        &__ctn-check {
+            margin-top: 2rem;
+            padding: 1em;
+            font-family: $font-archivo;
+            font-weight: 700;
+
+            &__title {
+                text-align: center;
+                font-size: 1.25em;
+            }
+
+            &__check-in-out {
+                margin: 2rem 0;
+                font-size: 0.9em;
+            }
+
+            &__ctn-date {
+                position: relative;
+                max-width: 50rem;
+
+                &__pick-date {
+                    padding: 1.25em 3.5em 1.25em 1.75em;
+                    width: 100%;
+                    font-family: $font-archivo;
+                    font-size: 1em;
+                    border: none;
+                    outline: none;
+                    background-color: $color-backgroundGray;
+                }
+
+                &__img {
+                    position: absolute;
+                    top: 40%;
+                    right: 1.5rem;
+                }
+            }
+
+            &__ctn-btn {
+                text-align: center;
+
+                &__btn {
+                    @include defaultButton($sidePadding: 2em);
+                }
+            }
+        }
+    }
+
+    &__info-text {
+        padding: 0 1.5em;
+        font-family: $font-roboto;
+        font-size: 0.9em;
+        font-weight: 400;
+        line-height: 1.5em;
+        color: $color-textGray;
+    }
+
+    &__amenities {
+
+        &__title {
+            margin-top: 2rem;
+            padding: 0 1em;
+            font-family: $font-oldStandardTT;
+            font-size: 1.75em;
+            font-weight: 400;
+        }
+
+        @include listAmenities;
+    }
+
+    &__person-profile {
+        margin: 5rem 0 2rem;
+        padding: 0 1em;
+        text-align: center;
+
+        &__img {
+            width: 10rem;
+            height: 10rem;
+            border-radius: 50%;
+        }
+
+        &__title {
+            margin-top: 1rem;
+            font-family: $font-oldStandardTT;
+            font-size: 2em;
+            font-weight: 400;
+            color: $color-darkBrown;
+        }
+
+        &__subtitle {
+            margin-top: 1rem;
+            font-family: $font-archivo;
+            font-size: 1em;
+            font-weight: 700;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: $color-lightBrown;
+        }
+
+        &__text {
+            margin-top: 1.75rem;
+            font-family: $font-archivo;
+            font-size: 1em;
+            font-weight: 400;
+            line-height: 1.5em;
+            color: $color-textGray;
+        }
+    }
+
+    &__cancellation {
+        margin-top: 5rem;
+        padding: 0 1em;
+
+        &__title {
+            margin-top: 1rem;
+            font-family: $font-oldStandardTT;
+            font-size: 2em;
+            font-weight: 400;
+            color: $color-darkBrown;
+        }
+
+        &__text {
+            margin-top: 1.75rem;
+            font-family: $font-archivo;
+            font-size: 1em;
+            font-weight: 400;
+            line-height: 1.5em;
+            color: $color-textGray;
+        }
+    }
+
+    &__related-rooms {
+        margin: 3rem 0;
+        padding: 0 1em;
+
+        &__title {
+            margin: 1rem 0 2rem;
+            font-family: $font-oldStandardTT;
+            font-size: 2em;
+            font-weight: 400;
+            color: $color-darkBrown;
+        }
+
+        @include roomInfo;
+    }
+
+}
