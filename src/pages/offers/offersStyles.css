@@ -228,11 +228,11 @@
   display: flex;
 }
 
-.rooms__intro {
+.offers__intro {
   padding: 4em 1em 0;
   background-color: #333333;
 }
-.rooms__intro__minor-title {
+.offers__intro__minor-title {
   font-family: "Archivo";
   font-size: 0.75em;
   letter-spacing: 0.25em;
@@ -240,7 +240,7 @@
   text-transform: uppercase;
   color: #FFFFFF;
 }
-.rooms__intro__mayor-title {
+.offers__intro__mayor-title {
   margin-top: 1rem;
   font-family: "Old Standard TT";
   font-size: 3.5em;
@@ -248,14 +248,14 @@
   line-height: 1.15em;
   color: #FFFFFF;
 }
-.rooms__intro__location {
+.offers__intro__location {
   margin: 2rem 0 0 auto;
   padding: 1em 0;
   text-align: center;
   width: 10rem;
   background-color: #FFFFFF;
 }
-.rooms__intro__location__previus-location {
+.offers__intro__location__previus-location {
   display: inline-block;
   text-decoration: none;
   font-family: "Archivo";
@@ -263,31 +263,183 @@
   color: #000000;
   cursor: pointer;
 }
-.rooms__intro__location__separator {
+.offers__intro__location__separator {
   display: inline-block;
   margin: 0 0.25rem;
   height: 0.9rem;
   border-left: 2px solid #000000;
 }
-.rooms__intro__location__actual-location {
+.offers__intro__location__actual-location {
   display: inline-block;
   font-family: "Archivo";
   font-weight: 700;
   color: #BEAD8E;
   cursor: pointer;
 }
-.rooms__entry {
-  margin: 4rem 0;
-  padding: 0 1em;
+.offers__entry {
+  margin: 2rem 1rem;
+  box-shadow: 0 0.1em 0.15em lightgray, -0.1em 0.1em 0.5em lightgray, 0.1em 0.1em 0.5em lightgray;
 }
-.rooms__entry__ctn-img {
+.offers__entry__ctn-img {
   position: relative;
+  font-family: "Archivo";
+  text-shadow: -1px 1px 0 #000000, 1px 1px 0 #000000, 1px -1px 0 #000000, -1px -1px 0 #000000;
 }
-.rooms__entry__ctn-img__img {
+.offers__entry__ctn-img__img {
   width: 100%;
   height: auto;
 }
-.rooms__entry__ctn-img__ctn-options {
+.offers__entry__ctn-img__ctn-original-price {
+  position: absolute;
+  bottom: 3.5rem;
+  right: 1rem;
+  color: #BEAD8E;
+}
+.offers__entry__ctn-img__ctn-original-price__number {
+  display: inline-block;
+  font-size: 1.25em;
+  text-decoration: line-through;
+  text-decoration-thickness: 1px;
+}
+.offers__entry__ctn-img__ctn-original-price__text {
+  display: inline-block;
+  font-size: 0.75em;
+  text-decoration: line-through;
+  text-decoration-thickness: 1px;
+}
+.offers__entry__ctn-img__ctn-discounted-price {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  color: #DE5777;
+}
+.offers__entry__ctn-img__ctn-discounted-price__number {
+  display: inline-block;
+  font-size: 1.75em;
+}
+.offers__entry__ctn-img__ctn-discounted-price__text {
+  display: inline-block;
+  font-size: 0.75em;
+}
+.offers__entry__ctn-info {
+  margin-top: 1.5rem;
+  padding: 0 1em;
+}
+.offers__entry__ctn-info__title-section {
+  font-family: "Archivo";
+  font-size: 1em;
+  font-size: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  color: #777777;
+}
+.offers__entry__ctn-info__title-intro {
+  margin: 1rem 0 0 0;
+  font-family: "Old Standard TT";
+  font-size: 2.75em;
+  font-weight: 400;
+  color: #000000;
+}
+.offers__entry__ctn-info__text {
+  margin-top: 1rem;
+  font-family: "Roboto";
+  line-height: 1.5em;
+  color: #777777;
+}
+.offers__entry__ctn-info__list-beneficits {
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-flow: column;
+  row-gap: 0.75rem;
+  margin-top: 2rem;
+  padding: 0 1em;
+  text-align: left;
+}
+.offers__entry__ctn-info__list-beneficits__option {
+  margin-left: 1.5rem;
+  padding-left: 0.5em;
+  font-family: "Roboto";
+  font-size: 1em;
+  font-weight: 500;
+  color: #777777;
+}
+.offers__entry__ctn-info__list-beneficits__option--air-conditioner {
+  list-style-image: url("../../imgIcon/list-airConditioner.png");
+}
+.offers__entry__ctn-info__list-beneficits__option--breakfast {
+  list-style-image: url("../../imgIcon/list-breakfast.png");
+}
+.offers__entry__ctn-info__list-beneficits__option--cleaning {
+  list-style-image: url("../../imgIcon/list-cleaning.png");
+}
+.offers__entry__ctn-info__list-beneficits__option--grocery {
+  list-style-image: url("../../imgIcon/list-grocery.png");
+}
+.offers__entry__ctn-info__list-beneficits__option--shop-near {
+  list-style-image: url("../../imgIcon/list-singleBed.png");
+}
+.offers__entry__ctn-info__list-beneficits__option--high-speed-wifi {
+  list-style-image: url("../../imgIcon/list-highSpeedWifi.png");
+}
+.offers__entry__ctn-info__list-beneficits__option--kitchen {
+  list-style-image: url("../../imgIcon/list-kitchen.png");
+}
+.offers__entry__ctn-info__list-beneficits__option--shower {
+  list-style-image: url("../../imgIcon/list-shower.png");
+}
+.offers__entry__ctn-info__list-beneficits__option--single-bed {
+  list-style-image: url("../../imgIcon/list-singleBed.png");
+}
+.offers__entry__ctn-info__list-beneficits__option--towels {
+  list-style-image: url("../../imgIcon/list-towels.png");
+}
+.offers__entry__ctn-info__btn {
+  margin: 1rem 1rem 3rem;
+  margin-top: 2rem;
+  font-family: "Archivo";
+  font-size: 1em;
+  font-weight: 700;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 1.75em 4em;
+  border: none;
+  color: #FFFFFF;
+  background-color: #BEAD8E;
+}
+.offers__popular {
+  padding: 3em 0;
+  text-align: center;
+  background-color: #222222;
+}
+.offers__popular__title-section {
+  font-family: "Archivo";
+  font-size: 0.75em;
+  font-size: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  color: #BEAD8E;
+}
+.offers__popular__title-intro {
+  margin: 1rem 0 2rem;
+  font-family: "Old Standard TT";
+  font-size: 2em;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+.offers__popular__ctn-room {
+  margin: 0 1rem;
+  background-color: #FFFFFF;
+}
+.offers__popular__ctn-room__ctn-img {
+  position: relative;
+}
+.offers__popular__ctn-room__ctn-img__img {
+  width: 100%;
+  height: auto;
+}
+.offers__popular__ctn-room__ctn-img__ctn-options {
   position: absolute;
   padding: 0.5em 1.2em;
   width: -moz-fit-content;
@@ -298,28 +450,28 @@
   box-shadow: 0 0 0.25em 0.025em lightgray, -0.01em 0.01em 0.05em lightgray, 0.01em 0.01em 0.05em lightgray;
   background-color: #FFFFFF;
 }
-.rooms__entry__ctn-img__ctn-options__img {
+.offers__popular__ctn-room__ctn-img__ctn-options__img {
   padding: 0.5em 0.5em;
   transform: scale(1.25);
   cursor: pointer;
 }
-.rooms__entry__ctn-info {
+.offers__popular__ctn-room__ctn-info {
   margin-top: 3.5rem;
   padding: 0 1.5em 2em;
   text-align: center;
 }
-.rooms__entry__ctn-info__title {
+.offers__popular__ctn-room__ctn-info__title {
   font-family: "Old Standard TT";
   font-size: 1.75em;
   font-weight: 400;
   color: #222222;
 }
-.rooms__entry__ctn-info__text {
+.offers__popular__ctn-room__ctn-info__text {
   margin: 1rem 0;
   font-family: "Roboto";
   color: #777777;
 }
-.rooms__entry__ctn-info__price {
+.offers__popular__ctn-room__ctn-info__price {
   display: inline-block;
   margin-right: 0.75rem;
   font-family: "Archivo";
@@ -327,7 +479,7 @@
   font-weight: 700;
   color: #BEAD8E;
 }
-.rooms__entry__ctn-info__link-confirm {
+.offers__popular__ctn-room__ctn-info__link-confirm {
   display: inline-block;
   margin-left: 0.75rem;
   font-family: "Archivo";
@@ -349,4 +501,4 @@ html {
 
 body {
   min-width: 320px;
-}/*# sourceMappingURL=roomsStyles.css.map */
+}/*# sourceMappingURL=offersStyles.css.map */
