@@ -36,7 +36,6 @@
     }
 
     &__beneficits {
-        margin-bottom: 4rem;
         padding: 0 1em;
         text-align: center;
 
@@ -71,6 +70,7 @@
     }
 
     &__restaurant {
+        margin: 4rem 0;
         padding: 0 2em;
 
         &__img {
@@ -105,6 +105,62 @@
 
         &__btn {
             @include defaultButton;
+        }
+    }
+
+    &__facilities {
+        padding-top: 2em;
+        text-align: center;
+        color: $color-white;
+        background-color: $color-darkBrown;
+
+        @include introSection($marginTitleIntro: 1rem 0 2rem, $fontSizeTitleSection: 0.75em, $colorTitleSection: $color-white, $fontSizeTitleIntro: 3em, $colorTitleIntro: $color-white);
+
+        &__ctn-slider {
+            position: relative;
+            margin: 0 1rem;
+            padding: 1em 1em 4em;
+            text-align: left;
+            background-color: $color-darkBrown2;
+
+            &__img-selectStars {
+                margin-top: 4rem;
+            }
+
+            &__img-numberSlider {
+                position: absolute;
+                top: 1rem;
+                right: 1rem;
+            }
+
+            &__title {
+                margin-top: 1rem;
+                font-family: $font-oldStandardTT;
+                font-size: 2em;
+                font-weight: 400;
+            }
+
+            &__text {
+                margin-top: 1rem;
+                font-family: $font-archivo;
+                font-size: 1em;
+                font-weight: 400;
+                line-height: 1.75em;
+            }
+        }
+    }
+
+    &__facts {
+        margin-top: 2rem;
+        padding: 1em;
+        @include introSection;
+
+        @include contact($marginTop: 2rem, $padding: 1em, $paddingTopImg: 0.75em, $titleSize: 4em);
+
+        &__img {
+            margin: 4rem 0;
+            width: 100%;
+            height: auto;
         }
     }
 

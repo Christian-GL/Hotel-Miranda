@@ -95,11 +95,12 @@
     }
 }
 
-@mixin contact ($marginTop: 0rem, $paddingTopBotton: 0rem, $marginTitleText: 0rem) {
+@mixin contact ($marginTop: 0rem, $padding: 0em, $paddingTopImg: 0em, $marginTitleText: 0rem, $titleSize: 1.4em) {
 
     &__ctn-entry {
+        position: relative;
         margin-top: $marginTop;
-        padding: $paddingTopBotton 0;
+        padding: $padding;
         background-position: right;
         background-repeat: no-repeat;
         background-size: cover;
@@ -108,6 +109,7 @@
         &__img {
             display: inline-block;
             vertical-align: top;
+            padding-top: $paddingTopImg;
         }
 
         &__ctn-info {
@@ -118,7 +120,7 @@
             &__title {
                 margin-bottom: $marginTitleText;
                 font-family: $font-oldStandardTT;
-                font-size: 1.4em;
+                font-size: $titleSize;
                 font-weight: 300;
             }
 
@@ -129,5 +131,31 @@
                 color: $color-textGray;
             }
         }
+
+        &__img-arrow {
+            position: absolute;
+            top: 50%;
+            left: 17.5rem;
+        }
+    }
+}
+
+@mixin introSection ($marginTitleIntro: 1rem 0 0 0, $fontSizeTitleSection: 1em, $colorTitleSection: $color-textGray, $fontSizeTitleIntro: 4em, $colorTitleIntro: $color-black) {
+
+    &__title-section {
+        font-family: $font-archivo;
+        font-size: $fontSizeTitleSection;
+        font-size: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.25em;
+        color: $colorTitleSection;
+    }
+
+    &__title-intro {
+        margin: $marginTitleIntro;
+        font-family: $font-oldStandardTT;
+        font-size: $fontSizeTitleIntro;
+        font-weight: 400;
+        color: $colorTitleIntro;
     }
 }

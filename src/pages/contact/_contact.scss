@@ -23,7 +23,7 @@
             }
         }
 
-        @include contact(5rem, 2.5em, 1rem);
+        @include contact($marginTop: 5rem, $padding: 2.5em 0, $marginTitleText: 1rem);
     }
 
     &__img {

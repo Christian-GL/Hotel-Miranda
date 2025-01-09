@@ -159,8 +159,9 @@
   font-weight: 300;
 }
 .footer__ctn-main__contact__ctn-entry {
+  position: relative;
   margin-top: 4rem;
-  padding: 0rem 0;
+  padding: 0em;
   background-position: right;
   background-repeat: no-repeat;
   background-size: cover;
@@ -169,6 +170,7 @@
 .footer__ctn-main__contact__ctn-entry__img {
   display: inline-block;
   vertical-align: top;
+  padding-top: 0em;
 }
 .footer__ctn-main__contact__ctn-entry__ctn-info {
   display: inline-block;
@@ -186,6 +188,11 @@
   font-size: 1em;
   font-weight: 400;
   color: #777777;
+}
+.footer__ctn-main__contact__ctn-entry__img-arrow {
+  position: absolute;
+  top: 50%;
+  left: 17.5rem;
 }
 .footer__credits {
   margin-top: 1rem;
@@ -296,7 +303,6 @@
   font-size: 1.8em;
 }
 .about__beneficits {
-  margin-bottom: 4rem;
   padding: 0 1em;
   text-align: center;
 }
@@ -326,6 +332,7 @@
   background-color: #BEAD8E;
 }
 .about__restaurant {
+  margin: 4rem 0;
   padding: 0 2em;
 }
 .about__restaurant__img {
@@ -366,6 +373,115 @@
   border: none;
   color: #FFFFFF;
   background-color: #BEAD8E;
+}
+.about__facilities {
+  padding-top: 2em;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #222222;
+}
+.about__facilities__title-section {
+  font-family: "Archivo";
+  font-size: 0.75em;
+  font-size: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  color: #FFFFFF;
+}
+.about__facilities__title-intro {
+  margin: 1rem 0 2rem;
+  font-family: "Old Standard TT";
+  font-size: 3em;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+.about__facilities__ctn-slider {
+  position: relative;
+  margin: 0 1rem;
+  padding: 1em 1em 4em;
+  text-align: left;
+  background-color: #292929;
+}
+.about__facilities__ctn-slider__img-selectStars {
+  margin-top: 4rem;
+}
+.about__facilities__ctn-slider__img-numberSlider {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+.about__facilities__ctn-slider__title {
+  margin-top: 1rem;
+  font-family: "Old Standard TT";
+  font-size: 2em;
+  font-weight: 400;
+}
+.about__facilities__ctn-slider__text {
+  margin-top: 1rem;
+  font-family: "Archivo";
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.75em;
+}
+.about__facts {
+  margin-top: 2rem;
+  padding: 1em;
+}
+.about__facts__title-section {
+  font-family: "Archivo";
+  font-size: 1em;
+  font-size: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  color: #777777;
+}
+.about__facts__title-intro {
+  margin: 1rem 0 0 0;
+  font-family: "Old Standard TT";
+  font-size: 4em;
+  font-weight: 400;
+  color: #000000;
+}
+.about__facts__ctn-entry {
+  position: relative;
+  margin-top: 2rem;
+  padding: 1em;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: contain;
+}
+.about__facts__ctn-entry__img {
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 0.75em;
+}
+.about__facts__ctn-entry__ctn-info {
+  display: inline-block;
+  margin-left: 1rem;
+  max-width: 75%;
+}
+.about__facts__ctn-entry__ctn-info__title {
+  margin-bottom: 0rem;
+  font-family: "Old Standard TT";
+  font-size: 4em;
+  font-weight: 300;
+}
+.about__facts__ctn-entry__ctn-info__text {
+  font-family: "Roboto";
+  font-size: 1em;
+  font-weight: 400;
+  color: #777777;
+}
+.about__facts__ctn-entry__img-arrow {
+  position: absolute;
+  top: 50%;
+  left: 17.5rem;
+}
+.about__facts__img {
+  margin: 4rem 0;
+  width: 100%;
+  height: auto;
 }
 
 * {
