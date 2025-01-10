@@ -234,7 +234,7 @@
 }
 .home__intro__minor-title {
   font-family: "Archivo";
-  font-size: 0.75em;
+  font-size: 0.85em;
   letter-spacing: 0.25em;
   line-height: 1.5em;
   text-transform: uppercase;
@@ -275,14 +275,36 @@
   background-color: #333333;
 }
 .home__availability {
-  padding: 3em 1em;
+  padding: 1em 1em 3em;
   background-color: #222222;
 }
 .home__availability__title {
+  margin: 2rem 0 1rem;
   font-family: "Roboto";
   font-size: 1.25em;
   font-weight: 700;
   color: #FFFFFF;
+}
+.home__availability__ctn-date {
+  position: relative;
+}
+.home__availability__ctn-date__pick-date {
+  padding: 1.25em 1.75em 1.25em 1.75em;
+  width: 100%;
+  font-family: "Archivo";
+  font-size: 1em;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-color: #BEAD8E;
+  outline: none;
+  color: #686868;
+  background-color: #222222;
+}
+.home__availability__ctn-date__img {
+  position: absolute;
+  top: 35%;
+  left: 0;
 }
 .home__availability__btn-check {
   margin-top: 2rem;
@@ -293,6 +315,45 @@
   text-transform: uppercase;
   cursor: pointer;
   padding: 1.75em 2.5em;
+  border: none;
+  color: #FFFFFF;
+  background-color: #BEAD8E;
+  margin-top: 3rem;
+}
+.home__about-us {
+  margin: 4rem 0 2rem;
+  padding: 1em;
+}
+.home__about-us__title-section {
+  font-family: "Archivo";
+  font-size: 1em;
+  font-size: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  color: #777777;
+}
+.home__about-us__title-intro {
+  margin: 2rem 0 0;
+  font-family: "Old Standard TT";
+  font-size: 3.5em;
+  font-weight: 400;
+  color: #000000;
+}
+.home__about-us__text {
+  margin-top: 1.5rem;
+  font-family: "Archivo";
+  line-height: 1.75em;
+  color: #777777;
+}
+.home__about-us__btn {
+  margin-top: 2rem;
+  font-family: "Archivo";
+  font-size: 1em;
+  font-weight: 700;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 1.75em 4em;
   border: none;
   color: #FFFFFF;
   background-color: #BEAD8E;

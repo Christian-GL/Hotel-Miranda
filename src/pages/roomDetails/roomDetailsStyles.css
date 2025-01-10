@@ -329,7 +329,6 @@
 }
 .roomDetails__availability__ctn-check__ctn-date {
   position: relative;
-  max-width: 50rem;
 }
 .roomDetails__availability__ctn-check__ctn-date__pick-date {
   padding: 1.25em 3.5em 1.25em 1.75em;
