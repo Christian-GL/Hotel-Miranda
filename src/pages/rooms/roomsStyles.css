@@ -288,6 +288,7 @@
   position: relative;
 }
 .rooms__entry__ctn-img__img {
+  padding: 0em;
   width: 100%;
   height: auto;
 }
@@ -308,7 +309,7 @@
   cursor: pointer;
 }
 .rooms__entry__ctn-info {
-  margin-top: 3.5rem;
+  margin: 3.5rem 0 0;
   padding: 0 1.5em 2em;
   text-align: center;
 }

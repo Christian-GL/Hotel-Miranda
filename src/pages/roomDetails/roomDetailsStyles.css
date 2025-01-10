@@ -500,6 +500,7 @@
   position: relative;
 }
 .roomDetails__related-rooms__ctn-img__img {
+  padding: 0em;
   width: 100%;
   height: auto;
 }
@@ -520,7 +521,7 @@
   cursor: pointer;
 }
 .roomDetails__related-rooms__ctn-info {
-  margin-top: 3.5rem;
+  margin: 3.5rem 0 0;
   padding: 0 1.5em 2em;
   text-align: center;
 }

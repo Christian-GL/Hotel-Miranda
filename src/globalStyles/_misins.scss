@@ -183,12 +183,15 @@
     }
 }
 
-@mixin roomInfo ($optionsCtnPositionY: -60%) {
+@mixin roomInfo ($imgPadding: 0em,
+    $optionsCtnPositionY: -60%,
+    $marginCtnInfo: 3.5rem 0 0) {
 
     &__ctn-img {
         position: relative;
 
         &__img {
+            padding: $imgPadding;
             width: 100%;
             height: auto;
         }
@@ -200,8 +203,8 @@
             left: 50%;
             transform: translate(-50%, $optionsCtnPositionY);
             // NOTA: Para alinear este contenedor al inicio o al final de la img a la que está enlazado según se necesite: en el HTML se deberá ubicar la etiqueta de la IMAGEN...
-            // ...ANTES que el div que contiene este contenedor (el contenedor estará alineado en la parte INFERIOR de la imagen) y ($optionsCtnPositionY = -60%).
-            // ...DESPUÉS que el div que contiene este contenedor (el contenedor estará alineado en la parte SUPERIOR de la imagen) y ($optionsCtnPositionY = -52.5%).
+            // ...ANTES que el div que contiene este contenedor (el contenedor estará alineado en la parte INFERIOR de la imagen) y ($optionsCtnPositionY = -60% (XX slider)).
+            // ...DESPUÉS que el div que contiene este contenedor (el contenedor estará alineado en la parte SUPERIOR de la imagen) y ($optionsCtnPositionY = -52.5% (7.5% en slider)).
             white-space: nowrap;
             box-shadow: 0 0.0.25em 0.025em $color-shading, // bottom
                 -0.01em 0.01em 0.05em $color-shading, // left
@@ -217,7 +220,7 @@
     }
 
     &__ctn-info {
-        margin-top: 3.5rem;
+        margin: $marginCtnInfo;
         padding: 0 1.5em 2em;
         text-align: center;
 

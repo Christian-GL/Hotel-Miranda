@@ -419,12 +419,12 @@
   line-height: 1.5em;
   color: #FFFFFF;
 }
-.home__entry {
+.home__room {
   padding: 0 1em;
   text-align: center;
   text-align: center;
 }
-.home__entry__title-section {
+.home__room__title-section {
   font-family: "Archivo";
   font-size: 1em;
   font-size: 700;
@@ -432,53 +432,54 @@
   letter-spacing: 0.25em;
   color: #777777;
 }
-.home__entry__title-intro {
+.home__room__title-intro {
   margin: 1rem 0 3rem;
   font-family: "Old Standard TT";
   font-size: 3.5em;
   font-weight: 400;
   color: #000000;
 }
-.home__entry__ctn-img {
+.home__room__ctn-img {
   position: relative;
 }
-.home__entry__ctn-img__img {
+.home__room__ctn-img__img {
+  padding: 2em 0;
   width: 100%;
   height: auto;
 }
-.home__entry__ctn-img__ctn-options {
+.home__room__ctn-img__ctn-options {
   position: absolute;
   padding: 0.5em 1.2em;
   width: -moz-fit-content;
   width: fit-content;
   left: 50%;
-  transform: translate(-50%, -52.5%);
+  transform: translate(-50%, 7.5%);
   white-space: nowrap;
   box-shadow: 0 0 0.25em 0.025em lightgray, -0.01em 0.01em 0.05em lightgray, 0.01em 0.01em 0.05em lightgray;
   background-color: #FFFFFF;
 }
-.home__entry__ctn-img__ctn-options__img {
+.home__room__ctn-img__ctn-options__img {
   padding: 0.5em 0.5em;
   transform: scale(1.25);
   cursor: pointer;
 }
-.home__entry__ctn-info {
-  margin-top: 3.5rem;
+.home__room__ctn-info {
+  margin: 0;
   padding: 0 1.5em 2em;
   text-align: center;
 }
-.home__entry__ctn-info__title {
+.home__room__ctn-info__title {
   font-family: "Old Standard TT";
   font-size: 1.75em;
   font-weight: 400;
   color: #222222;
 }
-.home__entry__ctn-info__text {
+.home__room__ctn-info__text {
   margin: 1rem 0;
   font-family: "Roboto";
   color: #777777;
 }
-.home__entry__ctn-info__price {
+.home__room__ctn-info__price {
   display: inline-block;
   margin-right: 0.75rem;
   font-family: "Archivo";
@@ -486,7 +487,7 @@
   font-weight: 700;
   color: #BEAD8E;
 }
-.home__entry__ctn-info__link-room {
+.home__room__ctn-info__link-room {
   display: inline-block;
   margin-left: 0.75rem;
   font-family: "Archivo";
@@ -639,7 +640,9 @@
   color: #777777;
 }
 .home__foods {
-  padding: 1em;
+  position: relative;
+  padding: 10em 1em 0;
+  overflow-x: hidden;
   text-align: left;
 }
 .home__foods__title-section {
@@ -656,6 +659,12 @@
   font-size: 3.5em;
   font-weight: 400;
   color: #000000;
+}
+.home__foods__img {
+  position: absolute;
+  left: 60%;
+  bottom: 77.5%;
+  transform: scale(0.6);
 }
 .home__foods__ctn-meals__ctn-entry {
   position: relative;
@@ -697,7 +706,7 @@
   top: 50%;
   left: 17.5rem;
 }
-.home__img {
+.home__imgs {
   margin: 5rem 0;
   padding: 0 1em;
   width: 100%;
@@ -725,6 +734,61 @@
   font-size: 1em;
   font-weight: 700;
   color: #999999;
+}
+
+.swiper__home__room .swiper-button-prev {
+  padding: 1em 1.35em;
+  background-size: 50px;
+  color: #000000;
+  background-color: #FFFFFF;
+}
+.swiper__home__room .swiper-button-prev::after {
+  font-size: 1rem;
+}
+.swiper__home__room .swiper-button-next {
+  padding: 1em 1.35em;
+  background-size: 50px;
+  color: #FFFFFF;
+  background-color: #BEAD8E;
+}
+.swiper__home__room .swiper-button-next::after {
+  font-size: 1rem;
+}
+.swiper__home__facilities .swiper-pagination-bullet {
+  background-color: #BEAD8E;
+}
+.swiper__home__foods {
+  position: relative;
+}
+.swiper__home__foods .swiper-slide-active {
+  padding-bottom: 5em;
+}
+.swiper__home__foods .swiper-button-prev {
+  position: absolute;
+  top: 36rem;
+  left: 14rem;
+  padding: 1em 1.35em;
+  background-size: 50px;
+  color: #000000;
+  background-color: #F8F8F8;
+}
+.swiper__home__foods .swiper-button-prev::after {
+  font-size: 1rem;
+}
+.swiper__home__foods .swiper-button-next {
+  position: absolute;
+  top: 36rem;
+  right: 0.5rem;
+  padding: 1em 1.35em;
+  background-size: 50px;
+  color: #FFFFFF;
+  background-color: #BEAD8E;
+}
+.swiper__home__foods .swiper-button-next::after {
+  font-size: 1rem;
+}
+.swiper__home__imgs .swiper-pagination-bullet {
+  background-color: #BEAD8E;
 }
 
 * {

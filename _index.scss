@@ -86,13 +86,13 @@
         @include aboutUsInfo($backgroundColor: $color-darkBrown, $textColor: $color-white);
     }
 
-    &__entry {
+    &__room {
         padding: 0 1em;
         text-align: center;
 
         @include introSection($textAlign: center, $marginTitleIntro: 1rem 0 3rem, $fontSizeTitleIntro: 3.5em);
 
-        @include roomInfo($optionsCtnPositionY: -52.5%);
+        @include roomInfo($imgPadding: 2em 0, $optionsCtnPositionY: 7.5%, $marginCtnInfo: 0);
     }
 
     &__about-us-info3 {
@@ -130,15 +130,24 @@
     }
 
     &__foods {
-        padding: 1em;
+        position: relative;
+        padding: 10em 1em 0;
+        overflow-x: hidden;
         @include introSection($fontSizeTitleIntro: 3.5em);
+
+        &__img {
+            position: absolute;
+            left: 60%;
+            bottom: 77.5%;
+            transform: scale(0.6);
+        }
 
         &__ctn-meals {
             @include contact($marginTop: 4rem, $imgWidthHeight: 7rem);
         }
     }
 
-    &__img {
+    &__imgs {
         margin: 5rem 0;
         padding: 0 1em;
         width: 100%;
@@ -173,6 +182,87 @@
                 font-weight: 700;
                 color: $color-textGray2;
             }
+        }
+    }
+
+}
+
+
+
+.swiper {
+
+    &__home__room {
+
+        .swiper-button-prev {
+            padding: 1em 1.35em;
+            background-size: 50px;
+            color: $color-black;
+            background-color: $color-white;
+        }
+
+        .swiper-button-prev::after {
+            font-size: 1rem;
+        }
+
+        .swiper-button-next {
+            padding: 1em 1.35em;
+            background-size: 50px;
+            color: $color-white;
+            background-color: $color-lightBrown;
+        }
+
+        .swiper-button-next::after {
+            font-size: 1rem;
+        }
+    }
+
+    &__home__facilities {
+
+        .swiper-pagination-bullet {
+            background-color: $color-lightBrown;
+        }
+    }
+
+    &__home__foods {
+        position: relative;
+
+        .swiper-slide-active {
+            padding-bottom: 5em;
+        }
+
+        .swiper-button-prev {
+            position: absolute;
+            top: 36rem;
+            left: 14rem;
+            padding: 1em 1.35em;
+            background-size: 50px;
+            color: $color-black;
+            background-color: $color-backgroundGray;
+        }
+
+        .swiper-button-prev::after {
+            font-size: 1rem;
+        }
+
+        .swiper-button-next {
+            position: absolute;
+            top: 36rem;
+            right: 0.5rem;
+            padding: 1em 1.35em;
+            background-size: 50px;
+            color: $color-white;
+            background-color: $color-lightBrown;
+        }
+
+        .swiper-button-next::after {
+            font-size: 1rem;
+        }
+    }
+
+    &__home__imgs {
+
+        .swiper-pagination-bullet {
+            background-color: $color-lightBrown;
         }
     }
 
