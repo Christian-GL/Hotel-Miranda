@@ -145,9 +145,11 @@
 
         &__title {
             margin-top: 1rem;
+            padding-bottom: 0.25em;
             font-family: $font-oldStandardTT;
             font-size: 2em;
             font-weight: 400;
+            border-bottom: 1px solid $color-borderTitle;
             color: $color-darkBrown;
         }
 
@@ -167,9 +169,11 @@
 
         &__title {
             margin: 1rem 0 2rem;
+            padding-bottom: 0.25em;
             font-family: $font-oldStandardTT;
             font-size: 2em;
             font-weight: 400;
+            border-bottom: 1px solid $color-borderTitle;
             color: $color-darkBrown;
         }
 

@@ -1,6 +1,7 @@
 .home {
 
     &__intro {
+        // @include introPage($padding: 4em 1em);
         @include introPageIndex;
 
         &__btn {
@@ -58,7 +59,7 @@
     }
 
     &__about-us {
-        margin: 4rem 0 2rem;
+        margin-top: 4rem;
         padding: 1em;
 
         @include introSection($marginTitleIntro: 2rem 0 0, $fontSizeTitleIntro: 3.5em);
@@ -72,6 +73,106 @@
 
         &__btn {
             @include defaultButton($sidePadding: 4em);
+        }
+    }
+
+    &__about-us-info {
+
+        @include aboutUsInfo();
+    }
+
+    &__about-us-info2 {
+
+        @include aboutUsInfo($backgroundColor: $color-darkBrown, $textColor: $color-white);
+    }
+
+    &__entry {
+        padding: 0 1em;
+        text-align: center;
+
+        @include introSection($textAlign: center, $marginTitleIntro: 1rem 0 3rem, $fontSizeTitleIntro: 3.5em);
+
+        @include roomInfo($optionsCtnPositionY: -52.5%);
+    }
+
+    &__about-us-info3 {
+        margin-top: 1.5rem;
+        padding: 3em 1em;
+        background-color: $color-darkBrown;
+
+        @include introSection($fontSizeTitleSection: 0.8em, $colorTitleSection: $color-lightBrown, $fontSizeTitleIntro: 3.5em, $colorTitleIntro: $color-white);
+
+        &__text {
+            margin: 1rem 0 2rem;
+            font-family: $font-roboto;
+            line-height: 1.5em;
+            color: $color-textLightGray2;
+        }
+
+        @include listAmenities;
+
+        &__video {
+            width: 100%;
+            height: 20rem;
+        }
+
+        &__btn {
+            @include defaultButton ($sidePadding: 4em);
+        }
+    }
+
+    &__facilities {
+        @include facilities($introSectionTextAlign: center,
+            $facilitiesBackgroundColor: $color-white,
+            $ctnSliderBackgroundColor: $color-white,
+            $letterTitleIntroAndTitleText: $color-darkBrown,
+            $letterTitleSectionAndText: $color-textGray);
+    }
+
+    &__foods {
+        padding: 1em;
+        @include introSection($fontSizeTitleIntro: 3.5em);
+
+        &__ctn-meals {
+            @include contact($marginTop: 4rem, $imgWidthHeight: 7rem);
+        }
+    }
+
+    &__img {
+        margin: 5rem 0;
+        padding: 0 1em;
+        width: 100%;
+        height: auto;
+    }
+
+    &__stats {
+        margin: 2rem 0 4rem;
+        text-align: center;
+        background-color: $color-darkBrown;
+
+        &__entry {
+            padding: 2em 0;
+
+            &__ctn-stat {
+
+                &__number {
+                    display: inline-block;
+                    font-family: $font-roboto;
+                    font-size: 3em;
+                    color: $color-white;
+                }
+
+                &__plus {
+                    font-size: 1em;
+                }
+            }
+
+            &__text {
+                font-family: $font-roboto;
+                font-size: 1em;
+                font-weight: 700;
+                color: $color-textGray2;
+            }
         }
     }
 

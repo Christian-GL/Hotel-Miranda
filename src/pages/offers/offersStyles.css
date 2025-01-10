@@ -171,11 +171,15 @@
   display: inline-block;
   vertical-align: top;
   padding-top: 0em;
+  width: auto;
+  height: auto;
+  max-width: 32.5%;
+  max-height: same-as-width;
 }
 .footer__ctn-main__contact__ctn-entry__ctn-info {
   display: inline-block;
   margin-left: 1rem;
-  max-width: 75%;
+  max-width: 60%;
 }
 .footer__ctn-main__contact__ctn-entry__ctn-info__title {
   margin-bottom: 0rem;
@@ -324,6 +328,7 @@
 .offers__entry__ctn-info {
   margin-top: 1.5rem;
   padding: 0 1em;
+  text-align: left;
 }
 .offers__entry__ctn-info__title-section {
   font-family: "Archivo";
@@ -412,6 +417,7 @@
   padding: 3em 0;
   text-align: center;
   background-color: #222222;
+  text-align: left;
 }
 .offers__popular__title-section {
   font-family: "Archivo";

@@ -1,4 +1,8 @@
-@mixin defaultButton($sidePadding: 2.5em, $border: none, $textColor: $color-white, $backgroundColor: $color-lightBrown) {
+@mixin defaultButton($sidePadding: 2.5em,
+    $border: none,
+    $textColor: $color-white,
+    $backgroundColor: $color-lightBrown) {
+
     margin-top: 2rem;
     font-family: $font-archivo;
     font-size: 1em;
@@ -43,8 +47,11 @@
     }
 }
 
-@mixin introPage ($widthContainer: 10rem, $separatorDistanceRem: 0rem) {
-    padding: 4em 1em 0;
+@mixin introPage ($padding: 4em 1em 0,
+    $widthContainer: 10rem,
+    $separatorDistanceRem: 0rem) {
+
+    padding: $padding;
     background-color: $color-mediumBrown;
 
     &__minor-title {
@@ -95,7 +102,12 @@
     }
 }
 
-@mixin contact ($marginTop: 0rem, $padding: 0em, $paddingTopImg: 0em, $marginTitleText: 0rem, $titleSize: 1.4em) {
+@mixin contact ($marginTop: 0rem,
+    $padding: 0em,
+    $paddingTopImg: 0em,
+    $imgWidthHeight: auto,
+    $marginTitleText: 0rem,
+    $titleSize: 1.4em) {
 
     &__ctn-entry {
         position: relative;
@@ -110,12 +122,16 @@
             display: inline-block;
             vertical-align: top;
             padding-top: $paddingTopImg;
+            width: $imgWidthHeight;
+            height: $imgWidthHeight;
+            max-width: 32.5%;
+            max-height: same-as-width;
         }
 
         &__ctn-info {
             display: inline-block;
             margin-left: 1rem;
-            max-width: 75%;
+            max-width: 60%;
 
             &__title {
                 margin-bottom: $marginTitleText;
@@ -140,7 +156,14 @@
     }
 }
 
-@mixin introSection ($marginTitleIntro: 1rem 0 0 0, $fontSizeTitleSection: 1em, $colorTitleSection: $color-textGray, $fontSizeTitleIntro: 4em, $colorTitleIntro: $color-black) {
+@mixin introSection ($textAlign: left,
+    $marginTitleIntro: 1rem 0 0 0,
+    $fontSizeTitleSection: 1em,
+    $colorTitleSection: $color-textGray,
+    $fontSizeTitleIntro: 4em,
+    $colorTitleIntro: $color-black) {
+
+    text-align: $textAlign;
 
     &__title-section {
         font-family: $font-archivo;
@@ -160,7 +183,7 @@
     }
 }
 
-@mixin roomInfo () {
+@mixin roomInfo ($optionsCtnPositionY: -60%) {
 
     &__ctn-img {
         position: relative;
@@ -175,7 +198,10 @@
             padding: 0.5em 1.2em;
             width: fit-content;
             left: 50%;
-            transform: translate(-50%, -60%);
+            transform: translate(-50%, $optionsCtnPositionY);
+            // NOTA: Para alinear este contenedor al inicio o al final de la img a la que está enlazado según se necesite: en el HTML se deberá ubicar la etiqueta de la IMAGEN...
+            // ...ANTES que el div que contiene este contenedor (el contenedor estará alineado en la parte INFERIOR de la imagen) y ($optionsCtnPositionY = -60%).
+            // ...DESPUÉS que el div que contiene este contenedor (el contenedor estará alineado en la parte SUPERIOR de la imagen) y ($optionsCtnPositionY = -52.5%).
             white-space: nowrap;
             box-shadow: 0 0.0.25em 0.025em $color-shading, // bottom
                 -0.01em 0.01em 0.05em $color-shading, // left
@@ -290,6 +316,95 @@
             &--towels {
                 list-style-image: url('../../imgIcon/list-towels.png');
             }
+        }
+    }
+}
+
+@mixin aboutUsInfo ($backgroundColor: $color-white,
+    $textColor: $color-textDark) {
+
+    margin: 4rem 2rem;
+    text-align: center;
+    box-shadow: 0 0.10em 0.15em $color-shading, // bottom
+        -0.1em 0.10em 0.5em $color-shading, // left
+        0.1em 0.10em 0.5em $color-shading; // right
+    background-color: $backgroundColor;
+
+    &__img {
+        width: 100%;
+        height: auto;
+    }
+
+    &__ctn-info {
+        padding: 1em 2em;
+
+        &__title {
+            margin-top: 1rem;
+            font-family: $font-oldStandardTT;
+            font-size: 2em;
+            font-weight: 400;
+            color: $textColor;
+        }
+
+        &__text {
+            margin-top: 1rem;
+            font-family: $font-roboto;
+            font-size: 1em;
+            font-weight: 400;
+            line-height: 1.5em;
+            color: $textColor;
+        }
+    }
+}
+
+@mixin facilities ($introSectionTextAlign: left,
+    $facilitiesBackgroundColor: $color-darkBrown,
+    $ctnSliderBackgroundColor: $color-darkBrown2,
+    $letterTitleIntroAndTitleText: $color-white,
+    $letterTitleSectionAndText: $color-white) {
+
+    padding: 2em;
+    text-align: center;
+    background-color: $facilitiesBackgroundColor;
+
+    @include introSection($textAlign: $introSectionTextAlign,
+        $marginTitleIntro: 1rem 0 2rem,
+        $fontSizeTitleSection: 0.75em,
+        $colorTitleSection: $letterTitleSectionAndText,
+        $fontSizeTitleIntro: 3em,
+        $colorTitleIntro: $letterTitleIntroAndTitleText);
+
+    &__ctn-slider {
+        position: relative;
+        padding: 1em 1em 4em;
+        text-align: left;
+        background-color: $ctnSliderBackgroundColor;
+
+        &__img-selectStars {
+            margin-top: 4rem;
+        }
+
+        &__img-numberSlider {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+        }
+
+        &__title {
+            margin-top: 1rem;
+            font-family: $font-oldStandardTT;
+            font-size: 2em;
+            font-weight: 400;
+            color: $letterTitleIntroAndTitleText;
+        }
+
+        &__text {
+            margin-top: 1rem;
+            font-family: $font-archivo;
+            font-size: 1em;
+            font-weight: 400;
+            line-height: 1.75em;
+            color: $letterTitleSectionAndText;
         }
     }
 }

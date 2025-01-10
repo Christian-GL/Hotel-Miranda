@@ -15,19 +15,6 @@
             height: 20rem;
         }
 
-        &__btn-play {
-            position: absolute;
-            left: 50%;
-            transform: translate(-50%, 150%);
-            white-space: nowrap;
-
-            padding: 1em 1.2em;
-            font-size: 1.5em;
-            border: none;
-            border-radius: 50%;
-            background-color: $color-white;
-        }
-
         &__text {
             margin-top: 2rem;
             font-family: $font-oldStandardTT;
@@ -109,45 +96,8 @@
     }
 
     &__facilities {
-        padding-top: 2em;
-        text-align: center;
-        color: $color-white;
-        background-color: $color-darkBrown;
-
-        @include introSection($marginTitleIntro: 1rem 0 2rem, $fontSizeTitleSection: 0.75em, $colorTitleSection: $color-white, $fontSizeTitleIntro: 3em, $colorTitleIntro: $color-white);
-
-        &__ctn-slider {
-            position: relative;
-            margin: 0 1rem;
-            padding: 1em 1em 4em;
-            text-align: left;
-            background-color: $color-darkBrown2;
-
-            &__img-selectStars {
-                margin-top: 4rem;
-            }
-
-            &__img-numberSlider {
-                position: absolute;
-                top: 1rem;
-                right: 1rem;
-            }
-
-            &__title {
-                margin-top: 1rem;
-                font-family: $font-oldStandardTT;
-                font-size: 2em;
-                font-weight: 400;
-            }
-
-            &__text {
-                margin-top: 1rem;
-                font-family: $font-archivo;
-                font-size: 1em;
-                font-weight: 400;
-                line-height: 1.75em;
-            }
-        }
+        
+        @include facilities;
     }
 
     &__facts {

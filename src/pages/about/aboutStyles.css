@@ -171,11 +171,15 @@
   display: inline-block;
   vertical-align: top;
   padding-top: 0em;
+  width: auto;
+  height: auto;
+  max-width: 32.5%;
+  max-height: same-as-width;
 }
 .footer__ctn-main__contact__ctn-entry__ctn-info {
   display: inline-block;
   margin-left: 1rem;
-  max-width: 75%;
+  max-width: 60%;
 }
 .footer__ctn-main__contact__ctn-entry__ctn-info__title {
   margin-bottom: 0rem;
@@ -286,17 +290,6 @@
   width: 100%;
   height: 20rem;
 }
-.about__introduction__btn-play {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, 150%);
-  white-space: nowrap;
-  padding: 1em 1.2em;
-  font-size: 1.5em;
-  border: none;
-  border-radius: 50%;
-  background-color: #FFFFFF;
-}
 .about__introduction__text {
   margin-top: 2rem;
   font-family: "Old Standard TT";
@@ -375,10 +368,10 @@
   background-color: #BEAD8E;
 }
 .about__facilities {
-  padding-top: 2em;
+  padding: 2em;
   text-align: center;
-  color: #FFFFFF;
   background-color: #222222;
+  text-align: left;
 }
 .about__facilities__title-section {
   font-family: "Archivo";
@@ -397,7 +390,6 @@
 }
 .about__facilities__ctn-slider {
   position: relative;
-  margin: 0 1rem;
   padding: 1em 1em 4em;
   text-align: left;
   background-color: #292929;
@@ -415,6 +407,7 @@
   font-family: "Old Standard TT";
   font-size: 2em;
   font-weight: 400;
+  color: #FFFFFF;
 }
 .about__facilities__ctn-slider__text {
   margin-top: 1rem;
@@ -422,10 +415,12 @@
   font-size: 1em;
   font-weight: 400;
   line-height: 1.75em;
+  color: #FFFFFF;
 }
 .about__facts {
   margin-top: 2rem;
   padding: 1em;
+  text-align: left;
 }
 .about__facts__title-section {
   font-family: "Archivo";
@@ -455,11 +450,15 @@
   display: inline-block;
   vertical-align: top;
   padding-top: 0.75em;
+  width: auto;
+  height: auto;
+  max-width: 32.5%;
+  max-height: same-as-width;
 }
 .about__facts__ctn-entry__ctn-info {
   display: inline-block;
   margin-left: 1rem;
-  max-width: 75%;
+  max-width: 60%;
 }
 .about__facts__ctn-entry__ctn-info__title {
   margin-bottom: 0rem;

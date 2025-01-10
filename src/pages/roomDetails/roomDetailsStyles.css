@@ -171,11 +171,15 @@
   display: inline-block;
   vertical-align: top;
   padding-top: 0em;
+  width: auto;
+  height: auto;
+  max-width: 32.5%;
+  max-height: same-as-width;
 }
 .footer__ctn-main__contact__ctn-entry__ctn-info {
   display: inline-block;
   margin-left: 1rem;
-  max-width: 75%;
+  max-width: 60%;
 }
 .footer__ctn-main__contact__ctn-entry__ctn-info__title {
   margin-bottom: 0rem;
@@ -278,6 +282,7 @@
 }
 .roomDetails__availability {
   padding: 3em 1em;
+  text-align: left;
 }
 .roomDetails__availability__title-section {
   font-family: "Archivo";
@@ -463,9 +468,11 @@
 }
 .roomDetails__cancellation__title {
   margin-top: 1rem;
+  padding-bottom: 0.25em;
   font-family: "Old Standard TT";
   font-size: 2em;
   font-weight: 400;
+  border-bottom: 1px solid #F1F1F1;
   color: #222222;
 }
 .roomDetails__cancellation__text {
@@ -482,9 +489,11 @@
 }
 .roomDetails__related-rooms__title {
   margin: 1rem 0 2rem;
+  padding-bottom: 0.25em;
   font-family: "Old Standard TT";
   font-size: 2em;
   font-weight: 400;
+  border-bottom: 1px solid #F1F1F1;
   color: #222222;
 }
 .roomDetails__related-rooms__ctn-img {
