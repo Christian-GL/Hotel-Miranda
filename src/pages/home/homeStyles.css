@@ -84,7 +84,7 @@
 
 .footer__ctn-main {
   padding: 4em 1em 1em;
-  background-image: url("./src/imgIcon/footerBackground.png"), url("../../media/icon/footerBackground.png");
+  background-image: url("../../media/icon/footerBackground.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -755,9 +755,15 @@
 .swiper__home__room {
   position: relative;
 }
+.swiper__home__room .swiper-slide-active {
+  padding: 0em;
+}
 .swiper__home__room .swiper-button-prev {
   position: absolute;
   top: var(--swiper-navigation-top-offset, 35%);
+  right: none;
+  bottom: none;
+  left: none;
   padding: 1em 1.35em;
   background-size: 50px;
   color: #000000;
@@ -769,6 +775,9 @@
 .swiper__home__room .swiper-button-next {
   position: absolute;
   top: var(--swiper-navigation-top-offset, 35%);
+  right: none;
+  bottom: none;
+  left: none;
   padding: 1em 1.35em;
   background-size: 50px;
   color: #FFFFFF;
@@ -784,17 +793,18 @@
   position: relative;
 }
 .swiper__home__foods .swiper-slide-active {
-  padding-bottom: 5em;
+  padding: 0 0 5em;
 }
 .swiper__home__foods .swiper-button-prev {
   position: absolute;
   top: 36rem;
-  right: 14rem;
-  right: 2.5rem !important;
+  right: 2.5rem;
+  bottom: none;
+  left: none;
   padding: 1em 1.35em;
   background-size: 50px;
   color: #000000;
-  background-color: #F8F8F8;
+  background-color: #FFFFFF;
 }
 .swiper__home__foods .swiper-button-prev::after {
   font-size: 1rem;
@@ -803,6 +813,8 @@
   position: absolute;
   top: 36rem;
   right: 0.5rem;
+  bottom: none;
+  left: none;
   padding: 1em 1.35em;
   background-size: 50px;
   color: #FFFFFF;

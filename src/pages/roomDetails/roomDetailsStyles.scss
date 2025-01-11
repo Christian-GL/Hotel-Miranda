@@ -1,10 +1,11 @@
-@import '../../globalStyles/_globalVars.scss';
-@import '../../globalStyles/layout.scss';
+@import '../../styles/globalVars.scss';
+@import '../../styles/layout.scss';
 
-@import '../../globalStyles/mixin/introSection.scss';
-@import '../../globalStyles/mixin/defaultButton.scss';
-@import '../../globalStyles/mixin/listAmenities.scss';
-@import '../../globalStyles/mixin/roomInfo.scss';
+@import '../../styles/mixin/introSection.scss';
+@import '../../styles/mixin/defaultButton.scss';
+@import '../../styles/mixin/listAmenities.scss';
+@import '../../styles/mixin/roomInfo.scss';
+@import '../../styles/mixin/sliderButtons.scss';
 
 @import 'roomDetails.scss';
 

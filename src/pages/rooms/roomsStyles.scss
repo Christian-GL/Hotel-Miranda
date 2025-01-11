@@ -1,8 +1,8 @@
-@import '../../globalStyles/_globalVars.scss';
-@import '../../globalStyles/_layout.scss';
+@import '../../styles/globalVars.scss';
+@import '../../styles/layout.scss';
 
-@import '../../globalStyles/mixin/introSection.scss';
-@import '../../globalStyles/mixin/roomInfo.scss';
+@import '../../styles/mixin/introSection.scss';
+@import '../../styles/mixin/roomInfo.scss';
 
 @import 'rooms.scss';
 

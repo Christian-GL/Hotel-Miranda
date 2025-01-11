@@ -210,41 +210,8 @@
 .swiper {
 
     &__home__room {
-        position: relative;
-
-        .swiper-button-prev {
-            position: absolute;
-            // top: 9.5rem;
-            top: var(--swiper-navigation-top-offset, 35%);
-
-            // top: 50%;
-            // transform: translate(-50%, -50%);
-            padding: 1em 1.35em;
-            background-size: 50px;
-            color: $color-black;
-            background-color: $color-white;
-        }
-
-        .swiper-button-prev::after {
-            font-size: 1rem;
-        }
-
-        .swiper-button-next {
-            position: absolute;
-            // top: 9.5rem;
-            top: var(--swiper-navigation-top-offset, 35%);
-
-            // top: 50%;
-            // transform: translate(-50%, -50%);
-            padding: 1em 1.35em;
-            background-size: 50px;
-            color: $color-white;
-            background-color: $color-lightBrown;
-        }
-
-        .swiper-button-next::after {
-            font-size: 1rem;
-        }
+        @include sliderButtons($prevTop: (var(--swiper-navigation-top-offset, 35%)),
+            $nextTop: (var(--swiper-navigation-top-offset, 35%)));
     }
 
     &__home__facilities {
@@ -255,40 +222,11 @@
     }
 
     &__home__foods {
-        position: relative;
-
-        .swiper-slide-active {
-            padding-bottom: 5em;
-        }
-
-        .swiper-button-prev {
-            position: absolute;
-            top: 36rem;
-            right: 14rem;
-            right: 2.5rem !important;
-            padding: 1em 1.35em;
-            background-size: 50px;
-            color: $color-black;
-            background-color: $color-backgroundGray;
-        }
-
-        .swiper-button-prev::after {
-            font-size: 1rem;
-        }
-
-        .swiper-button-next {
-            position: absolute;
-            top: 36rem;
-            right: 0.5rem;
-            padding: 1em 1.35em;
-            background-size: 50px;
-            color: $color-white;
-            background-color: $color-lightBrown;
-        }
-
-        .swiper-button-next::after {
-            font-size: 1rem;
-        }
+        @include sliderButtons($paddingSlider: 0 0 5em,
+            $prevTop: 36rem,
+            $prevRight: 2.5rem,
+            $nextTop: 36rem,
+            $nextRight: 0.5rem);
     }
 
     &__home__imgs {

@@ -84,7 +84,7 @@
 
 .footer__ctn-main {
   padding: 4em 1em 1em;
-  background-image: url("./src/imgIcon/footerBackground.png"), url("../../media/icon/footerBackground.png");
+  background-image: url("../../media/icon/footerBackground.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -573,9 +573,15 @@
 .swiper__roomDetails__room {
   position: relative;
 }
+.swiper__roomDetails__room .swiper-slide-active {
+  padding: 0em;
+}
 .swiper__roomDetails__room .swiper-button-prev {
   position: absolute;
-  top: 9.5rem;
+  top: var(--swiper-navigation-top-offset, 25%);
+  right: none;
+  bottom: none;
+  left: none;
   padding: 1em 1.35em;
   background-size: 50px;
   color: #000000;
@@ -586,7 +592,10 @@
 }
 .swiper__roomDetails__room .swiper-button-next {
   position: absolute;
-  top: 9.5rem;
+  top: var(--swiper-navigation-top-offset, 25%);
+  right: none;
+  bottom: none;
+  left: none;
   padding: 1em 1.35em;
   background-size: 50px;
   color: #FFFFFF;

@@ -1,10 +1,10 @@
-@import '../../globalStyles/_globalVars.scss';
-@import '../../globalStyles/_layout.scss';
+@import '../../styles/globalVars.scss';
+@import '../../styles/layout.scss';
 
-@import '../../globalStyles/mixin/introSection.scss';
-@import '../../globalStyles/mixin/defaultButton.scss';
-@import '../../globalStyles/mixin/facilities.scss';
-@import '../../globalStyles/mixin/contact.scss';
+@import '../../styles/mixin/introSection.scss';
+@import '../../styles/mixin/defaultButton.scss';
+@import '../../styles/mixin/facilities.scss';
+@import '../../styles/mixin/contact.scss';
 
 @import 'about.scss';
 

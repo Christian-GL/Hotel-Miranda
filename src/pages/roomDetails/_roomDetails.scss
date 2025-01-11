@@ -204,32 +204,7 @@
 .swiper {
 
     &__roomDetails__room {
-        position: relative;
-
-        .swiper-button-prev {
-            position: absolute;
-            top: 9.5rem;
-            padding: 1em 1.35em;
-            background-size: 50px;
-            color: $color-black;
-            background-color: $color-white;
-        }
-
-        .swiper-button-prev::after {
-            font-size: 1rem;
-        }
-
-        .swiper-button-next {
-            position: absolute;
-            top: 9.5rem;
-            padding: 1em 1.35em;
-            background-size: 50px;
-            color: $color-white;
-            background-color: $color-lightBrown;
-        }
-
-        .swiper-button-next::after {
-            font-size: 1rem;
-        }
+        @include sliderButtons($prevTop: (var(--swiper-navigation-top-offset, 25%)),
+            $nextTop: (var(--swiper-navigation-top-offset, 25%)));
     }
 }
