@@ -1,0 +1,110 @@
+@import '../../globalStyles/mixin/introSeparator.scss';
+
+@mixin introPageIndex () {
+    padding: 4em 1em;
+    background-color: $color-mediumBrown;
+
+    &__minor-title {
+        font-family: $font-archivo;
+        font-size: 0.85em;
+        letter-spacing: 0.25em;
+        line-height: 1.5em;
+        text-transform: uppercase;
+        color: $color-white;
+    }
+
+    &__mayor-title {
+        margin-top: 1rem;
+        font-family: $font-oldStandardTT;
+        font-size: 3.5em;
+        font-weight: 300;
+        line-height: 1.15em;
+        color: $color-white;
+    }
+}
+
+
+
+@mixin introPage ($padding: 4em 1em 0,
+    $widthContainer: 10rem,
+    $separatorDistanceRem: 0rem) {
+
+    padding: $padding;
+    background-color: $color-mediumBrown;
+
+    &__minor-title {
+        font-family: $font-archivo;
+        font-size: 0.75em;
+        letter-spacing: 0.25em;
+        line-height: 1.5em;
+        text-transform: uppercase;
+        color: $color-white;
+    }
+
+    &__mayor-title {
+        margin-top: 1rem;
+        font-family: $font-oldStandardTT;
+        font-size: 3.5em;
+        font-weight: 300;
+        line-height: 1.15em;
+        color: $color-white;
+    }
+
+    &__location {
+        margin: 2rem 0 0 auto;
+        padding: 1em 0;
+        text-align: center;
+        width: $widthContainer;
+        background-color: $color-white;
+
+        &__previus-location {
+            display: inline-block;
+            text-decoration: none;
+            font-family: $font-archivo;
+            font-weight: 700;
+            color: $color-black;
+            cursor: pointer;
+        }
+
+        &__separator {
+            @include introSeparator($separatorDistanceRem)
+        }
+
+        &__actual-location {
+            display: inline-block;
+            font-family: $font-archivo;
+            font-weight: 700;
+            color: $color-lightBrown;
+            cursor: pointer;
+        }
+    }
+}
+
+
+
+@mixin introSection ($textAlign: left,
+    $marginTitleIntro: 1rem 0 0 0,
+    $fontSizeTitleSection: 1em,
+    $colorTitleSection: $color-textGray,
+    $fontSizeTitleIntro: 4em,
+    $colorTitleIntro: $color-black) {
+
+    text-align: $textAlign;
+
+    &__title-section {
+        font-family: $font-archivo;
+        font-size: $fontSizeTitleSection;
+        font-size: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.25em;
+        color: $colorTitleSection;
+    }
+
+    &__title-intro {
+        margin: $marginTitleIntro;
+        font-family: $font-oldStandardTT;
+        font-size: $fontSizeTitleIntro;
+        font-weight: 400;
+        color: $colorTitleIntro;
+    }
+}

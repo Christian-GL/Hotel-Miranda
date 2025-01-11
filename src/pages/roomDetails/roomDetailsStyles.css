@@ -84,7 +84,7 @@
 
 .footer__ctn-main {
   padding: 4em 1em 1em;
-  background-image: url("./src/imgIcon/footerBackground.png"), url("../../imgIcon/footerBackground.png");
+  background-image: url("./src/imgIcon/footerBackground.png"), url("../../media/icon/footerBackground.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -414,34 +414,34 @@
   color: #777777;
 }
 .roomDetails__amenities__list-beneficits__option--air-conditioner {
-  list-style-image: url("../../imgIcon/list-airConditioner.png");
+  list-style-image: url("../../media/icon/list-airConditioner.png");
 }
 .roomDetails__amenities__list-beneficits__option--breakfast {
-  list-style-image: url("../../imgIcon/list-breakfast.png");
+  list-style-image: url("../../media/icon/list-breakfast.png");
 }
 .roomDetails__amenities__list-beneficits__option--cleaning {
-  list-style-image: url("../../imgIcon/list-cleaning.png");
+  list-style-image: url("../../media/icon/list-cleaning.png");
 }
 .roomDetails__amenities__list-beneficits__option--grocery {
-  list-style-image: url("../../imgIcon/list-grocery.png");
+  list-style-image: url("../../media/icon/list-grocery.png");
 }
 .roomDetails__amenities__list-beneficits__option--shop-near {
-  list-style-image: url("../../imgIcon/list-singleBed.png");
+  list-style-image: url("../../media/icon/list-singleBed.png");
 }
 .roomDetails__amenities__list-beneficits__option--high-speed-wifi {
-  list-style-image: url("../../imgIcon/list-highSpeedWifi.png");
+  list-style-image: url("../../media/icon/list-highSpeedWifi.png");
 }
 .roomDetails__amenities__list-beneficits__option--kitchen {
-  list-style-image: url("../../imgIcon/list-kitchen.png");
+  list-style-image: url("../../media/icon/list-kitchen.png");
 }
 .roomDetails__amenities__list-beneficits__option--shower {
-  list-style-image: url("../../imgIcon/list-shower.png");
+  list-style-image: url("../../media/icon/list-shower.png");
 }
 .roomDetails__amenities__list-beneficits__option--single-bed {
-  list-style-image: url("../../imgIcon/list-singleBed.png");
+  list-style-image: url("../../media/icon/list-singleBed.png");
 }
 .roomDetails__amenities__list-beneficits__option--towels {
-  list-style-image: url("../../imgIcon/list-towels.png");
+  list-style-image: url("../../media/icon/list-towels.png");
 }
 .roomDetails__person-profile {
   margin: 5rem 0 2rem;

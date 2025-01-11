@@ -1,6 +1,9 @@
-@import '../../globalStyles/_globalVars.scss';
-@import '../../globalStyles/_misins.scss';
-@import '../../globalStyles/_layout.scss';
+@import '../../globalStyles/globalVars.scss';
+@import '../../globalStyles/layout.scss';
+
+@import '../../globalStyles/mixin/introSection.scss';
+@import '../../globalStyles/mixin/contact.scss';
+@import '../../globalStyles/mixin/defaultButton.scss';
 
 @import 'contact.scss';
 

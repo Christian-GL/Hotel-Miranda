@@ -84,7 +84,7 @@
 
 .footer__ctn-main {
   padding: 4em 1em 1em;
-  background-image: url("./src/imgIcon/footerBackground.png"), url("../../imgIcon/footerBackground.png");
+  background-image: url("./src/imgIcon/footerBackground.png"), url("../../media/icon/footerBackground.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -559,34 +559,34 @@
   color: #777777;
 }
 .home__about-us-info3__list-beneficits__option--air-conditioner {
-  list-style-image: url("../../imgIcon/list-airConditioner.png");
+  list-style-image: url("../../media/icon/list-airConditioner.png");
 }
 .home__about-us-info3__list-beneficits__option--breakfast {
-  list-style-image: url("../../imgIcon/list-breakfast.png");
+  list-style-image: url("../../media/icon/list-breakfast.png");
 }
 .home__about-us-info3__list-beneficits__option--cleaning {
-  list-style-image: url("../../imgIcon/list-cleaning.png");
+  list-style-image: url("../../media/icon/list-cleaning.png");
 }
 .home__about-us-info3__list-beneficits__option--grocery {
-  list-style-image: url("../../imgIcon/list-grocery.png");
+  list-style-image: url("../../media/icon/list-grocery.png");
 }
 .home__about-us-info3__list-beneficits__option--shop-near {
-  list-style-image: url("../../imgIcon/list-singleBed.png");
+  list-style-image: url("../../media/icon/list-singleBed.png");
 }
 .home__about-us-info3__list-beneficits__option--high-speed-wifi {
-  list-style-image: url("../../imgIcon/list-highSpeedWifi.png");
+  list-style-image: url("../../media/icon/list-highSpeedWifi.png");
 }
 .home__about-us-info3__list-beneficits__option--kitchen {
-  list-style-image: url("../../imgIcon/list-kitchen.png");
+  list-style-image: url("../../media/icon/list-kitchen.png");
 }
 .home__about-us-info3__list-beneficits__option--shower {
-  list-style-image: url("../../imgIcon/list-shower.png");
+  list-style-image: url("../../media/icon/list-shower.png");
 }
 .home__about-us-info3__list-beneficits__option--single-bed {
-  list-style-image: url("../../imgIcon/list-singleBed.png");
+  list-style-image: url("../../media/icon/list-singleBed.png");
 }
 .home__about-us-info3__list-beneficits__option--towels {
-  list-style-image: url("../../imgIcon/list-towels.png");
+  list-style-image: url("../../media/icon/list-towels.png");
 }
 .home__about-us-info3__video {
   width: 100%;
@@ -757,7 +757,7 @@
 }
 .swiper__home__room .swiper-button-prev {
   position: absolute;
-  top: 9.5rem;
+  top: var(--swiper-navigation-top-offset, 35%);
   padding: 1em 1.35em;
   background-size: 50px;
   color: #000000;
@@ -768,7 +768,7 @@
 }
 .swiper__home__room .swiper-button-next {
   position: absolute;
-  top: 9.5rem;
+  top: var(--swiper-navigation-top-offset, 35%);
   padding: 1em 1.35em;
   background-size: 50px;
   color: #FFFFFF;
@@ -789,6 +789,7 @@
 .swiper__home__foods .swiper-button-prev {
   position: absolute;
   top: 36rem;
+  right: 14rem;
   right: 2.5rem !important;
   padding: 1em 1.35em;
   background-size: 50px;

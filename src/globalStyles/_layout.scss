@@ -1,3 +1,6 @@
+@import './mixin/contact.scss';
+@import './mixin/introSeparator.scss';
+
 .header {
     position: relative;
     box-shadow: 0 0.15rem 0.15rem $color-textLightGray;
@@ -103,7 +106,7 @@
 
     &__ctn-main {
         padding: 4em 1em 1em;
-        background-image: url('./src/imgIcon/footerBackground.png'), url('../../imgIcon/footerBackground.png');
+        background-image: url('./src/imgIcon/footerBackground.png'), url('../../media/icon/footerBackground.png');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;

@@ -1,8 +1,12 @@
 @import '../../globalStyles/_globalVars.scss';
-@import '../../globalStyles/_misins.scss';
 @import '../../globalStyles/_layout.scss';
 
-@import '_about.scss';
+@import '../../globalStyles/mixin/introSection.scss';
+@import '../../globalStyles/mixin/defaultButton.scss';
+@import '../../globalStyles/mixin/facilities.scss';
+@import '../../globalStyles/mixin/contact.scss';
+
+@import 'about.scss';
 
 
 * {

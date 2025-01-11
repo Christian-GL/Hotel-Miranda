@@ -7,7 +7,7 @@
         &__btn {
 
             &__tour {
-                @include defaultButton
+                @include defaultButton;
             }
 
             &__learn {
@@ -214,7 +214,9 @@
 
         .swiper-button-prev {
             position: absolute;
-            top: 9.5rem;
+            // top: 9.5rem;
+            top: var(--swiper-navigation-top-offset, 35%);
+
             // top: 50%;
             // transform: translate(-50%, -50%);
             padding: 1em 1.35em;
@@ -229,7 +231,9 @@
 
         .swiper-button-next {
             position: absolute;
-            top: 9.5rem;
+            // top: 9.5rem;
+            top: var(--swiper-navigation-top-offset, 35%);
+
             // top: 50%;
             // transform: translate(-50%, -50%);
             padding: 1em 1.35em;
@@ -260,7 +264,7 @@
         .swiper-button-prev {
             position: absolute;
             top: 36rem;
-            // right: 14rem;
+            right: 14rem;
             right: 2.5rem !important;
             padding: 1em 1.35em;
             background-size: 50px;
