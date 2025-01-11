@@ -287,7 +287,6 @@
 .offers__entry__ctn-img {
   position: relative;
   font-family: "Archivo";
-  text-shadow: -1px 1px 0 #000000, 1px 1px 0 #000000, 1px -1px 0 #000000, -1px -1px 0 #000000;
 }
 .offers__entry__ctn-img__img {
   width: 100%;
@@ -417,7 +416,7 @@
   padding: 3em 0;
   text-align: center;
   background-color: #222222;
-  text-align: left;
+  text-align: center;
 }
 .offers__popular__title-section {
   font-family: "Archivo";
@@ -495,6 +494,32 @@
   text-decoration: none;
   color: #BDBDBD;
   cursor: pointer;
+}
+
+.swiper__offers__room {
+  position: relative;
+}
+.swiper__offers__room .swiper-button-prev {
+  position: absolute;
+  top: 9.5rem;
+  padding: 1em 1.35em;
+  background-size: 50px;
+  color: #000000;
+  background-color: #FFFFFF;
+}
+.swiper__offers__room .swiper-button-prev::after {
+  font-size: 1rem;
+}
+.swiper__offers__room .swiper-button-next {
+  position: absolute;
+  top: 9.5rem;
+  padding: 1em 1.35em;
+  background-size: 50px;
+  color: #FFFFFF;
+  background-color: #BEAD8E;
+}
+.swiper__offers__room .swiper-button-next::after {
+  font-size: 1rem;
 }
 
 * {

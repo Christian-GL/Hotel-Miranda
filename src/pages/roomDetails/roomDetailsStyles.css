@@ -342,11 +342,26 @@
   font-size: 1em;
   border: none;
   outline: none;
+  color: #777777;
   background-color: #F8F8F8;
+}
+.roomDetails__availability__ctn-check__ctn-date__pick-date input {
+  position: relative;
+}
+.roomDetails__availability__ctn-check__ctn-date input[type=date]::-webkit-calendar-picker-indicator {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: auto;
+  height: auto;
+  background: transparent;
+  cursor: pointer;
 }
 .roomDetails__availability__ctn-check__ctn-date__img {
   position: absolute;
-  top: 40%;
+  top: 1.35rem;
   right: 1.5rem;
 }
 .roomDetails__availability__ctn-check__ctn-btn {
@@ -484,7 +499,7 @@
   color: #777777;
 }
 .roomDetails__related-rooms {
-  margin: 3rem 0;
+  margin: 3rem 0 0;
   padding: 0 1em;
 }
 .roomDetails__related-rooms__title {
@@ -553,6 +568,32 @@
   text-decoration: none;
   color: #BDBDBD;
   cursor: pointer;
+}
+
+.swiper__roomDetails__room {
+  position: relative;
+}
+.swiper__roomDetails__room .swiper-button-prev {
+  position: absolute;
+  top: 9.5rem;
+  padding: 1em 1.35em;
+  background-size: 50px;
+  color: #000000;
+  background-color: #FFFFFF;
+}
+.swiper__roomDetails__room .swiper-button-prev::after {
+  font-size: 1rem;
+}
+.swiper__roomDetails__room .swiper-button-next {
+  position: absolute;
+  top: 9.5rem;
+  padding: 1em 1.35em;
+  background-size: 50px;
+  color: #FFFFFF;
+  background-color: #BEAD8E;
+}
+.swiper__roomDetails__room .swiper-button-next::after {
+  font-size: 1rem;
 }
 
 * {

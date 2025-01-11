@@ -13,11 +13,11 @@
         &__ctn-img {
             position: relative;
             font-family: $font-archivo;
-            text-shadow:
-                -1px 1px 0 $color-black,
-                1px 1px 0 $color-black,
-                1px -1px 0 $color-black,
-                -1px -1px 0 $color-black;
+            // text-shadow:
+            //     -1px 1px 0 $color-black,
+            //     1px 1px 0 $color-black,
+            //     1px -1px 0 $color-black,
+            //     -1px -1px 0 $color-black;
 
             &__img {
                 width: 100%;
@@ -90,7 +90,7 @@
         text-align: center;
         background-color: $color-darkBrown;
 
-        @include introSection($marginTitleIntro: 1rem 0 2rem, $fontSizeTitleSection: 0.75em, $colorTitleSection: $color-lightBrown, $fontSizeTitleIntro: 2em, $colorTitleIntro: $color-white);
+        @include introSection($textAlign: center, $marginTitleIntro: 1rem 0 2rem, $fontSizeTitleSection: 0.75em, $colorTitleSection: $color-lightBrown, $fontSizeTitleIntro: 2em, $colorTitleIntro: $color-white);
 
         &__ctn-room {
             margin: 0 1rem;
@@ -100,4 +100,39 @@
         }
     }
 
+}
+
+
+
+.swiper {
+
+    &__offers__room {
+        position: relative;
+
+        .swiper-button-prev {
+            position: absolute;
+            top: 9.5rem;
+            padding: 1em 1.35em;
+            background-size: 50px;
+            color: $color-black;
+            background-color: $color-white;
+        }
+
+        .swiper-button-prev::after {
+            font-size: 1rem;
+        }
+
+        .swiper-button-next {
+            position: absolute;
+            top: 9.5rem;
+            padding: 1em 1.35em;
+            background-size: 50px;
+            color: $color-white;
+            background-color: $color-lightBrown;
+        }
+
+        .swiper-button-next::after {
+            font-size: 1rem;
+        }
+    }
 }

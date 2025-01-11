@@ -108,7 +108,7 @@
         padding: 0 1em;
         text-align: center;
 
-        @include introSection($textAlign: center, $marginTitleIntro: 1rem 0 3rem, $fontSizeTitleIntro: 3.5em);
+        @include introSection($textAlign: center, $marginTitleIntro: 1rem 0, $fontSizeTitleIntro: 3.5em);
 
         @include roomInfo($imgPadding: 2em 0, $optionsCtnPositionY: 7.5%, $marginCtnInfo: 0);
     }
@@ -215,6 +215,8 @@
         .swiper-button-prev {
             position: absolute;
             top: 9.5rem;
+            // top: 50%;
+            // transform: translate(-50%, -50%);
             padding: 1em 1.35em;
             background-size: 50px;
             color: $color-black;
@@ -228,6 +230,8 @@
         .swiper-button-next {
             position: absolute;
             top: 9.5rem;
+            // top: 50%;
+            // transform: translate(-50%, -50%);
             padding: 1em 1.35em;
             background-size: 50px;
             color: $color-white;
@@ -256,7 +260,8 @@
         .swiper-button-prev {
             position: absolute;
             top: 36rem;
-            right: 14rem;
+            // right: 14rem;
+            right: 2.5rem !important;
             padding: 1em 1.35em;
             background-size: 50px;
             color: $color-black;

@@ -96,8 +96,8 @@
     }
 
     &__facilities {
-        
-        @include facilities;
+
+        @include facilities($padding: 2em 2em 5em);
     }
 
     &__facts {
@@ -111,6 +111,32 @@
             margin: 4rem 0;
             width: 100%;
             height: auto;
+        }
+    }
+
+}
+
+
+
+.swiper {
+
+    &__about__facilities {
+
+        // .swiper-pagination {
+        //     position: absolute;
+        //     z-index: 99 !important;
+        //     bottom: -10px !important;
+        // }
+
+        .swiper-pagination-bullet {
+            background-color: $color-lightBrown;
+        }
+    }
+
+    &__about__room {
+
+        .swiper-pagination-bullet {
+            background-color: $color-lightBrown;
         }
     }
 

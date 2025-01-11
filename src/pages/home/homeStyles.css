@@ -449,7 +449,7 @@
   color: #777777;
 }
 .home__room__title-intro {
-  margin: 1rem 0 3rem;
+  margin: 1rem 0;
   font-family: "Old Standard TT";
   font-size: 3.5em;
   font-weight: 400;
@@ -628,7 +628,7 @@
 }
 .home__facilities__ctn-slider {
   position: relative;
-  padding: 1em 1em 4em;
+  padding: 1em 1em 3em;
   text-align: left;
   background-color: #FFFFFF;
 }
@@ -789,7 +789,7 @@
 .swiper__home__foods .swiper-button-prev {
   position: absolute;
   top: 36rem;
-  right: 14rem;
+  right: 2.5rem !important;
   padding: 1em 1.35em;
   background-size: 50px;
   color: #000000;
@@ -826,4 +826,4 @@ html {
 
 body {
   min-width: 320px;
-}/*# sourceMappingURL=indexStyles.css.map */
+}/*# sourceMappingURL=homeStyles.css.map */

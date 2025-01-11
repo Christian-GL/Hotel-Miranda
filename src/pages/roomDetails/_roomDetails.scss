@@ -58,12 +58,29 @@
                     font-size: 1em;
                     border: none;
                     outline: none;
+                    color: $color-textGray;
                     background-color: $color-backgroundGray;
+                }
+
+                &__pick-date input {
+                    position: relative;
+                }
+
+                input[type="date"]::-webkit-calendar-picker-indicator {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                    width: auto;
+                    height: auto;
+                    background: transparent;
+                    cursor: pointer;
                 }
 
                 &__img {
                     position: absolute;
-                    top: 40%;
+                    top: 1.35rem;
                     right: 1.5rem;
                 }
             }
@@ -164,7 +181,7 @@
     }
 
     &__related-rooms {
-        margin: 3rem 0;
+        margin: 3rem 0 0;
         padding: 0 1em;
 
         &__title {
@@ -180,4 +197,39 @@
         @include roomInfo;
     }
 
+}
+
+
+
+.swiper {
+
+    &__roomDetails__room {
+        position: relative;
+
+        .swiper-button-prev {
+            position: absolute;
+            top: 9.5rem;
+            padding: 1em 1.35em;
+            background-size: 50px;
+            color: $color-black;
+            background-color: $color-white;
+        }
+
+        .swiper-button-prev::after {
+            font-size: 1rem;
+        }
+
+        .swiper-button-next {
+            position: absolute;
+            top: 9.5rem;
+            padding: 1em 1.35em;
+            background-size: 50px;
+            color: $color-white;
+            background-color: $color-lightBrown;
+        }
+
+        .swiper-button-next::after {
+            font-size: 1rem;
+        }
+    }
 }

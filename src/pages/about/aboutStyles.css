@@ -368,7 +368,7 @@
   background-color: #BEAD8E;
 }
 .about__facilities {
-  padding: 2em;
+  padding: 2em 2em 5em;
   text-align: center;
   background-color: #222222;
   text-align: left;
@@ -390,7 +390,7 @@
 }
 .about__facilities__ctn-slider {
   position: relative;
-  padding: 1em 1em 4em;
+  padding: 1em 1em 3em;
   text-align: left;
   background-color: #292929;
 }
@@ -481,6 +481,13 @@
   margin: 4rem 0;
   width: 100%;
   height: auto;
+}
+
+.swiper__about__facilities .swiper-pagination-bullet {
+  background-color: #BEAD8E;
+}
+.swiper__about__room .swiper-pagination-bullet {
+  background-color: #BEAD8E;
 }
 
 * {

@@ -37,20 +37,12 @@
         padding: 0 1em;
 
         &__ctn-entry {
-            margin-bottom: 1rem;
-            background-color: $color-backgroundGray;
-
-            &__img {
-                display: inline-block;
-                padding: 1.5em 0 1.25em 1.25em;
-                vertical-align: top;
-                background-color: $color-backgroundGray;
-            }
+            position: relative;
 
             &__data {
-                display: inline-block;
-                padding: 1.25em;
-                width: 75%;
+                margin: 1rem 0;
+                padding: 1.25em 1.5em 1.25em 2.5em;
+                width: 100%;
                 vertical-align: top;
                 font-family: $font-roboto;
                 font-size: 1.1em;
@@ -59,13 +51,13 @@
                 background-color: $color-backgroundGray;
             }
 
-            &--message {
-                padding-bottom: 4em;
+            &__img {
+                position: absolute;
+                top: 2.5rem;
+                left: 1rem;
+                transform: scale(1.25);
+                pointer-events: none;
             }
-        }
-
-        &__data::placeholder {
-            color: $color-textGray;
         }
 
         &__ctn-btn {
