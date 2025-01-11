@@ -32,7 +32,7 @@
             position: relative;
 
             &__pick-date {
-                padding: 1.25em 1.75em 1.25em 1.75em;
+                padding: 1.25em 2em 1em;
                 width: 100%;
                 font-family: $font-archivo;
                 font-size: 1em;
@@ -45,10 +45,28 @@
                 background-color: $color-darkBrown;
             }
 
+            &__pick-date input {
+                position: relative;
+            }
+
+            input[type="date"]::-webkit-calendar-picker-indicator {
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                width: auto;
+                height: auto;
+                background: transparent;
+                cursor: pointer;
+            }
+
             &__img {
                 position: absolute;
-                top: 35%;
-                left: 0;
+                top: 1.25rem;
+                left: 0.25rem;
+                transform: scale(1.25);
+                pointer-events: none;
             }
         }
 
@@ -137,7 +155,7 @@
 
         &__img {
             position: absolute;
-            left: 60%;
+            right: -4.5rem;
             bottom: 77.5%;
             transform: scale(0.6);
         }
@@ -192,8 +210,11 @@
 .swiper {
 
     &__home__room {
+        position: relative;
 
         .swiper-button-prev {
+            position: absolute;
+            top: 9.5rem;
             padding: 1em 1.35em;
             background-size: 50px;
             color: $color-black;
@@ -205,6 +226,8 @@
         }
 
         .swiper-button-next {
+            position: absolute;
+            top: 9.5rem;
             padding: 1em 1.35em;
             background-size: 50px;
             color: $color-white;
@@ -233,7 +256,7 @@
         .swiper-button-prev {
             position: absolute;
             top: 36rem;
-            left: 14rem;
+            right: 14rem;
             padding: 1em 1.35em;
             background-size: 50px;
             color: $color-black;
