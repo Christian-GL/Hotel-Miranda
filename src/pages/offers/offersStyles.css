@@ -5,17 +5,18 @@
 .header__nav {
   display: flex;
   justify-content: space-between;
-  height: 4rem;
+  padding: 1.25em 1em 0.75em;
 }
 .header__nav__ctn-left {
-  display: flex;
-  align-items: center;
+  display: inline-block;
 }
 .header__nav__ctn-left__ctn-img {
+  display: inline-block;
+  vertical-align: middle;
   width: 4rem;
 }
 .header__nav__ctn-left__ctn-img__img {
-  margin: 0 auto;
+  margin: 0 auto 0 0;
   padding: 0.5em;
   cursor: pointer;
 }
@@ -26,21 +27,23 @@
   display: none;
 }
 .header__nav__ctn-left__ctn-returnHome {
-  display: flex;
-  align-items: center;
+  display: inline-block;
   text-decoration: none;
   color: #000000;
   cursor: pointer;
 }
 .header__nav__ctn-left__ctn-returnHome__icon-H {
-  margin-left: 1rem;
   padding: 0.3em 0.5em;
+  display: inline-block;
+  vertical-align: middle;
   font-family: "Archivo";
   font-size: 1.25em;
   box-shadow: 0 0.1em 0.15em lightgray, -0.1em 0.1em 0.5em lightgray, 0.1em 0.1em 0.5em lightgray;
 }
 .header__nav__ctn-left__ctn-returnHome__title {
+  display: inline-block;
   margin-left: 1rem;
+  vertical-align: middle;
   font-family: "Archivo";
   font-size: 0.75em;
   letter-spacing: 0.1em;
@@ -50,7 +53,7 @@
 .header__nav__ctn-middle {
   width: 100%;
   position: absolute;
-  top: 4.1rem;
+  top: 4.6rem;
   left: 0;
   background-color: #FFFFFF;
 }
@@ -72,13 +75,8 @@
 .header__nav__ctn-middle__menu__option:hover {
   color: #BDBDBD;
 }
-.header__nav__ctn-right {
-  display: flex;
-  align-items: center;
-}
 .header__nav__ctn-right__img {
-  margin-right: 1rem;
-  padding: 0.5em;
+  padding: 0.4em;
   cursor: pointer;
 }
 
