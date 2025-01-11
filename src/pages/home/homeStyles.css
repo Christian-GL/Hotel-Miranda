@@ -178,7 +178,7 @@
 }
 .footer__ctn-main__contact__ctn-entry__ctn-info {
   display: inline-block;
-  margin-left: 1rem;
+  margin: 0 0 0 1rem;
   max-width: 60%;
 }
 .footer__ctn-main__contact__ctn-entry__ctn-info__title {
@@ -390,17 +390,24 @@
   height: auto;
 }
 .home__about-us-info__ctn-info {
+  position: relative;
+  z-index: 0;
   padding: 1em 2em;
 }
+.home__about-us-info__ctn-info__img-background {
+  position: absolute;
+  right: 0;
+  z-index: -1;
+}
 .home__about-us-info__ctn-info__title {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   font-family: "Old Standard TT";
   font-size: 2em;
   font-weight: 400;
   color: #111111;
 }
 .home__about-us-info__ctn-info__text {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   font-family: "Roboto";
   font-size: 1em;
   font-weight: 400;
@@ -418,17 +425,24 @@
   height: auto;
 }
 .home__about-us-info2__ctn-info {
+  position: relative;
+  z-index: 0;
   padding: 1em 2em;
 }
+.home__about-us-info2__ctn-info__img-background {
+  position: absolute;
+  right: 0;
+  z-index: -1;
+}
 .home__about-us-info2__ctn-info__title {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   font-family: "Old Standard TT";
   font-size: 2em;
   font-weight: 400;
   color: #FFFFFF;
 }
 .home__about-us-info2__ctn-info__text {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   font-family: "Roboto";
   font-size: 1em;
   font-weight: 400;
@@ -702,7 +716,7 @@
 }
 .home__foods__ctn-meals__ctn-entry__ctn-info {
   display: inline-block;
-  margin-left: 1rem;
+  margin: 1rem 0 0 1rem;
   max-width: 60%;
 }
 .home__foods__ctn-meals__ctn-entry__ctn-info__title {
@@ -715,7 +729,7 @@
   font-family: "Roboto";
   font-size: 1em;
   font-weight: 400;
-  color: #777777;
+  color: #222222;
 }
 .home__foods__ctn-meals__ctn-entry__img-arrow {
   position: absolute;

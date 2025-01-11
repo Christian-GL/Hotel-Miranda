@@ -161,7 +161,10 @@
         }
 
         &__ctn-meals {
-            @include contact($marginTop: 4rem, $imgWidthHeight: 7rem);
+            @include contact($marginTop: 4rem,
+                $imgWidthHeight: 7rem,
+                $marginCtnInfo: 1rem 0 0 1rem,
+                $colorText: $color-darkBrown);
         }
     }
 

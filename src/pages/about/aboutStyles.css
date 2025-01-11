@@ -178,7 +178,7 @@
 }
 .footer__ctn-main__contact__ctn-entry__ctn-info {
   display: inline-block;
-  margin-left: 1rem;
+  margin: 0 0 0 1rem;
   max-width: 60%;
 }
 .footer__ctn-main__contact__ctn-entry__ctn-info__title {
@@ -457,7 +457,7 @@
 }
 .about__facts__ctn-entry__ctn-info {
   display: inline-block;
-  margin-left: 1rem;
+  margin: 0 0 0 1rem;
   max-width: 60%;
 }
 .about__facts__ctn-entry__ctn-info__title {

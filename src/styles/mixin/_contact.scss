@@ -1,6 +1,8 @@
 @mixin contact ($marginTop: 0rem,
     $padding: 0em,
     $paddingTopImg: 0em,
+    $marginCtnInfo: 0 0 0 1rem,
+    $colorText: $color-textGray,
     $imgWidthHeight: auto,
     $marginTitleText: 0rem,
     $titleSize: 1.4em) {
@@ -26,7 +28,7 @@
 
         &__ctn-info {
             display: inline-block;
-            margin-left: 1rem;
+            margin: $marginCtnInfo;
             max-width: 60%;
 
             &__title {
@@ -40,7 +42,7 @@
                 font-family: $font-roboto;
                 font-size: 1em;
                 font-weight: 400;
-                color: $color-textGray;
+                color: $colorText;
             }
         }
 

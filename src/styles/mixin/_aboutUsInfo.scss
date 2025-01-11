@@ -14,10 +14,18 @@
     }
 
     &__ctn-info {
+        position: relative;
+        z-index: 0;
         padding: 1em 2em;
 
+        &__img-background {
+            position: absolute;
+            right: 0;
+            z-index: -1;
+        }
+
         &__title {
-            margin-top: 1rem;
+            margin-top: 1.5rem;
             font-family: $font-oldStandardTT;
             font-size: 2em;
             font-weight: 400;
@@ -25,7 +33,7 @@
         }
 
         &__text {
-            margin-top: 1rem;
+            margin-top: 1.5rem;
             font-family: $font-roboto;
             font-size: 1em;
             font-weight: 400;
