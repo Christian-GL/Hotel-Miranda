@@ -1,14 +1,43 @@
 @import './mixin/contact.scss';
 @import './mixin/introSeparator.scss';
+@import './mixin/sidePaddingForDesktop.scss';
 
 .header {
     position: relative;
-    box-shadow: 0 0.15rem 0.15rem $color-textLightGray;
+    background-color: $color-darkBrown;
+
+    &__introduction {
+        display: none;
+
+        @media only screen and (min-width: 1000px) {
+            display: block;
+            margin: 0 auto;
+            padding: 1em 0 5em;
+            width: 80%;
+            font-family: $font-roboto;
+            font-size: 0.75em;
+            font-weight: 400;
+            color: $color-white;
+        }
+    }
 
     &__nav {
         display: flex;
         justify-content: space-between;
         padding: 1.25em 1em 0.75em;
+        background-color: $color-white;
+        box-shadow: 0 0.15rem 0.15rem $color-textLightGray2;
+
+        @media only screen and (min-width: 1000px) {
+            position: absolute;
+            top: 25%;
+            left: 50%;
+            transform: translate(-50%, 15%);
+            margin: 0 auto;
+            padding: 1.25em 1em 1em;
+            width: 80%;
+            box-shadow: none;
+        }
 
         &__ctn-left {
             display: inline-block;
@@ -18,6 +47,10 @@
                 vertical-align: middle;
                 width: 4rem;
 
+                @media only screen and (min-width: 1000px) {
+                    width: 0rem;
+                }
+
                 &__img {
                     margin: 0 auto 0 0;
                     padding: 0.5em;
@@ -25,6 +58,10 @@
 
                     &__hamburger {
                         display: block;
+
+                        @media only screen and (min-width: 1000px) {
+                            display: none;
+                        }
                     }
 
                     &__X {
@@ -48,6 +85,11 @@
                     box-shadow: 0 0.10em 0.15em $color-shading, // bottom
                         -0.1em 0.10em 0.5em $color-shading, // left
                         0.1em 0.10em 0.5em $color-shading; // right
+
+                    @media only screen and (min-width: 1000px) {
+                        padding: 0.5em 0.7em;
+                        font-size: 1.75em;
+                    }
                 }
 
                 &__title {
@@ -59,16 +101,27 @@
                     letter-spacing: 0.1em;
                     text-transform: uppercase;
                     font-weight: 400;
+
+                    @media only screen and (min-width: 1000px) {
+                        font-size: 1.2em;
+                    }
                 }
             }
         }
 
         &__ctn-middle {
-            width: 100%;
             position: absolute;
             top: 4.675rem;
             left: 0;
+            width: 100%;
             background-color: $color-white;
+
+            @media only screen and (min-width: 1000px) {
+                position: relative;
+                top: 0;
+                left: 0;
+                width: auto;
+            }
 
             &__menu {
                 display: none;
@@ -77,6 +130,11 @@
                 font-family: $font-archivo;
                 font-size: 0.8em;
                 font-weight: 700;
+
+                @media only screen and (min-width: 1000px) {
+                    display: flex;
+                    flex-direction: row;
+                }
 
                 &__option {
                     padding: 1.15em;
@@ -87,6 +145,10 @@
                     &:hover {
                         color: $color-textLightGray;
                     }
+
+                    @media only screen and (min-width: 1000px) {
+                        margin-top: 0.7rem;
+                    }
                 }
             }
         }
@@ -96,9 +158,17 @@
             &__img {
                 padding: 0.4em;
                 cursor: pointer;
+
+                @media only screen and (min-width: 1000px) {
+                    margin-top: 0.35rem;
+                    margin-right: 1rem;
+                    padding: 0.6em;
+                    border: 2px solid $color-borderButtonGray;
+                }
             }
         }
     }
+
 }
 
 .footer {
@@ -109,6 +179,8 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+
+        @include sidePaddingForDesktop($paddingSide: 10em);
 
         &__ctn-title {
             display: flex;
@@ -194,6 +266,11 @@
 
             @include contact($marginTop: 4rem);
         }
+
+        @media only screen and (min-width: 1000px) {
+            // display: flex;
+            // flex-direction: column;
+        }
     }
 
     &__credits {
@@ -201,6 +278,8 @@
         padding: 1em;
         font-family: $font-roboto;
         background-color: $color-backgroundGray;
+
+        @include sidePaddingForDesktop($paddingSide: 10em);
 
         &__ctn-terms-policy {
             margin-top: 1rem;
@@ -216,6 +295,11 @@
             &__policy {
                 display: inline-block;
             }
+        }
+
+        @media only screen and (min-width: 1000px) {
+            display: flex;
+            justify-content: space-between;
         }
     }
 

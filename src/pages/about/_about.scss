@@ -8,6 +8,12 @@
             $colorMayorTitle: $color-white,
             $backgroundColor: $color-mediumBrown);
         @include pageLocation($separatorDistanceRem: 0.25rem);
+
+        @include sidePaddingForDesktop();
+
+        @media only screen and (min-width: 1000px) {
+            padding-top: 8em;
+        }
     }
 
     &__introduction {
@@ -103,7 +109,8 @@
 
     &__facilities {
 
-        @include facilities($padding: 2em 2em 5em);
+        @include facilities($padding: 2em 2em 5em,
+            $introSectionTextAlign: center);
     }
 
     &__facts {

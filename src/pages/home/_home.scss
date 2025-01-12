@@ -16,8 +16,14 @@
             }
 
             &__learn {
-                @include defaultButton($border: 1px solid $color-borderButton, $backgroundColor: $color-mediumBrown)
+                @include defaultButton($border: 1px solid $color-borderButtonBrown, $backgroundColor: $color-mediumBrown)
             }
+        }
+
+        @include sidePaddingForDesktop();
+
+        @media only screen and (min-width: 1000px) {
+            padding-top: 8em;
         }
     }
 

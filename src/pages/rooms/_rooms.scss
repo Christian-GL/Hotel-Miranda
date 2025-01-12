@@ -2,12 +2,18 @@
 
     &__intro {
         padding: 4em 1em 0;
-        @include introSection( $fontSizeMinorTitle: 0.75em,
+        @include introSection($fontSizeMinorTitle: 0.75em,
             $fontSizeMayorTitle: 3.5em,
             $colorMinorTitle: $color-white,
             $colorMayorTitle: $color-white,
             $backgroundColor: $color-mediumBrown);
         @include pageLocation($separatorDistanceRem: 0.25rem);
+
+        @include sidePaddingForDesktop();
+
+        @media only screen and (min-width: 1000px) {
+            padding-top: 8em;
+        }
     }
 
     &__entry {

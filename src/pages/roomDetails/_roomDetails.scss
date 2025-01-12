@@ -9,6 +9,12 @@
             $backgroundColor: $color-mediumBrown);
         @include pageLocation($separatorDistanceRem: 0.25rem,
             $widthContainer: 12.5rem);
+
+        @include sidePaddingForDesktop();
+
+        @media only screen and (min-width: 1000px) {
+            padding-top: 8em;
+        }
     }
 
     &__availability {

@@ -8,15 +8,14 @@
     $colorLetterMinorTitleAndText: $color-white) {
 
     padding: $padding;
-    text-align: center;
-    background-color: $facilitiesBackgroundColor;
 
     @include introSection($textAlign: $introSectionTextAlign,
         $marginMayorTitle: 1rem 0 2rem,
         $fontSizeMinorTitle: 0.75em,
         $colorMinorTitle: $colorLetterMinorTitleAndText,
         $fontSizeMayorTitle: 3em,
-        $colorMayorTitle: $colorLetterMayorTitleAndTitleText);
+        $colorMayorTitle: $colorLetterMayorTitleAndTitleText,
+        $backgroundColor: $facilitiesBackgroundColor);
 
     &__ctn-slider {
         position: relative;

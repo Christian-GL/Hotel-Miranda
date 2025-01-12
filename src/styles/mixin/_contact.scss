@@ -5,7 +5,8 @@
     $colorText: $color-textGray,
     $imgWidthHeight: auto,
     $marginTitleText: 0rem,
-    $titleSize: 1.4em) {
+    $titleSize: 1.4em,
+    $textSize: 1em) {
 
     &__ctn-entry {
         position: relative;
@@ -13,8 +14,11 @@
         padding: $padding;
         background-position: right;
         background-repeat: no-repeat;
-        background-size: cover;
         background-size: contain;
+
+        @media only screen and (min-width: 1000px) {
+            flex: 1 1 0;
+        }
 
         &__img {
             display: inline-block;
@@ -22,14 +26,12 @@
             padding-top: $paddingTopImg;
             width: $imgWidthHeight;
             height: $imgWidthHeight;
-            max-width: 32.5%;
-            max-height: same-as-width;
         }
 
         &__ctn-info {
             display: inline-block;
             margin: $marginCtnInfo;
-            max-width: 60%;
+            width: 50%;
 
             &__title {
                 margin-bottom: $marginTitleText;
@@ -40,7 +42,7 @@
 
             &__text {
                 font-family: $font-roboto;
-                font-size: 1em;
+                font-size: $textSize;
                 font-weight: 400;
                 color: $colorText;
             }

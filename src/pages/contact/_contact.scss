@@ -8,11 +8,22 @@
             $colorMayorTitle: $color-white,
             $backgroundColor: $color-mediumBrown);
         @include pageLocation($separatorDistanceRem: 0.25rem);
+
+        @include sidePaddingForDesktop();
+
+        @media only screen and (min-width: 1000px) {
+            padding-top: 8em;
+        }
     }
 
     &__ctn-contacts {
         margin: 4rem 0;
         padding: 0 2em;
+
+        @media only screen and (min-width: 1000px) {
+            display: flex;
+            justify-content: space-around;
+        }
 
         &__ctn-entry {
 
@@ -29,13 +40,27 @@
             }
         }
 
-        @include contact($marginTop: 5rem, $padding: 2.5em 0, $marginTitleText: 1rem);
+        @include contact($marginTop: 5rem,
+            $padding: 2.5em 0,
+            $marginTitleText: 1rem);
+
+        @media only screen and (min-width: 1000px) {
+            @include contact($marginTop: 5rem,
+                $padding: 2.5em 0,
+                $marginTitleText: 1rem,
+                $titleSize: 1em,
+                $textSize: 0.75em);
+        }
+
+        @include sidePaddingForDesktop;
     }
 
     &__img {
         padding: 0 1em;
         width: 100%;
         height: auto;
+
+        @include sidePaddingForDesktop;
     }
 
     &__ctn-data {
@@ -74,6 +99,7 @@
             }
         }
 
+        @include sidePaddingForDesktop;
     }
 
 }
