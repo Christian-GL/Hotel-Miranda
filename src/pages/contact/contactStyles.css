@@ -246,11 +246,6 @@
   background-repeat: no-repeat;
   background-size: contain;
 }
-@media only screen and (min-width: 1000px) {
-  .footer__ctn-main__contact__ctn-entry {
-    flex: 1 1 0;
-  }
-}
 .footer__ctn-main__contact__ctn-entry__img {
   display: inline-block;
   vertical-align: top;
@@ -393,6 +388,12 @@
   .contact__ctn-contacts {
     display: flex;
     justify-content: space-around;
+    margin: 3rem 0 2rem;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .contact__ctn-contacts__ctn-entry {
+    flex: 1 1 0;
   }
 }
 .contact__ctn-contacts__ctn-entry--01 {
@@ -411,11 +412,6 @@
   background-position: right;
   background-repeat: no-repeat;
   background-size: contain;
-}
-@media only screen and (min-width: 1000px) {
-  .contact__ctn-contacts__ctn-entry {
-    flex: 1 1 0;
-  }
 }
 .contact__ctn-contacts__ctn-entry__img {
   display: inline-block;
@@ -455,13 +451,6 @@
     background-repeat: no-repeat;
     background-size: contain;
   }
-}
-@media only screen and (min-width: 1000px) and (min-width: 1000px) {
-  .contact__ctn-contacts__ctn-entry {
-    flex: 1 1 0;
-  }
-}
-@media only screen and (min-width: 1000px) {
   .contact__ctn-contacts__ctn-entry__img {
     display: inline-block;
     vertical-align: top;
@@ -513,6 +502,16 @@
   margin: 4rem 0;
   padding: 0 1em;
 }
+@media only screen and (min-width: 1000px) {
+  .contact__ctn-data {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-flow: column;
+    grid-template-rows: auto;
+    margin: 6rem 0 1rem;
+  }
+}
 .contact__ctn-data__ctn-entry {
   position: relative;
 }
@@ -527,6 +526,19 @@
   outline: none;
   background-color: #F8F8F8;
 }
+.contact__ctn-data__ctn-entry__data--message {
+  height: 10em;
+}
+@media only screen and (min-width: 1000px) {
+  .contact__ctn-data__ctn-entry__data--message {
+    height: 15em;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .contact__ctn-data__ctn-entry__data {
+    padding-left: 3.5em;
+  }
+}
 .contact__ctn-data__ctn-entry__img {
   position: absolute;
   top: 2.5rem;
@@ -534,11 +546,43 @@
   transform: scale(1.25);
   pointer-events: none;
 }
-.contact__ctn-data__ctn-btn {
+@media only screen and (min-width: 1000px) {
+  .contact__ctn-data__ctn-entry__img {
+    left: 2rem;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .contact__ctn-data__ctn-entry--name {
+    margin: 0 1rem 0 4rem;
+  }
+  .contact__ctn-data__ctn-entry--phone {
+    margin: 0 1rem 0 4rem;
+  }
+  .contact__ctn-data__ctn-entry--mail {
+    margin: 0 4rem 0 1rem;
+  }
+  .contact__ctn-data__ctn-entry--subject {
+    margin: 0 4rem 0 1rem;
+  }
+  .contact__ctn-data__ctn-entry--message {
+    margin: 0 4rem;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .contact__ctn-data {
+    padding-right: 12.5em;
+    padding-left: 12.5em;
+  }
+}
+.contact__ctn-btn {
   text-align: center;
 }
-.contact__ctn-data__ctn-btn__btn {
-  margin-top: 2rem;
+.contact__ctn-btn__btn {
+  margin: 0 0 4rem;
   font-family: "Archivo";
   font-size: 1em;
   font-weight: 700;
@@ -551,7 +595,22 @@
   background-color: #BEAD8E;
 }
 @media only screen and (min-width: 1000px) {
-  .contact__ctn-data {
+  .contact__ctn-btn__btn {
+    margin: 0 0 8rem;
+    font-family: "Archivo";
+    font-size: 1em;
+    font-weight: 700;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 1.75em 7.5em;
+    border: none;
+    color: #FFFFFF;
+    background-color: #BEAD8E;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .contact__ctn-btn {
     padding-right: 12.5em;
     padding-left: 12.5em;
   }

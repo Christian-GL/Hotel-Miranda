@@ -246,11 +246,6 @@
   background-repeat: no-repeat;
   background-size: contain;
 }
-@media only screen and (min-width: 1000px) {
-  .footer__ctn-main__contact__ctn-entry {
-    flex: 1 1 0;
-  }
-}
 .footer__ctn-main__contact__ctn-entry__img {
   display: inline-block;
   vertical-align: top;
@@ -347,7 +342,7 @@
   color: #FFFFFF;
 }
 .home__intro__btn__tour {
-  margin-top: 2rem;
+  margin: 2rem 0 0;
   font-family: "Archivo";
   font-size: 1em;
   font-weight: 700;
@@ -360,7 +355,7 @@
   background-color: #BEAD8E;
 }
 .home__intro__btn__learn {
-  margin-top: 2rem;
+  margin: 2rem 0 0;
   font-family: "Archivo";
   font-size: 1em;
   font-weight: 700;
@@ -432,7 +427,7 @@
   pointer-events: none;
 }
 .home__availability__btn-check {
-  margin-top: 2rem;
+  margin: 2rem 0 0;
   font-family: "Archivo";
   font-size: 1em;
   font-weight: 700;
@@ -473,7 +468,7 @@
   color: #777777;
 }
 .home__about-us__btn {
-  margin-top: 2rem;
+  margin: 2rem 0 0;
   font-family: "Archivo";
   font-size: 1em;
   font-weight: 700;
@@ -715,7 +710,7 @@
   height: 20rem;
 }
 .home__about-us-info3__btn {
-  margin-top: 2rem;
+  margin: 2rem 0 0;
   font-family: "Archivo";
   font-size: 1em;
   font-weight: 700;
@@ -811,11 +806,6 @@
   background-position: right;
   background-repeat: no-repeat;
   background-size: contain;
-}
-@media only screen and (min-width: 1000px) {
-  .home__foods__ctn-meals__ctn-entry {
-    flex: 1 1 0;
-  }
 }
 .home__foods__ctn-meals__ctn-entry__img {
   display: inline-block;
