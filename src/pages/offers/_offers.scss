@@ -1,7 +1,13 @@
 .offers {
 
     &__intro {
-        @include introPage($separatorDistanceRem: 0.25rem);
+        padding: 4em 1em 0;
+        @include introSection($fontSizeMinorTitle: 0.75em,
+            $fontSizeMayorTitle: 3.5em,
+            $colorMinorTitle: $color-white,
+            $colorMayorTitle: $color-white,
+            $backgroundColor: $color-mediumBrown);
+        @include pageLocation($separatorDistanceRem: 0.25rem);
     }
 
     &__entry {
@@ -67,7 +73,7 @@
             margin-top: 1.5rem;
             padding: 0 1em;
 
-            @include introSection($fontSizeTitleIntro: 2.75em);
+            @include introSection($fontSizeMayorTitle: 2.75em);
 
             &__text {
                 margin-top: 1rem;
@@ -90,7 +96,7 @@
         text-align: center;
         background-color: $color-darkBrown;
 
-        @include introSection($textAlign: center, $marginTitleIntro: 1rem 0 2rem, $fontSizeTitleSection: 0.75em, $colorTitleSection: $color-lightBrown, $fontSizeTitleIntro: 2em, $colorTitleIntro: $color-white);
+        @include introSection($textAlign: center, $marginMayorTitle: 1rem 0 2rem, $fontSizeMinorTitle: 0.75em, $colorMinorTitle: $color-lightBrown, $fontSizeMayorTitle: 2em, $colorMayorTitle: $color-white);
 
         &__ctn-room {
             margin: 0 1rem;

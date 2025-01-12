@@ -53,7 +53,7 @@
 .header__nav__ctn-middle {
   width: 100%;
   position: absolute;
-  top: 4.6rem;
+  top: 4.675rem;
   left: 0;
   background-color: #FFFFFF;
 }
@@ -66,8 +66,7 @@
   font-weight: 700;
 }
 .header__nav__ctn-middle__menu__option {
-  margin-left: 1.5rem;
-  padding: 1.15em 0;
+  padding: 1.15em;
   text-decoration: none;
   color: #000000;
   cursor: pointer;
@@ -232,22 +231,22 @@
 
 .contact__intro {
   padding: 4em 1em 0;
+  text-align: left;
   background-color: #333333;
 }
 .contact__intro__minor-title {
   font-family: "Archivo";
   font-size: 0.75em;
+  font-weight: 700;
   letter-spacing: 0.25em;
-  line-height: 1.5em;
   text-transform: uppercase;
   color: #FFFFFF;
 }
 .contact__intro__mayor-title {
-  margin-top: 1rem;
+  margin: 1rem 0 0;
   font-family: "Old Standard TT";
   font-size: 3.5em;
-  font-weight: 300;
-  line-height: 1.15em;
+  font-weight: 400;
   color: #FFFFFF;
 }
 .contact__intro__location {

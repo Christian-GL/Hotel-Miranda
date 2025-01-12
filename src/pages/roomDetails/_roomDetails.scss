@@ -1,13 +1,20 @@
 .roomDetails {
 
     &__intro {
-        @include introPage($widthContainer: 12.5rem, $separatorDistanceRem: 0.25rem);
+        padding: 4em 1em 0;
+        @include introSection($fontSizeMinorTitle: 0.75em,
+            $fontSizeMayorTitle: 3.5em,
+            $colorMinorTitle: $color-white,
+            $colorMayorTitle: $color-white,
+            $backgroundColor: $color-mediumBrown);
+        @include pageLocation($separatorDistanceRem: 0.25rem,
+            $widthContainer: 12.5rem);
     }
 
     &__availability {
         padding: 3em 1em;
 
-        @include introSection($fontSizeTitleIntro: 2.25em);
+        @include introSection($fontSizeMayorTitle: 2.25em);
 
         &__ctn-price {
             margin: 1.5rem 0;

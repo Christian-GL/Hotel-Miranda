@@ -1,8 +1,13 @@
 .home {
 
     &__intro {
-        // @include introPage($padding: 4em 1em);
-        @include introPageIndex;
+        padding: 4em 1em;
+        @include introSection($marginMayorTitle: 2rem 0 0,
+            $fontSizeMinorTitle: 0.85em,
+            $fontSizeMayorTitle: 3.5em,
+            $colorMinorTitle: $color-white,
+            $colorMayorTitle: $color-white,
+            $backgroundColor: $color-mediumBrown);
 
         &__btn {
 
@@ -80,7 +85,8 @@
         margin-top: 4rem;
         padding: 1em;
 
-        @include introSection($marginTitleIntro: 2rem 0 0, $fontSizeTitleIntro: 3.5em);
+        @include introSection($marginMayorTitle: 2rem 0 0,
+            $fontSizeMayorTitle: 3.5em);
 
         &__text {
             margin-top: 1.5rem;
@@ -108,7 +114,7 @@
         padding: 0 1em;
         text-align: center;
 
-        @include introSection($textAlign: center, $marginTitleIntro: 1rem 0, $fontSizeTitleIntro: 3.5em);
+        @include introSection($textAlign: center, $marginMayorTitle: 1rem 0, $fontSizeMayorTitle: 3.5em);
 
         @include roomInfo($imgPadding: 2em 0, $optionsCtnPositionY: 7.5%, $marginCtnInfo: 0);
     }
@@ -118,7 +124,11 @@
         padding: 3em 1em;
         background-color: $color-darkBrown;
 
-        @include introSection($fontSizeTitleSection: 0.8em, $colorTitleSection: $color-lightBrown, $fontSizeTitleIntro: 3.5em, $colorTitleIntro: $color-white);
+        @include introSection($fontSizeMinorTitle: 0.8em,
+            $fontSizeMayorTitle: 3.5em,
+            $colorMinorTitle: $color-lightBrown,
+            $colorMayorTitle: $color-white,
+            $backgroundColor: $color-mediumBrown);
 
         &__text {
             margin: 1rem 0 2rem;
@@ -143,15 +153,15 @@
         @include facilities($introSectionTextAlign: center,
             $facilitiesBackgroundColor: $color-white,
             $ctnSliderBackgroundColor: $color-white,
-            $letterTitleIntroAndTitleText: $color-darkBrown,
-            $letterTitleSectionAndText: $color-textGray);
+            $colorLetterMayorTitleAndTitleText: $color-darkBrown,
+            $colorLetterMinorTitleAndText: $color-textGray);
     }
 
     &__foods {
         position: relative;
         padding: 10em 1em 0;
         overflow-x: hidden;
-        @include introSection($fontSizeTitleIntro: 3.5em);
+        @include introSection($fontSizeMayorTitle: 3.5em);
 
         &__img {
             position: absolute;
