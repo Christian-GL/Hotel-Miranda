@@ -276,7 +276,6 @@
   left: 17.5rem;
 }
 .footer__credits {
-  margin-top: 1rem;
   padding: 1em;
   font-family: "Roboto";
   background-color: #F8F8F8;
@@ -501,7 +500,7 @@
 }
 .offers__entry__ctn-info__btn {
   margin: 1rem 1rem 3rem;
-  margin: 2rem 0 0;
+  margin: 2rem 1rem 1rem;
   font-family: "Archivo";
   font-size: 1em;
   font-weight: 700;

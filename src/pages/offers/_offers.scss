@@ -92,7 +92,7 @@
 
             &__btn {
                 margin: 1rem 1rem 3rem;
-                @include defaultButton ($sidePadding: 4em);
+                @include defaultButton ($margin: 2rem 1rem 1rem, $sidePadding: 4em);
             }
         }
     }
