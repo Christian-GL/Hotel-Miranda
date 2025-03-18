@@ -399,6 +399,12 @@
   font-weight: 400;
   color: #000000;
 }
+@media only screen and (min-width: 1000px) {
+  .roomDetails__availability {
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+  }
+}
 .roomDetails__availability__ctn-price {
   margin: 1.5rem 0;
   font-family: "Archivo";
@@ -414,28 +420,46 @@
   font-size: 1em;
   text-decoration-thickness: 1px;
 }
-.roomDetails__availability__img {
+@media only screen and (min-width: 1000px) {
+  .roomDetails__availability__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.roomDetails__availability__info__img {
   width: 100%;
   height: auto;
 }
-.roomDetails__availability__ctn-check {
+@media only screen and (min-width: 1000px) {
+  .roomDetails__availability__info__img {
+    width: 60%;
+  }
+}
+.roomDetails__availability__info__ctn-check {
   margin-top: 2rem;
   padding: 1em;
   font-family: "Archivo";
   font-weight: 700;
 }
-.roomDetails__availability__ctn-check__title {
+@media only screen and (min-width: 1000px) {
+  .roomDetails__availability__info__ctn-check {
+    width: 35%;
+    margin-top: 0;
+  }
+}
+.roomDetails__availability__info__ctn-check__title {
   text-align: center;
   font-size: 1.25em;
 }
-.roomDetails__availability__ctn-check__check-in-out {
+.roomDetails__availability__info__ctn-check__check-in-out {
   margin: 2rem 0;
   font-size: 0.9em;
 }
-.roomDetails__availability__ctn-check__ctn-date {
+.roomDetails__availability__info__ctn-check__ctn-date {
   position: relative;
 }
-.roomDetails__availability__ctn-check__ctn-date__pick-date {
+.roomDetails__availability__info__ctn-check__ctn-date__pick-date {
   padding: 1.25em 3.5em 1.25em 1.75em;
   width: 100%;
   font-family: "Archivo";
@@ -445,10 +469,10 @@
   color: #777777;
   background-color: #F8F8F8;
 }
-.roomDetails__availability__ctn-check__ctn-date__pick-date input {
+.roomDetails__availability__info__ctn-check__ctn-date__pick-date input {
   position: relative;
 }
-.roomDetails__availability__ctn-check__ctn-date input[type=date]::-webkit-calendar-picker-indicator {
+.roomDetails__availability__info__ctn-check__ctn-date input[type=date]::-webkit-calendar-picker-indicator {
   position: absolute;
   top: 0;
   right: 0;
@@ -459,15 +483,15 @@
   background: transparent;
   cursor: pointer;
 }
-.roomDetails__availability__ctn-check__ctn-date__img {
+.roomDetails__availability__info__ctn-check__ctn-date__img {
   position: absolute;
   top: 1.35rem;
   right: 1.5rem;
 }
-.roomDetails__availability__ctn-check__ctn-btn {
+.roomDetails__availability__info__ctn-check__ctn-btn {
   text-align: center;
 }
-.roomDetails__availability__ctn-check__ctn-btn__btn {
+.roomDetails__availability__info__ctn-check__ctn-btn__btn {
   margin: 2rem 0 0;
   font-family: "Archivo";
   font-size: 1em;
@@ -487,6 +511,12 @@
   font-weight: 400;
   line-height: 1.5em;
   color: #777777;
+}
+@media only screen and (min-width: 1000px) {
+  .roomDetails__info-text {
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+  }
 }
 .roomDetails__amenities__title {
   margin-top: 2rem;
@@ -554,10 +584,22 @@
 .roomDetails__amenities__list-beneficits__option--towels {
   list-style-image: url("../../media/icon/list-towels.png");
 }
+@media only screen and (min-width: 1000px) {
+  .roomDetails__amenities {
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+  }
+}
 .roomDetails__person-profile {
   margin: 5rem 0 2rem;
   padding: 0 1em;
   text-align: center;
+}
+@media only screen and (min-width: 1000px) {
+  .roomDetails__person-profile {
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+  }
 }
 .roomDetails__person-profile__img {
   width: 10rem;
@@ -592,6 +634,12 @@
   margin-top: 5rem;
   padding: 0 1em;
 }
+@media only screen and (min-width: 1000px) {
+  .roomDetails__cancellation {
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+  }
+}
 .roomDetails__cancellation__title {
   margin-top: 1rem;
   padding-bottom: 0.25em;
@@ -612,6 +660,12 @@
 .roomDetails__related-rooms {
   margin: 3rem 0 0;
   padding: 0 1em;
+}
+@media only screen and (min-width: 1000px) {
+  .roomDetails__related-rooms {
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+  }
 }
 .roomDetails__related-rooms__title {
   margin: 1rem 0 2rem;

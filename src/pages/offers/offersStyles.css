@@ -560,7 +560,7 @@
   font-family: "Old Standard TT";
   font-size: 2em;
   font-weight: 400;
-  color: #FFFFFF;
+  color: #222222;
 }
 .offers__popular__ctn-room {
   margin: 0 1rem;
@@ -624,6 +624,12 @@
   color: #BDBDBD;
   cursor: pointer;
 }
+@media only screen and (min-width: 1000px) {
+  .offers__popular__ctn-room {
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+  }
+}
 
 .swiper__offers__room {
   position: relative;
@@ -658,6 +664,42 @@
 }
 .swiper__offers__room .swiper-button-next::after {
   font-size: 1rem;
+}
+@media only screen and (min-width: 1000px) {
+  .swiper__offers__room {
+    position: relative;
+  }
+  .swiper__offers__room .swiper-slide-active {
+    padding: 0em;
+  }
+  .swiper__offers__room .swiper-button-prev {
+    position: absolute;
+    top: var(--swiper-navigation-top-offset, 25%);
+    right: none;
+    bottom: none;
+    left: 12.5%;
+    padding: 1em 1.35em;
+    background-size: 50px;
+    color: #000000;
+    background-color: #FFFFFF;
+  }
+  .swiper__offers__room .swiper-button-prev::after {
+    font-size: 1rem;
+  }
+  .swiper__offers__room .swiper-button-next {
+    position: absolute;
+    top: var(--swiper-navigation-top-offset, 25%);
+    right: 12.5%;
+    bottom: none;
+    left: none;
+    padding: 1em 1.35em;
+    background-size: 50px;
+    color: #FFFFFF;
+    background-color: #BEAD8E;
+  }
+  .swiper__offers__room .swiper-button-next::after {
+    font-size: 1rem;
+  }
 }
 
 * {

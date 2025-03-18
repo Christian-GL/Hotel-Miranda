@@ -22,6 +22,11 @@
 
         @include introSection($fontSizeMayorTitle: 2.25em);
 
+        @media only screen and (min-width: 1000px) {
+            margin-left: $spaceSideDesktop;
+            margin-right: $spaceSideDesktop;
+        }
+
         &__ctn-price {
             margin: 1.5rem 0;
             font-family: $font-archivo;
@@ -40,69 +45,87 @@
             }
         }
 
-        &__img {
-            width: 100%;
-            height: auto;
-        }
+        &__info {
 
-        &__ctn-check {
-            margin-top: 2rem;
-            padding: 1em;
-            font-family: $font-archivo;
-            font-weight: 700;
-
-            &__title {
-                text-align: center;
-                font-size: 1.25em;
+            @media only screen and (min-width: 1000px) {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
             }
 
-            &__check-in-out {
-                margin: 2rem 0;
-                font-size: 0.9em;
+            &__img {
+                width: 100%;
+                height: auto;
+
+                @media only screen and (min-width: 1000px) {
+                    width: 60%;
+                }
             }
 
-            &__ctn-date {
-                position: relative;
+            &__ctn-check {
+                margin-top: 2rem;
+                padding: 1em;
+                font-family: $font-archivo;
+                font-weight: 700;
 
-                &__pick-date {
-                    padding: 1.25em 3.5em 1.25em 1.75em;
-                    width: 100%;
-                    font-family: $font-archivo;
-                    font-size: 1em;
-                    border: none;
-                    outline: none;
-                    color: $color-textGray;
-                    background-color: $color-backgroundGray;
+                @media only screen and (min-width: 1000px) {
+                    width: 35%;
+                    margin-top: 0;
                 }
 
-                &__pick-date input {
+                &__title {
+                    text-align: center;
+                    font-size: 1.25em;
+                }
+
+                &__check-in-out {
+                    margin: 2rem 0;
+                    font-size: 0.9em;
+                }
+
+                &__ctn-date {
                     position: relative;
+
+                    &__pick-date {
+                        padding: 1.25em 3.5em 1.25em 1.75em;
+                        width: 100%;
+                        font-family: $font-archivo;
+                        font-size: 1em;
+                        border: none;
+                        outline: none;
+                        color: $color-textGray;
+                        background-color: $color-backgroundGray;
+                    }
+
+                    &__pick-date input {
+                        position: relative;
+                    }
+
+                    input[type="date"]::-webkit-calendar-picker-indicator {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                        left: 0;
+                        width: auto;
+                        height: auto;
+                        background: transparent;
+                        cursor: pointer;
+                    }
+
+                    &__img {
+                        position: absolute;
+                        top: 1.35rem;
+                        right: 1.5rem;
+                    }
                 }
 
-                input[type="date"]::-webkit-calendar-picker-indicator {
-                    position: absolute;
-                    top: 0;
-                    right: 0;
-                    bottom: 0;
-                    left: 0;
-                    width: auto;
-                    height: auto;
-                    background: transparent;
-                    cursor: pointer;
-                }
+                &__ctn-btn {
+                    text-align: center;
 
-                &__img {
-                    position: absolute;
-                    top: 1.35rem;
-                    right: 1.5rem;
-                }
-            }
-
-            &__ctn-btn {
-                text-align: center;
-
-                &__btn {
-                    @include defaultButton($sidePadding: 2em);
+                    &__btn {
+                        @include defaultButton($sidePadding: 2em);
+                    }
                 }
             }
         }
@@ -115,6 +138,11 @@
         font-weight: 400;
         line-height: 1.5em;
         color: $color-textGray;
+
+        @media only screen and (min-width: 1000px) {
+            margin-left: $spaceSideDesktop;
+            margin-right: $spaceSideDesktop;
+        }
     }
 
     &__amenities {
@@ -128,12 +156,22 @@
         }
 
         @include listAmenities;
+
+        @media only screen and (min-width: 1000px) {
+            margin-left: $spaceSideDesktop;
+            margin-right: $spaceSideDesktop;
+        }
     }
 
     &__person-profile {
         margin: 5rem 0 2rem;
         padding: 0 1em;
         text-align: center;
+
+        @media only screen and (min-width: 1000px) {
+            margin-left: $spaceSideDesktop;
+            margin-right: $spaceSideDesktop;
+        }
 
         &__img {
             width: 10rem;
@@ -173,6 +211,11 @@
         margin-top: 5rem;
         padding: 0 1em;
 
+        @media only screen and (min-width: 1000px) {
+            margin-left: $spaceSideDesktop;
+            margin-right: $spaceSideDesktop;
+        }
+
         &__title {
             margin-top: 1rem;
             padding-bottom: 0.25em;
@@ -196,6 +239,11 @@
     &__related-rooms {
         margin: 3rem 0 0;
         padding: 0 1em;
+
+        @media only screen and (min-width: 1000px) {
+            margin-left: $spaceSideDesktop;
+            margin-right: $spaceSideDesktop;
+        }
 
         &__title {
             margin: 1rem 0 2rem;
