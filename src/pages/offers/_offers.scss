@@ -22,14 +22,14 @@
             -0.1em 0.10em 0.5em $color-shading, // left
             0.1em 0.10em 0.5em $color-shading; // right
 
+        @media only screen and (min-width: 1000px) {
+            margin-left: $spaceSideDesktop;
+            margin-right: $spaceSideDesktop;
+        }
+
         &__ctn-img {
             position: relative;
             font-family: $font-archivo;
-            // text-shadow:
-            //     -1px 1px 0 $color-black,
-            //     1px 1px 0 $color-black,
-            //     1px -1px 0 $color-black,
-            //     -1px -1px 0 $color-black;
 
             &__img {
                 width: 100%;
@@ -81,6 +81,11 @@
 
             @include introSection($fontSizeMayorTitle: 2.75em);
 
+            @media only screen and (min-width: 1000px) {
+                margin-left: 7.5%;
+                margin-right: 7.5%;
+            }
+
             &__text {
                 margin-top: 1rem;
                 font-family: $font-roboto;
@@ -90,9 +95,15 @@
 
             @include listAmenities;
 
-            &__btn {
-                margin: 1rem 1rem 3rem;
-                @include defaultButton ($margin: 2rem 1rem 1rem, $sidePadding: 4em);
+            &__ctn-btn {
+                @media only screen and (min-width: 1000px) {
+                    text-align: center;
+                }
+
+                &__btn {
+                    margin: 1rem 1rem 3rem;
+                    @include defaultButton ($margin: 2rem 1rem 1rem, $sidePadding: 4em);
+                }
             }
         }
     }

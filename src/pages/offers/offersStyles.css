@@ -383,6 +383,12 @@
   margin: 2rem 1rem;
   box-shadow: 0 0.1em 0.15em lightgray, -0.1em 0.1em 0.5em lightgray, 0.1em 0.1em 0.5em lightgray;
 }
+@media only screen and (min-width: 1000px) {
+  .offers__entry {
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+  }
+}
 .offers__entry__ctn-img {
   position: relative;
   font-family: "Archivo";
@@ -444,6 +450,12 @@
   font-weight: 400;
   color: #000000;
 }
+@media only screen and (min-width: 1000px) {
+  .offers__entry__ctn-info {
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+  }
+}
 .offers__entry__ctn-info__text {
   margin-top: 1rem;
   font-family: "Roboto";
@@ -459,6 +471,17 @@
   margin-top: 2rem;
   padding: 0 1em;
   text-align: left;
+  justify-content: center;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media only screen and (min-width: 1000px) {
+  .offers__entry__ctn-info__list-beneficits {
+    -moz-column-gap: 5rem;
+         column-gap: 5rem;
+  }
 }
 .offers__entry__ctn-info__list-beneficits__option {
   margin-left: 1.5rem;
@@ -498,7 +521,12 @@
 .offers__entry__ctn-info__list-beneficits__option--towels {
   list-style-image: url("../../media/icon/list-towels.png");
 }
-.offers__entry__ctn-info__btn {
+@media only screen and (min-width: 1000px) {
+  .offers__entry__ctn-info__ctn-btn {
+    text-align: center;
+  }
+}
+.offers__entry__ctn-info__ctn-btn__btn {
   margin: 1rem 1rem 3rem;
   margin: 2rem 1rem 1rem;
   font-family: "Archivo";

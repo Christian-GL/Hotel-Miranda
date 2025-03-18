@@ -504,6 +504,17 @@
   margin-top: 2rem;
   padding: 0 1em;
   text-align: left;
+  justify-content: center;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media only screen and (min-width: 1000px) {
+  .roomDetails__amenities__list-beneficits {
+    -moz-column-gap: 5rem;
+         column-gap: 5rem;
+  }
 }
 .roomDetails__amenities__list-beneficits__option {
   margin-left: 1.5rem;
