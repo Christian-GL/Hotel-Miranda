@@ -28,19 +28,24 @@
     }
 
     &__availability {
-        padding: 1em 1em 3em;
+        padding: 1em $spaceSideDesktop 3em;
         background-color: $color-darkBrown;
 
-        &__title {
-            margin: 2rem 0 1rem;
-            font-family: $font-roboto;
-            font-size: 1.25em;
-            font-weight: 700;
-            color: $color-white;
+        @media only screen and (min-width: 1000px) {
+            display: flex;
+            justify-content: space-between;
         }
 
         &__ctn-date {
             position: relative;
+
+            &__title {
+                margin: 2rem 0 1rem;
+                font-family: $font-roboto;
+                font-size: 1.25em;
+                font-weight: 700;
+                color: $color-white;
+            }
 
             &__pick-date {
                 padding: 1.25em 2em 1em;
@@ -74,10 +79,14 @@
 
             &__img {
                 position: absolute;
-                top: 1.25rem;
+                top: 3.75rem;
                 left: 0.25rem;
                 transform: scale(1.25);
                 pointer-events: none;
+
+                @media only screen and (min-width: 1000px) {
+                    top: 5.75rem;
+                }
             }
         }
 
@@ -94,6 +103,11 @@
         @include introSection($marginMayorTitle: 2rem 0 0,
             $fontSizeMayorTitle: 3.5em);
 
+        @media only screen and (min-width: 1000px) {
+            margin-left: $spaceSideDesktop;
+            margin-right: $spaceSideDesktop;
+        }
+
         &__text {
             margin-top: 1.5rem;
             font-family: $font-archivo;
@@ -109,11 +123,21 @@
     &__about-us-info {
 
         @include aboutUsInfo();
+
+        @media only screen and (min-width: 1000px) {
+            margin-left: $spaceSideDesktop;
+            margin-right: $spaceSideDesktop;
+        }
     }
 
     &__about-us-info2 {
 
         @include aboutUsInfo($backgroundColor: $color-darkBrown, $textColor: $color-white);
+
+        @media only screen and (min-width: 1000px) {
+            margin-left: $spaceSideDesktop;
+            margin-right: $spaceSideDesktop;
+        }
     }
 
     &__room {
@@ -123,11 +147,16 @@
         @include introSection($textAlign: center, $marginMayorTitle: 1rem 0, $fontSizeMayorTitle: 3.5em);
 
         @include roomInfo($imgPadding: 2em 0, $optionsCtnPositionY: 7.5%, $marginCtnInfo: 0);
+
+        @media only screen and (min-width: 1000px) {
+            margin-left: $spaceSideDesktop;
+            margin-right: $spaceSideDesktop;
+        }
     }
 
     &__about-us-info3 {
         margin-top: 1.5rem;
-        padding: 3em 1em;
+        padding: 3em $spaceSideDesktop;
         background-color: $color-darkBrown;
 
         @include introSection($fontSizeMinorTitle: 0.8em,
@@ -161,6 +190,11 @@
             $ctnSliderBackgroundColor: $color-white,
             $colorLetterMayorTitleAndTitleText: $color-darkBrown,
             $colorLetterMinorTitleAndText: $color-textGray);
+
+        @media only screen and (min-width: 1000px) {
+            margin-left: $spaceSideDesktop;
+            margin-right: $spaceSideDesktop;
+        }
     }
 
     &__foods {
@@ -168,6 +202,11 @@
         padding: 10em 1em 0;
         overflow-x: hidden;
         @include introSection($fontSizeMayorTitle: 3.5em);
+
+        @media only screen and (min-width: 1000px) {
+            padding-left: $spaceSideDesktop;
+            padding-right: $spaceSideDesktop;
+        }
 
         &__img {
             position: absolute;
@@ -189,12 +228,25 @@
         padding: 0 1em;
         width: 100%;
         height: auto;
+
+        @media only screen and (min-width: 1000px) {
+            width: 75%;
+            margin-left: $spaceSideDesktop;
+            margin-right: $spaceSideDesktop;
+        }
     }
 
     &__stats {
         margin: 2rem 0 4rem;
         text-align: center;
         background-color: $color-darkBrown;
+
+        @media only screen and (min-width: 1000px) {
+            display: flex;
+            justify-content: space-between;
+            padding-left: $spaceSideDesktop;
+            padding-right: $spaceSideDesktop;
+        }
 
         &__entry {
             padding: 2em 0;

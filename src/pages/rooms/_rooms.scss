@@ -21,6 +21,11 @@
         padding: 0 1em;
 
         @include roomInfo;
+
+        @media only screen and (min-width: 1000px) {
+            margin-left: $spaceSideDesktop;
+            margin-right: $spaceSideDesktop;
+        }
     }
 
 }
